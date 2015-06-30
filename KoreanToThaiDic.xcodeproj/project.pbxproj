@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05C592291B42905E008BBC21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592281B42905E008BBC21 /* AppDelegate.swift */; };
+		05C5922B1B42905E008BBC21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C5922A1B42905E008BBC21 /* ViewController.swift */; };
+		05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
+		05C592301B42905E008BBC21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
+		05C592331B42905E008BBC21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C592311B42905E008BBC21 /* LaunchScreen.xib */; };
+		05C5923F1B42905E008BBC21 /* KoreanToThaiDicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C5923E1B42905E008BBC21 /* KoreanToThaiDicTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05C592391B42905E008BBC21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05C5921B1B42905D008BBC21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C592221B42905E008BBC21;
+			remoteInfo = KoreanToThaiDic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C592231B42905E008BBC21 /* KoreanToThaiDic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanToThaiDic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C592271B42905E008BBC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C592281B42905E008BBC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05C5922A1B42905E008BBC21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05C5922D1B42905E008BBC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05C5922F1B42905E008BBC21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		05C592321B42905E008BBC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		05C592381B42905E008BBC21 /* KoreanToThaiDicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoreanToThaiDicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C5923D1B42905E008BBC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C5923E1B42905E008BBC21 /* KoreanToThaiDicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToThaiDicTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05C592201B42905E008BBC21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C592351B42905E008BBC21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C5921A1B42905D008BBC21 = {
+			isa = PBXGroup;
+			children = (
+				05C592251B42905E008BBC21 /* KoreanToThaiDic */,
+				05C5923B1B42905E008BBC21 /* KoreanToThaiDicTests */,
+				05C592241B42905E008BBC21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05C592241B42905E008BBC21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05C592231B42905E008BBC21 /* KoreanToThaiDic.app */,
+				05C592381B42905E008BBC21 /* KoreanToThaiDicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05C592251B42905E008BBC21 /* KoreanToThaiDic */ = {
+			isa = PBXGroup;
+			children = (
+				05C592281B42905E008BBC21 /* AppDelegate.swift */,
+				05C5922A1B42905E008BBC21 /* ViewController.swift */,
+				05C5922C1B42905E008BBC21 /* Main.storyboard */,
+				05C5922F1B42905E008BBC21 /* Images.xcassets */,
+				05C592311B42905E008BBC21 /* LaunchScreen.xib */,
+				05C592261B42905E008BBC21 /* Supporting Files */,
+			);
+			path = KoreanToThaiDic;
+			sourceTree = "<group>";
+		};
+		05C592261B42905E008BBC21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05C592271B42905E008BBC21 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05C5923B1B42905E008BBC21 /* KoreanToThaiDicTests */ = {
+			isa = PBXGroup;
+			children = (
+				05C5923E1B42905E008BBC21 /* KoreanToThaiDicTests.swift */,
+				05C5923C1B42905E008BBC21 /* Supporting Files */,
+			);
+			path = KoreanToThaiDicTests;
+			sourceTree = "<group>";
+		};
+		05C5923C1B42905E008BBC21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05C5923D1B42905E008BBC21 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05C592221B42905E008BBC21 /* KoreanToThaiDic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C592421B42905E008BBC21 /* Build configuration list for PBXNativeTarget "KoreanToThaiDic" */;
+			buildPhases = (
+				05C5921F1B42905E008BBC21 /* Sources */,
+				05C592201B42905E008BBC21 /* Frameworks */,
+				05C592211B42905E008BBC21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoreanToThaiDic;
+			productName = KoreanToThaiDic;
+			productReference = 05C592231B42905E008BBC21 /* KoreanToThaiDic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05C592371B42905E008BBC21 /* KoreanToThaiDicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C592451B42905E008BBC21 /* Build configuration list for PBXNativeTarget "KoreanToThaiDicTests" */;
+			buildPhases = (
+				05C592341B42905E008BBC21 /* Sources */,
+				05C592351B42905E008BBC21 /* Frameworks */,
+				05C592361B42905E008BBC21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05C5923A1B42905E008BBC21 /* PBXTargetDependency */,
+			);
+			name = KoreanToThaiDicTests;
+			productName = KoreanToThaiDicTests;
+			productReference = 05C592381B42905E008BBC21 /* KoreanToThaiDicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05C5921B1B42905D008BBC21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = smallhouse;
+				TargetAttributes = {
+					05C592221B42905E008BBC21 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					05C592371B42905E008BBC21 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 05C592221B42905E008BBC21;
+					};
+				};
+			};
+			buildConfigurationList = 05C5921E1B42905D008BBC21 /* Build configuration list for PBXProject "KoreanToThaiDic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05C5921A1B42905D008BBC21;
+			productRefGroup = 05C592241B42905E008BBC21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05C592221B42905E008BBC21 /* KoreanToThaiDic */,
+				05C592371B42905E008BBC21 /* KoreanToThaiDicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05C592211B42905E008BBC21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */,
+				05C592331B42905E008BBC21 /* LaunchScreen.xib in Resources */,
+				05C592301B42905E008BBC21 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C592361B42905E008BBC21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05C5921F1B42905E008BBC21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C5922B1B42905E008BBC21 /* ViewController.swift in Sources */,
+				05C592291B42905E008BBC21 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C592341B42905E008BBC21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C5923F1B42905E008BBC21 /* KoreanToThaiDicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05C5923A1B42905E008BBC21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C592221B42905E008BBC21 /* KoreanToThaiDic */;
+			targetProxy = 05C592391B42905E008BBC21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05C5922C1B42905E008BBC21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05C5922D1B42905E008BBC21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05C592311B42905E008BBC21 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05C592321B42905E008BBC21 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05C592401B42905E008BBC21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05C592411B42905E008BBC21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05C592431B42905E008BBC21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KoreanToThaiDic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05C592441B42905E008BBC21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KoreanToThaiDic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05C592461B42905E008BBC21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KoreanToThaiDicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KoreanToThaiDic.app/KoreanToThaiDic";
+			};
+			name = Debug;
+		};
+		05C592471B42905E008BBC21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KoreanToThaiDicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KoreanToThaiDic.app/KoreanToThaiDic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05C5921E1B42905D008BBC21 /* Build configuration list for PBXProject "KoreanToThaiDic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C592401B42905E008BBC21 /* Debug */,
+				05C592411B42905E008BBC21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05C592421B42905E008BBC21 /* Build configuration list for PBXNativeTarget "KoreanToThaiDic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C592431B42905E008BBC21 /* Debug */,
+				05C592441B42905E008BBC21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		05C592451B42905E008BBC21 /* Build configuration list for PBXNativeTarget "KoreanToThaiDicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C592461B42905E008BBC21 /* Debug */,
+				05C592471B42905E008BBC21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05C5921B1B42905D008BBC21 /* Project object */;
+}
