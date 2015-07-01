@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "05C592221B42905E008BBC21"
-               BuildableName = "KoreanToThaiDic.app"
-               BlueprintName = "KoreanToThaiDic"
-               ReferencedContainer = "container:KoreanToThaiDic.xcodeproj">
+               BlueprintIdentifier = "D958025819E6EEEB003C8218"
+               BuildableName = "SwiftHTTP.framework"
+               BlueprintName = "SwiftHTTPOSX"
+               ReferencedContainer = "container:SwiftHTTP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "05C592371B42905E008BBC21"
-               BuildableName = "KoreanToThaiDicTests.xctest"
-               BlueprintName = "KoreanToThaiDicTests"
-               ReferencedContainer = "container:KoreanToThaiDic.xcodeproj">
+               BlueprintIdentifier = "D958026219E6EEEB003C8218"
+               BuildableName = "SwiftHTTPOSXTests.xctest"
+               BlueprintName = "SwiftHTTPOSXTests"
+               ReferencedContainer = "container:SwiftHTTP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "05C592371B42905E008BBC21"
-               BuildableName = "KoreanToThaiDicTests.xctest"
-               BlueprintName = "KoreanToThaiDicTests"
-               ReferencedContainer = "container:KoreanToThaiDic.xcodeproj">
+               BlueprintIdentifier = "D958026219E6EEEB003C8218"
+               BuildableName = "SwiftHTTPOSXTests.xctest"
+               BlueprintName = "SwiftHTTPOSXTests"
+               ReferencedContainer = "container:SwiftHTTP.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "05C592221B42905E008BBC21"
-            BuildableName = "KoreanToThaiDic.app"
-            BlueprintName = "KoreanToThaiDic"
-            ReferencedContainer = "container:KoreanToThaiDic.xcodeproj">
+            BlueprintIdentifier = "D958025819E6EEEB003C8218"
+            BuildableName = "SwiftHTTP.framework"
+            BlueprintName = "SwiftHTTPOSX"
+            ReferencedContainer = "container:SwiftHTTP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,16 +72,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "05C592221B42905E008BBC21"
-            BuildableName = "KoreanToThaiDic.app"
-            BlueprintName = "KoreanToThaiDic"
-            ReferencedContainer = "container:KoreanToThaiDic.xcodeproj">
+            BlueprintIdentifier = "D958025819E6EEEB003C8218"
+            BuildableName = "SwiftHTTP.framework"
+            BlueprintName = "SwiftHTTPOSX"
+            ReferencedContainer = "container:SwiftHTTP.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -91,16 +90,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "05C592221B42905E008BBC21"
-            BuildableName = "KoreanToThaiDic.app"
-            BlueprintName = "KoreanToThaiDic"
-            ReferencedContainer = "container:KoreanToThaiDic.xcodeproj">
+            BlueprintIdentifier = "D958025819E6EEEB003C8218"
+            BuildableName = "SwiftHTTP.framework"
+            BlueprintName = "SwiftHTTPOSX"
+            ReferencedContainer = "container:SwiftHTTP.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
