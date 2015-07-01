@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05C592291B42905E008BBC21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592281B42905E008BBC21 /* AppDelegate.swift */; };
-		05C5922B1B42905E008BBC21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C5922A1B42905E008BBC21 /* ViewController.swift */; };
 		05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
 		05C592301B42905E008BBC21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
 		05C592331B42905E008BBC21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C592311B42905E008BBC21 /* LaunchScreen.xib */; };
@@ -30,6 +29,8 @@
 		05EA7B921B43B8F900F2CE14 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B841B43B8F900F2CE14 /* LICENSE */; };
 		05EA7B931B43B8F900F2CE14 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B851B43B8F900F2CE14 /* README.md */; };
 		05EA7B941B43B8F900F2CE14 /* SwiftHTTP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */; };
+		05EA7BA21B43BE7D00F2CE14 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */; };
+		05EA7BA51B43BFC600F2CE14 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA41B43BFC600F2CE14 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,7 +123,6 @@
 		05C592231B42905E008BBC21 /* KoreanToThaiDic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanToThaiDic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C592271B42905E008BBC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C592281B42905E008BBC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05C5922A1B42905E008BBC21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05C5922D1B42905E008BBC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05C5922F1B42905E008BBC21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05C592321B42905E008BBC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -147,6 +147,8 @@
 		05EA7B861B43B8F900F2CE14 /* SwiftHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftHTTP.h; sourceTree = "<group>"; };
 		05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftHTTP.podspec; sourceTree = "<group>"; };
 		05EA7B881B43B8F900F2CE14 /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftHTTP.xcodeproj; sourceTree = "<group>"; };
+		05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		05EA7BA41B43BFC600F2CE14 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,11 +191,11 @@
 		05C592251B42905E008BBC21 /* KoreanToThaiDic */ = {
 			isa = PBXGroup;
 			children = (
+				05EA7BA31B43BFAC00F2CE14 /* 00AppInit */,
 				05C5924B1B4291EE008BBC21 /* Library */,
 				05C592481B4290D8008BBC21 /* DBFile */,
 				05C592C91B429439008BBC21 /* CustomLibrary */,
 				05C592281B42905E008BBC21 /* AppDelegate.swift */,
-				05C5922A1B42905E008BBC21 /* ViewController.swift */,
 				05C5922C1B42905E008BBC21 /* Main.storyboard */,
 				05C5922F1B42905E008BBC21 /* Images.xcassets */,
 				05C592311B42905E008BBC21 /* LaunchScreen.xib */,
@@ -251,6 +253,7 @@
 			children = (
 				05C592CA1B42944C008BBC21 /* DBManager.swift */,
 				05EA7B721B43B86700F2CE14 /* ConstValue.swift */,
+				05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */,
 			);
 			path = CustomLibrary;
 			sourceTree = "<group>";
@@ -302,6 +305,14 @@
 				05EA7BA01B43B8F900F2CE14 /* SwiftHTTPOSXTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		05EA7BA31B43BFAC00F2CE14 /* 00AppInit */ = {
+			isa = PBXGroup;
+			children = (
+				05EA7BA41B43BFC600F2CE14 /* MainVC.swift */,
+			);
+			path = 00AppInit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,17 +492,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				05EA7B8D1B43B8F900F2CE14 /* HTTPResponseSerializer.swift in Sources */,
-				05C5922B1B42905E008BBC21 /* ViewController.swift in Sources */,
 				05C592CB1B42944C008BBC21 /* DBManager.swift in Sources */,
 				05EA7B7A1B43B8DF00F2CE14 /* HWILib.swift in Sources */,
 				05EA7B8E1B43B8F900F2CE14 /* HTTPSecurity.swift in Sources */,
 				05C592291B42905E008BBC21 /* AppDelegate.swift in Sources */,
 				05EA7B931B43B8F900F2CE14 /* README.md in Sources */,
 				05EA7B8F1B43B8F900F2CE14 /* HTTPTask.swift in Sources */,
+				05EA7BA21B43BE7D00F2CE14 /* BaseVC.swift in Sources */,
 				05EA7B8C1B43B8F900F2CE14 /* HTTPRequestSerializer.swift in Sources */,
 				05EA7B731B43B86700F2CE14 /* ConstValue.swift in Sources */,
 				05EA7B901B43B8F900F2CE14 /* HTTPUpload.swift in Sources */,
 				05EA7B7B1B43B8DF00F2CE14 /* InsetTextField.swift in Sources */,
+				05EA7BA51B43BFC600F2CE14 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
