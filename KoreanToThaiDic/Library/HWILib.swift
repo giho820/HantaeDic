@@ -45,7 +45,7 @@ class HWILib
         {
             self.activityIndicator = UIView(frame: CGRectMake(0, 0, currentVC.view.frame.size.width, currentVC.view.frame.size.height))
             self.activityIndicator?.userInteractionEnabled = false
-            self.activityIndicator?.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+            self.activityIndicator?.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
             
             let sizeOfBackground = (currentVC.view.frame.size.width > currentVC.view.frame.size.height ? currentVC.view.frame.size.height : currentVC.view.frame.size.width) / 3
             
