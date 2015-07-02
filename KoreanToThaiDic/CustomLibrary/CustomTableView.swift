@@ -14,10 +14,12 @@ class CustomTableView: UITableView {
     
     
     //백그라운드 터치 시 키보드 자동 내림 처리
+    /*
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
     {
         customDelegate?.onTouchBegan(touches, withEvent: event)
         
     }
-
+    */
+    
 }

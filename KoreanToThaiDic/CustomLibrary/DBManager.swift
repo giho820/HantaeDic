@@ -75,8 +75,9 @@ class DBManager
     class func getListFromWord(word : String , callback : ()->())
     {
      
+//________________________________________________________________________________________________
         // 속도 테스트 001 : DB 에서 검색 및 콜백 해줌   ---> 만약 메모리가 딸릴 경우 이거로 해야한다.
-        /*
+        
         let qualityOfServiceClass = QOS_CLASS_BACKGROUND
         let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
         dispatch_async(backgroundQueue, {
@@ -104,10 +105,15 @@ class DBManager
                         callback()
             })
         })
-        */
+
+//________________________________________________________________________________________________
         
+        
+        
+//________________________________________________________________________________________________
         
         // 속도 테스트 002 : 처음에 전체 DB를 메모리에 올리고, 메모리에서 검색  --> 메모리가 넉넉할 경우 사용 -> 속도가 빠르다.
+        /*
         let qualityOfServiceClass = QOS_CLASS_BACKGROUND
         let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
         dispatch_async(backgroundQueue, {
@@ -133,8 +139,9 @@ class DBManager
                 callback()
             })
         })
+        */
         
-        
+//________________________________________________________________________________________________
         
     }
     

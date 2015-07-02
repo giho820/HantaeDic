@@ -10,7 +10,9 @@ import UIKit
 
 class ItemCell: UITableViewCell {
 
-    @IBOutlet weak var label01_test: UILabel!
+    @IBOutlet weak var label01_largeText: UILabel!
+    @IBOutlet weak var label02_smallText: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

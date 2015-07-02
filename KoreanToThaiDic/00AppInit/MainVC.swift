@@ -13,7 +13,7 @@ protocol CustomTableViewDelegate
     func onTouchBegan(touches: Set<NSObject>, withEvent event: UIEvent)
 }
 
-class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , CustomTableViewDelegate{
+class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableViewDelegate , CustomTableViewDelegate{
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var placeholderViewInSearchBar: UIView!
@@ -26,18 +26,27 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , CustomTable
     
     var originPositionXSearchBarIcon : CGFloat = 0
     var originSizeSearchBarWidth : CGFloat = 0
+
+    
+
+    @IBOutlet weak var detailScrollView: DetailScrollView!
+    
     
     
     var isSetOriginPositionXSearchBarIcon = false
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.detailScrollView.hidden = true
         self.initHeaderView()
         self.initViews()
         
         self.tableViewInMain.customDelegate = self
         
+        
+        
         HWILib.showActivityIndicator(self)
+        
         DBManager.getAllList { () -> () in
             self.tableViewInMain.reloadData()
             HWILib.hideActivityIndicator()
@@ -46,45 +55,52 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , CustomTable
         self.backButton.hidden = true
         self.topTitleLabel.text = "단어검색"
         
+        HWILib.delay(0.1, closure: { () -> () in
+            self.detailScrollView.onViewDidLoad()
+        })
+
+        
     }
     
-
+    
+    
     @IBAction func onStartWriting(sender: UITextField)
     {
         println("onStartWriting")
         hideSearchBarPlaceHolder()
+        setSearchMode()
         
-
     }
     
     @IBAction func onWriting(sender: UITextField)
     {
-            println("onWriting")
+        println("onWriting")
+        setSearchMode()
         
         if sender.text == ""
         {
-            
             DBManager.searchedItemArray = DBManager.allItemArray
             self.tableViewInMain.reloadData()
         }
         else
         {
             hideSearchBarPlaceHolder()
-
+            
             DBManager.getListFromWord(sender.text, callback: { () -> () in
                 
                 self.tableViewInMain.reloadData()
                 
             })
         }
-
-
+        
+        
     }
     
     @IBAction func didEndWriting(sender: UITextField)
     {
-            println("didEndWriting")
+        println("didEndWriting")
     }
+    
     
     func textFieldShouldReturn(textField: UITextField) -> Bool
     {
@@ -99,15 +115,9 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , CustomTable
         onWriting(self.textFieldInSearchBar)
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    }
-    
-    override func didReceiveMemoryWarning() {
+  
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -130,7 +140,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , CustomTable
             
             self.cancelBtnInSearchBar.hidden = false
         })
-
+        
     }
     
     
@@ -159,7 +169,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , CustomTable
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-            return DBManager.searchedItemArray.count
+        return DBManager.searchedItemArray.count
     }
     
     
@@ -169,14 +179,58 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , CustomTable
         
         let oneItem = DBManager.searchedItemArray[indexPath.row]
         
-        
-        itemCell.label01_test.text  = oneItem.KOREAN
+        itemCell.label01_largeText.text = oneItem.KOREAN
+        itemCell.label02_smallText.text = oneItem.THAI
         
         return itemCell
         
     }
     
-    func onTouchBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        
+        println("셀 선택 테스트 : 인덱스 : \(indexPath)")
+        
+        let selectedItem = DBManager.searchedItemArray[indexPath.row]
+        detailScrollView.label02_SmallLabel.text = selectedItem.KOREAN
+        detailScrollView.label04_SmallLabel.text = selectedItem.THAI
+        detailScrollView.label06_SmallLabel.text = selectedItem.PRONUNCIATION
+        detailScrollView.arrangeLabelViews()
+        setDetailViewMode()
+
+    }
+    
+    func setDetailViewMode()
+    {
+        
+        self.backButton.hidden = false
+        detailScrollView.hidden = false
+        self.textFieldInSearchBar.resignFirstResponder()
+    }
+    
+    func setSearchMode()
+    {
+        self.backButton.hidden = true
+        detailScrollView.hidden = true
+    }
+    
+    override func onBackBtnTouchUpInside(sender: UIButton) {
+        super.onBackBtnTouchUpInside(sender)
+        
+        if !detailScrollView.hidden
+        {
+            setSearchMode()
+        }
+    }
+    
+    func onTouchBegan(touches: Set<NSObject>, withEvent event: UIEvent)
+    {
         self.touchesBegan(touches, withEvent: event)
     }
+    
+    func scrollViewWillBeginDragging(scrollView: UIScrollView)
+    {
+        self.textFieldInSearchBar.resignFirstResponder()
+    }
+    
 }

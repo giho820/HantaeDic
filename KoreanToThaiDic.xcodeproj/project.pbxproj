@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		05A2612F1B44446F0055D803 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2612E1B44446F0055D803 /* CustomTableView.swift */; };
+		05B775A11B4583DB004CFC45 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A01B4583DB004CFC45 /* DetailScrollView.swift */; };
+		05B775A31B4583EF004CFC45 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
 		05C592291B42905E008BBC21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592281B42905E008BBC21 /* AppDelegate.swift */; };
 		05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
 		05C592301B42905E008BBC21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
@@ -17,6 +19,7 @@
 		05C592CB1B42944C008BBC21 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592CA1B42944C008BBC21 /* DBManager.swift */; };
 		05C592E01B42A064008BBC21 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C592D71B42A02E008BBC21 /* SQLite.framework */; };
 		05C592E31B42A0CD008BBC21 /* SQLite.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05C592D71B42A02E008BBC21 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05DEA95B1B4535B5008E1459 /* CustomNaviC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */; };
 		05EA7B731B43B86700F2CE14 /* ConstValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B721B43B86700F2CE14 /* ConstValue.swift */; };
 		05EA7B7A1B43B8DF00F2CE14 /* HWILib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B781B43B8DF00F2CE14 /* HWILib.swift */; };
 		05EA7B7B1B43B8DF00F2CE14 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B791B43B8DF00F2CE14 /* InsetTextField.swift */; };
@@ -123,6 +126,8 @@
 
 /* Begin PBXFileReference section */
 		05A2612E1B44446F0055D803 /* CustomTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		05B775A01B4583DB004CFC45 /* DetailScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollView.swift; sourceTree = "<group>"; };
+		05B775A21B4583EF004CFC45 /* BaseScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
 		05C592231B42905E008BBC21 /* KoreanToThaiDic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanToThaiDic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C592271B42905E008BBC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C592281B42905E008BBC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 		05C592491B4290D8008BBC21 /* KorThaiDictionary.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = KorThaiDictionary.sqlite; sourceTree = "<group>"; };
 		05C592CA1B42944C008BBC21 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		05C592CE1B42A02D008BBC21 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNaviC.swift; sourceTree = "<group>"; };
 		05EA7B721B43B86700F2CE14 /* ConstValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstValue.swift; sourceTree = "<group>"; };
 		05EA7B781B43B8DF00F2CE14 /* HWILib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWILib.swift; sourceTree = "<group>"; };
 		05EA7B791B43B8DF00F2CE14 /* InsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -260,6 +266,8 @@
 				05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */,
 				05F3CD521B44376000AF00B0 /* ItemCell.swift */,
 				05A2612E1B44446F0055D803 /* CustomTableView.swift */,
+				05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */,
+				05B775A21B4583EF004CFC45 /* BaseScrollView.swift */,
 			);
 			path = CustomLibrary;
 			sourceTree = "<group>";
@@ -317,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				05EA7BA41B43BFC600F2CE14 /* MainVC.swift */,
+				05B775A01B4583DB004CFC45 /* DetailScrollView.swift */,
 			);
 			path = 00AppInit;
 			sourceTree = "<group>";
@@ -510,8 +519,11 @@
 				05EA7B8C1B43B8F900F2CE14 /* HTTPRequestSerializer.swift in Sources */,
 				05EA7B731B43B86700F2CE14 /* ConstValue.swift in Sources */,
 				05EA7B901B43B8F900F2CE14 /* HTTPUpload.swift in Sources */,
+				05B775A11B4583DB004CFC45 /* DetailScrollView.swift in Sources */,
 				05EA7B7B1B43B8DF00F2CE14 /* InsetTextField.swift in Sources */,
 				05EA7BA51B43BFC600F2CE14 /* MainVC.swift in Sources */,
+				05B775A31B4583EF004CFC45 /* BaseScrollView.swift in Sources */,
+				05DEA95B1B4535B5008E1459 /* CustomNaviC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JZH-lx-gbf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -106,7 +106,7 @@
                                     <constraint firstItem="K20-6b-Vd5" firstAttribute="top" secondItem="8we-IZ-h7g" secondAttribute="top" constant="7" id="zQQ-v4-M0Q"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MBb-K3-viQ" customClass="CustomTableView" customModule="KoreanToThaiDic" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MBb-K3-viQ" userLabel="테이블 뷰" customClass="CustomTableView" customModule="KoreanToThaiDic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -115,22 +115,47 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cnj-mH-Fjp" id="sjS-DF-vci">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYO-JY-oQK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="큰 라벨 테스트 텍스트" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYO-JY-oQK" userLabel="큰 라벨">
+                                                    <rect key="frame" x="15" y="12" width="562" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="xgd-1B-C5A"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="작은 라벨 테스트 텍스트" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCa-N2-mcH" userLabel="작은 라벨">
+                                                    <rect key="frame" x="15" y="35" width="562" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="YC7-C4-ELn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_n" translatesAutoresizingMaskIntoConstraints="NO" id="2cn-tc-6Sg">
+                                                    <rect key="frame" x="585" y="28" width="8" height="13"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="13" id="9ef-7Y-Xx7"/>
+                                                        <constraint firstAttribute="width" constant="8" id="IVn-um-Oea"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="RYO-JY-oQK" firstAttribute="leading" secondItem="sjS-DF-vci" secondAttribute="leading" id="K9L-DX-bbc"/>
-                                                <constraint firstAttribute="bottom" secondItem="RYO-JY-oQK" secondAttribute="bottom" id="dRc-aD-GFM"/>
-                                                <constraint firstItem="RYO-JY-oQK" firstAttribute="top" secondItem="sjS-DF-vci" secondAttribute="top" id="iRh-8j-gJ9"/>
-                                                <constraint firstAttribute="trailing" secondItem="RYO-JY-oQK" secondAttribute="trailing" id="ytY-Q2-fca"/>
+                                                <constraint firstItem="ZCa-N2-mcH" firstAttribute="top" secondItem="RYO-JY-oQK" secondAttribute="bottom" constant="2" id="826-2a-5GV"/>
+                                                <constraint firstItem="2cn-tc-6Sg" firstAttribute="leading" secondItem="ZCa-N2-mcH" secondAttribute="trailing" constant="8" id="MPU-xq-Y2j"/>
+                                                <constraint firstItem="ZCa-N2-mcH" firstAttribute="top" secondItem="RYO-JY-oQK" secondAttribute="bottom" constant="2" id="Q1e-aI-G9C"/>
+                                                <constraint firstItem="RYO-JY-oQK" firstAttribute="top" secondItem="sjS-DF-vci" secondAttribute="top" constant="12" id="V1O-v0-ijt"/>
+                                                <constraint firstItem="ZCa-N2-mcH" firstAttribute="leading" secondItem="sjS-DF-vci" secondAttribute="leading" constant="15" id="gl2-oy-IKL"/>
+                                                <constraint firstItem="2cn-tc-6Sg" firstAttribute="leading" secondItem="RYO-JY-oQK" secondAttribute="trailing" constant="8" id="jLj-Jh-YSg"/>
+                                                <constraint firstAttribute="centerY" secondItem="2cn-tc-6Sg" secondAttribute="centerY" id="oPH-C7-E6C"/>
+                                                <constraint firstAttribute="trailing" secondItem="2cn-tc-6Sg" secondAttribute="trailing" constant="7" id="t3k-Ij-gdw"/>
+                                                <constraint firstItem="RYO-JY-oQK" firstAttribute="leading" secondItem="sjS-DF-vci" secondAttribute="leading" constant="15" id="tue-Cc-UOA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="label01_test" destination="RYO-JY-oQK" id="4DP-W0-lzs"/>
+                                            <outlet property="label01_largeText" destination="RYO-JY-oQK" id="Gv5-vn-uD3"/>
+                                            <outlet property="label02_smallText" destination="ZCa-N2-mcH" id="LRI-Mk-EBU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -139,6 +164,9 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="16m-vl-w99"/>
                                 </connections>
                             </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsE-CW-Yrl" userLabel="디테일 스크롤뷰" customClass="DetailScrollView" customModule="KoreanToThaiDic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -148,14 +176,20 @@
                             <constraint firstItem="J7J-RT-PXH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TeL-pJ-DE3"/>
                             <constraint firstItem="8we-IZ-h7g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zfx-B6-dX1"/>
                             <constraint firstItem="J7J-RT-PXH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bCR-ZZ-fng"/>
+                            <constraint firstItem="ZsE-CW-Yrl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cwX-P3-65v"/>
+                            <constraint firstAttribute="trailing" secondItem="ZsE-CW-Yrl" secondAttribute="trailing" id="fUN-mM-IFj"/>
                             <constraint firstItem="MBb-K3-viQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fXb-e4-OHk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZsE-CW-Yrl" secondAttribute="bottom" id="gej-aG-HoG"/>
                             <constraint firstAttribute="trailing" secondItem="J7J-RT-PXH" secondAttribute="trailing" id="nAi-xC-IFx"/>
+                            <constraint firstItem="ZsE-CW-Yrl" firstAttribute="top" secondItem="8we-IZ-h7g" secondAttribute="bottom" id="reH-hg-mif"/>
                             <constraint firstAttribute="trailing" secondItem="MBb-K3-viQ" secondAttribute="trailing" id="rxe-7P-1aN"/>
                             <constraint firstItem="8we-IZ-h7g" firstAttribute="top" secondItem="J7J-RT-PXH" secondAttribute="bottom" id="ugz-Ku-fZC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="f26-AG-t4w"/>
                     <connections>
                         <outlet property="cancelBtnInSearchBar" destination="OhI-uO-dc6" id="5pI-9S-Tox"/>
+                        <outlet property="detailScrollView" destination="ZsE-CW-Yrl" id="ccf-c6-4pB"/>
                         <outlet property="labelInSearchTextField" destination="4Bg-yj-JfX" id="goE-6i-oTw"/>
                         <outlet property="placeholderViewInSearchBar" destination="zcA-cx-LgG" id="bIx-4j-iCx"/>
                         <outlet property="searchBarView" destination="8we-IZ-h7g" id="l1q-yZ-BX2"/>
@@ -165,9 +199,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1361" y="648"/>
+        </scene>
+        <!--Custom NaviC-->
+        <scene sceneID="FqE-JP-mPR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="JZH-lx-gbf" customClass="CustomNaviC" customModule="KoreanToThaiDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hQh-ce-Qg8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hy6-UM-J4r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1d-B2-sjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549" y="648"/>
         </scene>
     </scenes>
     <resources>
+        <image name="next_n" width="16" height="25"/>
         <image name="search_n" width="25" height="25"/>
     </resources>
 </document>

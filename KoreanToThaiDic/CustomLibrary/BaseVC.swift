@@ -106,6 +106,9 @@ class BaseVC: UIViewController {
         self.view.addSubview(container)
     }
     
+    
+//____________________________________________________________________________________________________________________________________________________________
+    // 뒤로가기 버튼 이벤트
     func onBackBtnTouchUpInside(sender : UIButton)
     {
         iconBackImageView.image = iconBackImageNormal
@@ -120,7 +123,11 @@ class BaseVC: UIViewController {
     {
         iconBackImageView.image = iconBackImageNormal
     }
+
     
+    
+//____________________________________________________________________________________________________________________________________________________________
+    // 오른쪽 버튼 이벤트
     
     func onETCBtnTouchUpInside(sender : UIButton)
     {
@@ -141,7 +148,7 @@ class BaseVC: UIViewController {
     //백그라운드 터치 시 키보드 자동 내림 처리
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
     {
-        println("베이스 스크롤뷰에서 터치 진입 테스트")
+        println("베이스 뷰컨트롤러에서 터치 진입 테스트")
         
         for firstDepthView in self.view.subviews
         {
@@ -185,9 +192,6 @@ class BaseVC: UIViewController {
         
     }
     
-    
-    override func shouldAutorotate() -> Bool {
-        return false
-    }
+
     
 }
