@@ -10,6 +10,10 @@
 		05A2612F1B44446F0055D803 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2612E1B44446F0055D803 /* CustomTableView.swift */; };
 		05B775A11B4583DB004CFC45 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A01B4583DB004CFC45 /* DetailScrollView.swift */; };
 		05B775A31B4583EF004CFC45 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
+		05BFBB851B4740C5001DA053 /* ETCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB841B4740C5001DA053 /* ETCVC.swift */; };
+		05BFBB871B4746BB001DA053 /* ETCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB861B4746BB001DA053 /* ETCCell.swift */; };
+		05BFBB891B4746D5001DA053 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB881B4746D5001DA053 /* ItemCell.swift */; };
+		05BFBB8B1B474ED5001DA053 /* AppIconBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB8A1B474ED5001DA053 /* AppIconBtnView.swift */; };
 		05C592291B42905E008BBC21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592281B42905E008BBC21 /* AppDelegate.swift */; };
 		05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
 		05C592301B42905E008BBC21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
@@ -35,7 +39,6 @@
 		05EA7B941B43B8F900F2CE14 /* SwiftHTTP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */; };
 		05EA7BA21B43BE7D00F2CE14 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */; };
 		05EA7BA51B43BFC600F2CE14 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA41B43BFC600F2CE14 /* MainVC.swift */; };
-		05F3CD531B44376000AF00B0 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3CD521B44376000AF00B0 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +131,10 @@
 		05A2612E1B44446F0055D803 /* CustomTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		05B775A01B4583DB004CFC45 /* DetailScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollView.swift; sourceTree = "<group>"; };
 		05B775A21B4583EF004CFC45 /* BaseScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
+		05BFBB841B4740C5001DA053 /* ETCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETCVC.swift; sourceTree = "<group>"; };
+		05BFBB861B4746BB001DA053 /* ETCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETCCell.swift; sourceTree = "<group>"; };
+		05BFBB881B4746D5001DA053 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		05BFBB8A1B474ED5001DA053 /* AppIconBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIconBtnView.swift; sourceTree = "<group>"; };
 		05C592231B42905E008BBC21 /* KoreanToThaiDic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanToThaiDic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C592271B42905E008BBC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C592281B42905E008BBC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,7 +165,6 @@
 		05EA7B881B43B8F900F2CE14 /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftHTTP.xcodeproj; sourceTree = "<group>"; };
 		05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		05EA7BA41B43BFC600F2CE14 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		05F3CD521B44376000AF00B0 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05BFBB7C1B4740AD001DA053 /* 01Etc */ = {
+			isa = PBXGroup;
+			children = (
+				05BFBB841B4740C5001DA053 /* ETCVC.swift */,
+				05BFBB861B4746BB001DA053 /* ETCCell.swift */,
+				05BFBB8A1B474ED5001DA053 /* AppIconBtnView.swift */,
+			);
+			path = 01Etc;
+			sourceTree = "<group>";
+		};
 		05C5921A1B42905D008BBC21 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				05EA7BA31B43BFAC00F2CE14 /* 00AppInit */,
+				05BFBB7C1B4740AD001DA053 /* 01Etc */,
 				05C5924B1B4291EE008BBC21 /* Library */,
 				05C592481B4290D8008BBC21 /* DBFile */,
 				05C592C91B429439008BBC21 /* CustomLibrary */,
@@ -264,7 +281,6 @@
 				05C592CA1B42944C008BBC21 /* DBManager.swift */,
 				05EA7B721B43B86700F2CE14 /* ConstValue.swift */,
 				05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */,
-				05F3CD521B44376000AF00B0 /* ItemCell.swift */,
 				05A2612E1B44446F0055D803 /* CustomTableView.swift */,
 				05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */,
 				05B775A21B4583EF004CFC45 /* BaseScrollView.swift */,
@@ -326,6 +342,7 @@
 			children = (
 				05EA7BA41B43BFC600F2CE14 /* MainVC.swift */,
 				05B775A01B4583DB004CFC45 /* DetailScrollView.swift */,
+				05BFBB881B4746D5001DA053 /* ItemCell.swift */,
 			);
 			path = 00AppInit;
 			sourceTree = "<group>";
@@ -510,7 +527,7 @@
 				05C592CB1B42944C008BBC21 /* DBManager.swift in Sources */,
 				05EA7B7A1B43B8DF00F2CE14 /* HWILib.swift in Sources */,
 				05EA7B8E1B43B8F900F2CE14 /* HTTPSecurity.swift in Sources */,
-				05F3CD531B44376000AF00B0 /* ItemCell.swift in Sources */,
+				05BFBB891B4746D5001DA053 /* ItemCell.swift in Sources */,
 				05A2612F1B44446F0055D803 /* CustomTableView.swift in Sources */,
 				05C592291B42905E008BBC21 /* AppDelegate.swift in Sources */,
 				05EA7B931B43B8F900F2CE14 /* README.md in Sources */,
@@ -518,9 +535,12 @@
 				05EA7BA21B43BE7D00F2CE14 /* BaseVC.swift in Sources */,
 				05EA7B8C1B43B8F900F2CE14 /* HTTPRequestSerializer.swift in Sources */,
 				05EA7B731B43B86700F2CE14 /* ConstValue.swift in Sources */,
+				05BFBB851B4740C5001DA053 /* ETCVC.swift in Sources */,
 				05EA7B901B43B8F900F2CE14 /* HTTPUpload.swift in Sources */,
 				05B775A11B4583DB004CFC45 /* DetailScrollView.swift in Sources */,
 				05EA7B7B1B43B8DF00F2CE14 /* InsetTextField.swift in Sources */,
+				05BFBB871B4746BB001DA053 /* ETCCell.swift in Sources */,
+				05BFBB8B1B474ED5001DA053 /* AppIconBtnView.swift in Sources */,
 				05EA7BA51B43BFC600F2CE14 /* MainVC.swift in Sources */,
 				05B775A31B4583EF004CFC45 /* BaseScrollView.swift in Sources */,
 				05DEA95B1B4535B5008E1459 /* CustomNaviC.swift in Sources */,

@@ -38,6 +38,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
     {
         super.viewDidLoad()
         self.detailScrollView.hidden = true
+        self.cancelBtnInSearchBar.hidden = true
         self.initHeaderView()
         self.initViews()
         
@@ -52,8 +53,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
             HWILib.hideActivityIndicator()
         }
         
-        self.backButton.hidden = true
-        self.topTitleLabel.text = "단어검색"
+
         
         HWILib.delay(0.1, closure: { () -> () in
             self.detailScrollView.onViewDidLoad()
@@ -205,6 +205,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         
         self.backButton.hidden = false
         detailScrollView.hidden = false
+
         self.textFieldInSearchBar.resignFirstResponder()
     }
     
@@ -212,6 +213,14 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
     {
         self.backButton.hidden = true
         detailScrollView.hidden = true
+        self.cancelBtnInSearchBar.hidden = false
+    }
+    
+    override func initHeaderView() {
+        super.initHeaderView()
+        self.backButton.hidden = true
+        self.topTitleLabel.text = "단어검색"
+        
     }
     
     override func onBackBtnTouchUpInside(sender: UIButton) {
@@ -231,6 +240,12 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
     func scrollViewWillBeginDragging(scrollView: UIScrollView)
     {
         self.textFieldInSearchBar.resignFirstResponder()
+    }
+    
+    override func onETCBtnTouchUpInside(sender: UIButton)
+    {
+        super.onETCBtnTouchUpInside(sender)
+        self.performSegueWithIdentifier("main_etc_seg", sender: self)
     }
     
 }
