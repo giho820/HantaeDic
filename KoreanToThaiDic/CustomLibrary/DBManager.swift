@@ -12,7 +12,7 @@ import SQLite
 
 class DBManager
 {
-    static let dbFilePath = NSBundle.mainBundle().pathForResource("KorThaiDictionary", ofType: "sqlite")!
+    static let dbFilePath = NSBundle.mainBundle().pathForResource("KorThaiDictionary_SEARCH_K", ofType: "sqlite")!
     static let db = Database(dbFilePath)
     static let dic = db["KOR_THAI_DICTIONARY"]
     
@@ -85,7 +85,7 @@ class DBManager
             
             self.searchedItemArrayTemp.removeAll(keepCapacity: false)
 
-            for oneItem in self.dic.filter(like("%\(word)%", self.KOREAN))
+            for oneItem in self.dic.filter(like("%\(word)%", self.SEARCH_KOREAN))
             {
                 
                 var oneCellItem = DicModel()
