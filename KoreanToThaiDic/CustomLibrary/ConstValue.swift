@@ -10,6 +10,14 @@ import UIKit
 
 class ConstValue {
     
+    // dic_mode  = 사전 모드
+    /*
+        1 : 한태 사전
+        2 : 들리는대로 태한사전
+        3 : 태한 사전
+    */
+    static let dic_mode = 2;
+    
     static let color01_white = HWILib.colorWIthRGB(255, green: 255, blue: 255, alpha: 1)
     static let color02_black = HWILib.colorWIthRGB(0, green: 0, blue: 0, alpha: 1)
     static let color03_card_gray = HWILib.colorWIthRGB(249, green: 249, blue: 249, alpha: 1)

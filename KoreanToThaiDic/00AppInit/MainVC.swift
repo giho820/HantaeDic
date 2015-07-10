@@ -151,7 +151,18 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
     
     func initViews()
     {
-        self.searchBarView.backgroundColor = ConstValue.color07_main_blue
+        switch ConstValue.dic_mode
+        {
+        case 1:
+            self.searchBarView.backgroundColor = ConstValue.color07_main_blue
+        case 2:
+            self.searchBarView.backgroundColor = ConstValue.color13_main_green
+        case 3:
+            self.searchBarView.backgroundColor = ConstValue.color10_main_red
+        default :
+            break
+        }
+
         self.labelInSearchTextField.textColor = ConstValue.color06_text_gray2
         self.cancelBtnInSearchBar.titleLabel?.font = UIFont.boldSystemFontOfSize(16)
         self.cancelBtnInSearchBar.setTitleColor(ConstValue.color01_white, forState: UIControlState.Normal)
@@ -172,8 +183,24 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         
         let oneItem = DBManager.searchedItemArray[indexPath.row]
         
-        itemCell.label01_largeText.text = oneItem.KOREAN
         itemCell.label02_smallText.text = oneItem.THAI
+        
+        switch ConstValue.dic_mode
+        {
+        case 1:
+            itemCell.label01_largeText.text = oneItem.KOREAN
+        case 2:
+            itemCell.label01_largeText.text = oneItem.PRONUNCIATION
+        case 3:
+            itemCell.label01_largeText.text = oneItem.THAI
+            itemCell.label02_smallText.text = oneItem.KOREAN
+        default:
+            break
+        }
+        
+
+        
+
         
         return itemCell
         
@@ -185,12 +212,31 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         println("셀 선택 테스트 : 인덱스 : \(indexPath)")
         
         let selectedItem = DBManager.searchedItemArray[indexPath.row]
-        detailScrollView.label02_SmallLabel.text = selectedItem.KOREAN
-        detailScrollView.label04_SmallLabel.text = selectedItem.THAI
-        detailScrollView.label06_SmallLabel.text = selectedItem.PRONUNCIATION
+        
+
+        
+        switch ConstValue.dic_mode
+        {
+        case 1:
+            detailScrollView.label02_SmallLabel.text = selectedItem.KOREAN
+            detailScrollView.label04_SmallLabel.text = selectedItem.THAI
+            detailScrollView.label06_SmallLabel.text = selectedItem.PRONUNCIATION
+        case 2:
+            detailScrollView.label02_SmallLabel.text = selectedItem.PRONUNCIATION
+            detailScrollView.label04_SmallLabel.text = selectedItem.THAI
+            detailScrollView.label06_SmallLabel.text = selectedItem.KOREAN
+        case 3:
+            detailScrollView.label02_SmallLabel.text = selectedItem.THAI
+            detailScrollView.label04_SmallLabel.text = selectedItem.KOREAN
+            detailScrollView.label06_SmallLabel.text = selectedItem.PRONUNCIATION
+        default:
+            break
+        }
+        
+        
         detailScrollView.arrangeLabelViews()
         setDetailViewMode()
-
+        
     }
     
     func setDetailViewMode()
@@ -198,7 +244,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         
         self.backButton.hidden = false
         detailScrollView.hidden = false
-
+        
         self.textFieldInSearchBar.resignFirstResponder()
     }
     

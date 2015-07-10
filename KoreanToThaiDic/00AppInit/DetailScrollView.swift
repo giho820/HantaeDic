@@ -32,9 +32,26 @@ class DetailScrollView: BaseScrollView
         containerView.backgroundColor = UIColor.clearColor()
         self.backgroundColor = ConstValue.color03_card_gray
         
-        label01_LargeText.text = "단어"
-        label03_LargeText.text = "태국어"
-        label05_LargeText.text = "발음"
+        
+        switch ConstValue.dic_mode
+        {
+        case 1:
+            label01_LargeText.text = "단어"
+            label03_LargeText.text = "태국어"
+            label05_LargeText.text = "발음"
+        case 2:
+            label01_LargeText.text = "발음"
+            label03_LargeText.text = "태국어"
+            label05_LargeText.text = "한국어"
+        case 3:
+            label01_LargeText.text = "단어"
+            label03_LargeText.text = "한국어"
+            label05_LargeText.text = "발음"
+        default:
+            break
+        }
+        
+
         
         arrayOfViews =
         [   label01_LargeText , label02_SmallLabel,

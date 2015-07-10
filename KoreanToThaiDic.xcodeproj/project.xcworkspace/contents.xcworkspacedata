@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:KoreanToThaiDic.xcodeproj">
+      location = "self:/Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic.xcodeproj">
    </FileRef>
 </Workspace>

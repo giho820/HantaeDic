@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05300B261B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */; };
+		05300B271B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
+		05300B281B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */; };
+		05300B301B5053A900282820 /* LauchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05300B2F1B5053A900282820 /* LauchScreen.xib */; };
 		05A2612F1B44446F0055D803 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2612E1B44446F0055D803 /* CustomTableView.swift */; };
 		05B775A11B4583DB004CFC45 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A01B4583DB004CFC45 /* DetailScrollView.swift */; };
 		05B775A31B4583EF004CFC45 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
-		05BD86F21B478BE10032DAEE /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05BD86F11B478B3C0032DAEE /* KorThaiDictionary_SEARCH_K.sqlite */; };
 		05BFBB851B4740C5001DA053 /* ETCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB841B4740C5001DA053 /* ETCVC.swift */; };
 		05BFBB871B4746BB001DA053 /* ETCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB861B4746BB001DA053 /* ETCCell.swift */; };
 		05BFBB891B4746D5001DA053 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB881B4746D5001DA053 /* ItemCell.swift */; };
@@ -18,7 +21,6 @@
 		05C592291B42905E008BBC21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592281B42905E008BBC21 /* AppDelegate.swift */; };
 		05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
 		05C592301B42905E008BBC21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
-		05C592331B42905E008BBC21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C592311B42905E008BBC21 /* LaunchScreen.xib */; };
 		05C5923F1B42905E008BBC21 /* KoreanToThaiDicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C5923E1B42905E008BBC21 /* KoreanToThaiDicTests.swift */; };
 		05C592CB1B42944C008BBC21 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592CA1B42944C008BBC21 /* DBManager.swift */; };
 		05C592E01B42A064008BBC21 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C592D71B42A02E008BBC21 /* SQLite.framework */; };
@@ -128,10 +130,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = KorThaiDictionary_SEARCH_K.sqlite; sourceTree = "<group>"; };
+		05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_P.sqlite; sourceTree = "<group>"; };
+		05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_T.sqlite; sourceTree = "<group>"; };
+		05300B2F1B5053A900282820 /* LauchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LauchScreen.xib; sourceTree = "<group>"; };
 		05A2612E1B44446F0055D803 /* CustomTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		05B775A01B4583DB004CFC45 /* DetailScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollView.swift; sourceTree = "<group>"; };
 		05B775A21B4583EF004CFC45 /* BaseScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
-		05BD86F11B478B3C0032DAEE /* KorThaiDictionary_SEARCH_K.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = KorThaiDictionary_SEARCH_K.sqlite; sourceTree = "<group>"; };
 		05BFBB841B4740C5001DA053 /* ETCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETCVC.swift; sourceTree = "<group>"; };
 		05BFBB861B4746BB001DA053 /* ETCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETCCell.swift; sourceTree = "<group>"; };
 		05BFBB881B4746D5001DA053 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
@@ -141,7 +146,6 @@
 		05C592281B42905E008BBC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05C5922D1B42905E008BBC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05C5922F1B42905E008BBC21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		05C592321B42905E008BBC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		05C592381B42905E008BBC21 /* KoreanToThaiDicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoreanToThaiDicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C5923D1B42905E008BBC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C5923E1B42905E008BBC21 /* KoreanToThaiDicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToThaiDicTests.swift; sourceTree = "<group>"; };
@@ -186,6 +190,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05300B221B5042B200282820 /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */,
+				05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */,
+				05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */,
+			);
+			path = DBFile;
+			sourceTree = "<group>";
+		};
 		05BFBB7C1B4740AD001DA053 /* 01Etc */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,16 +231,16 @@
 		05C592251B42905E008BBC21 /* KoreanToThaiDic */ = {
 			isa = PBXGroup;
 			children = (
+				05300B221B5042B200282820 /* DBFile */,
 				05EA7BA31B43BFAC00F2CE14 /* 00AppInit */,
 				05BFBB7C1B4740AD001DA053 /* 01Etc */,
 				05C5924B1B4291EE008BBC21 /* Library */,
-				05C592481B4290D8008BBC21 /* DBFile */,
 				05C592C91B429439008BBC21 /* CustomLibrary */,
 				05C592281B42905E008BBC21 /* AppDelegate.swift */,
 				05C5922C1B42905E008BBC21 /* Main.storyboard */,
 				05C5922F1B42905E008BBC21 /* Images.xcassets */,
-				05C592311B42905E008BBC21 /* LaunchScreen.xib */,
 				05C592261B42905E008BBC21 /* Supporting Files */,
+				05300B2F1B5053A900282820 /* LauchScreen.xib */,
 			);
 			path = KoreanToThaiDic;
 			sourceTree = "<group>";
@@ -254,14 +268,6 @@
 				05C5923D1B42905E008BBC21 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		05C592481B4290D8008BBC21 /* DBFile */ = {
-			isa = PBXGroup;
-			children = (
-				05BD86F11B478B3C0032DAEE /* KorThaiDictionary_SEARCH_K.sqlite */,
-			);
-			path = DBFile;
 			sourceTree = "<group>";
 		};
 		05C5924B1B4291EE008BBC21 /* Library */ = {
@@ -498,14 +504,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05BD86F21B478BE10032DAEE /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
+				05300B261B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
+				05300B271B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */,
 				05EA7B8B1B43B8F900F2CE14 /* .gitignore in Resources */,
 				05EA7B941B43B8F900F2CE14 /* SwiftHTTP.podspec in Resources */,
 				05EA7B911B43B8F900F2CE14 /* Info.plist in Resources */,
+				05300B301B5053A900282820 /* LauchScreen.xib in Resources */,
 				05EA7B921B43B8F900F2CE14 /* LICENSE in Resources */,
 				05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */,
-				05C592331B42905E008BBC21 /* LaunchScreen.xib in Resources */,
 				05C592301B42905E008BBC21 /* Images.xcassets in Resources */,
+				05300B281B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,14 +585,6 @@
 				05C5922D1B42905E008BBC21 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		05C592311B42905E008BBC21 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05C592321B42905E008BBC21 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

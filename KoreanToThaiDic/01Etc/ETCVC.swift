@@ -37,14 +37,18 @@ class ETCVC: BaseVC , UITableViewDataSource , UITableViewDelegate {
     //_______________________________________________________________________________________________________________
     // 하단 아이콘 관련
     
-    let titleOfIcon01 = "고급 태한사전"
+    let titleOfIcon01 = "고급 한태사전"
     let titleOfIcon02 = "들리는대로 한글로 찾는 태한사전"
-    
-    let imageOfIcon01_normal = "icon2_n"
-    let imageOfIcon01_pressed = "icon2_p"
-    let imageOfIcon02_normal = "icon3_n"
-    let imageOfIcon02_pressed = "icon3_p"
+    let titleOfIcon03 = "고급 태한사전"
 
+    let iconImage01_kor_thai_n = "icon1_n"
+    let iconImage02_thai_kor_p_n = "icon3_n"
+    let iconImage03_thai_kor_t_n = "icon2_n"
+    
+    let iconImage01_kor_thai_p = "icon1_p"
+    let iconImage02_thai_kor_p_p = "icon3_p"
+    let iconImage03_thai_kor_t_p = "icon2_p"
+    
     var arrayOfIconModels : [AppIconModel] = []
     
 
@@ -129,20 +133,67 @@ class ETCVC: BaseVC , UITableViewDataSource , UITableViewDelegate {
     // 03 하단 아이콘 뷰
     func initBottomViews()
     {
+        
+
+        var title01 = ""
+        var title02 = ""
+        
+        var iconImg01_n = ""
+        var iconImg02_n = ""
+
+        var iconImg01_p = ""
+        var iconImg02_p = ""
+        
+        
+        
+        switch ConstValue.dic_mode
+        {
+        case 1:
+            title01 = titleOfIcon02
+            title02 = titleOfIcon03
+            iconImg01_n = iconImage02_thai_kor_p_n
+            iconImg01_p = iconImage02_thai_kor_p_p
+            iconImg02_n = iconImage03_thai_kor_t_n
+            iconImg02_p = iconImage03_thai_kor_t_p
+            
+            
+        case 2:
+            title01 = titleOfIcon01
+            title02 = titleOfIcon03
+            iconImg01_n = iconImage01_kor_thai_n
+            iconImg01_p = iconImage01_kor_thai_p
+            iconImg02_n = iconImage03_thai_kor_t_n
+            iconImg02_p = iconImage03_thai_kor_t_p
+            
+        case 3:
+            title01 = titleOfIcon01
+            title02 = titleOfIcon02
+            iconImg01_n = iconImage01_kor_thai_n
+            iconImg01_p = iconImage01_kor_thai_p
+            iconImg02_n = iconImage02_thai_kor_p_n
+            iconImg02_p = iconImage02_thai_kor_p_p
+            
+        default:
+            break
+        }
+        
+        
+        
         let oneModel = AppIconModel()
-        oneModel.hwi_title = titleOfIcon01
-        oneModel.hwi_image_noemal = UIImage(named: "icon2_n")
-        oneModel.hwi_image_pressed = UIImage(named: "icon2_p")
+        oneModel.hwi_title = title01
+        oneModel.hwi_image_noemal = UIImage(named: iconImg01_n)
+        oneModel.hwi_image_pressed = UIImage(named: iconImg01_p)
         
         self.arrayOfIconModels.append(oneModel)
         
         let secondModel = AppIconModel()
-        secondModel.hwi_title = titleOfIcon02
-        secondModel.hwi_image_noemal = UIImage(named: "icon3_n")
-        secondModel.hwi_image_pressed = UIImage(named: "icon3_p")
+        secondModel.hwi_title = title02
+        secondModel.hwi_image_noemal = UIImage(named: iconImg02_n)
+        secondModel.hwi_image_pressed = UIImage(named: iconImg02_p)
 
-        
         self.arrayOfIconModels.append(secondModel)
+        
+        
         
         for (index, oneModel)  in enumerate(arrayOfIconModels)
         {

@@ -53,7 +53,19 @@ class BaseVC: UIViewController {
     func initHeaderView()
     {
         let container = UIView()
-        container.backgroundColor = ConstValue.color07_main_blue
+        switch ConstValue.dic_mode
+        {
+        case 1:
+            container.backgroundColor = ConstValue.color07_main_blue
+        case 2:
+            container.backgroundColor = ConstValue.color13_main_green
+        case 3:
+            container.backgroundColor = ConstValue.color10_main_red
+            
+        default :
+            break
+        }
+        
         container.frame = CGRectMake(0, 0, self.view.frame.size.width, 64)
         
 
