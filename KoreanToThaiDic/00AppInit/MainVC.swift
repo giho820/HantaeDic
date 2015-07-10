@@ -31,6 +31,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
 
     @IBOutlet weak var detailScrollView: DetailScrollView!
     
+    @IBOutlet weak var emptyContentView: UIView!
     
     
     var isSetOriginPositionXSearchBarIcon = false
@@ -45,16 +46,8 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         self.tableViewInMain.customDelegate = self
         
         
-        
-        HWILib.showActivityIndicator(self)
-        
-        DBManager.getAllList { () -> () in
-            self.tableViewInMain.reloadData()
-            HWILib.hideActivityIndicator()
-        }
-        
 
-        
+        // 앱 실행된 후 디테일 뷰(커스텀 뷰) 초기화
         HWILib.delay(0.1, closure: { () -> () in
             self.detailScrollView.onViewDidLoad()
         })
@@ -76,22 +69,22 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
     {
         println("onWriting")
         setSearchMode()
+        hideSearchBarPlaceHolder()
         
-        if sender.text == ""
-        {
-            DBManager.searchedItemArray = DBManager.allItemArray
-            self.tableViewInMain.reloadData()
-        }
-        else
-        {
-            hideSearchBarPlaceHolder()
+        
+        DBManager.getListFromWord(sender.text, callback: { () -> () in
             
-            DBManager.getListFromWord(sender.text, callback: { () -> () in
-                
-                self.tableViewInMain.reloadData()
-                
-            })
-        }
+            if sender.text == ""
+            {
+                self.emptyContentView.hidden = false
+            }
+            else
+            {
+                self.emptyContentView.hidden = true
+            }
+            self.tableViewInMain.reloadData()
+            
+        })
         
         
     }

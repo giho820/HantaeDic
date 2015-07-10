@@ -85,7 +85,8 @@ class DBManager
             
             self.searchedItemArrayTemp.removeAll(keepCapacity: false)
 
-            for oneItem in self.dic.filter(like("%\(word)%", self.SEARCH_KOREAN))
+            
+            for oneItem in self.dic.filter(like( "\(word)%", self.SEARCH_KOREAN) )
             {
                 
                 var oneCellItem = DicModel()
@@ -96,8 +97,43 @@ class DBManager
                 oneCellItem.SEARCH_KOREAN = oneItem[self.SEARCH_KOREAN]
                 
                 self.searchedItemArrayTemp.append(oneCellItem)
-                
             }
+            
+            if self.searchedItemArrayTemp.count == 0
+            {
+             
+                for oneItem in self.dic.filter(self.SEARCH_KOREAN == "\(word) " )
+                {
+                    
+                    var oneCellItem = DicModel()
+                    oneCellItem.IDX = oneItem[self.IDX]
+                    oneCellItem.KOREAN = oneItem[self.KOREAN]
+                    oneCellItem.THAI = oneItem[self.THAI]
+                    oneCellItem.PRONUNCIATION = oneItem[self.PRONUNCIATION]
+                    oneCellItem.SEARCH_KOREAN = oneItem[self.SEARCH_KOREAN]
+                    
+                    self.searchedItemArrayTemp.append(oneCellItem)
+                }
+                
+                if self.searchedItemArrayTemp.count == 0
+                {
+                    for oneItem in self.dic.filter(like("%\(word)%", self.SEARCH_KOREAN))
+                    {
+                        
+                        var oneCellItem = DicModel()
+                        oneCellItem.IDX = oneItem[self.IDX]
+                        oneCellItem.KOREAN = oneItem[self.KOREAN]
+                        oneCellItem.THAI = oneItem[self.THAI]
+                        oneCellItem.PRONUNCIATION = oneItem[self.PRONUNCIATION]
+                        oneCellItem.SEARCH_KOREAN = oneItem[self.SEARCH_KOREAN]
+                        
+                        self.searchedItemArrayTemp.append(oneCellItem)
+                        
+                    }
+                }
+            }
+            
+            
             self.searchedItemArray = self.searchedItemArrayTemp
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in

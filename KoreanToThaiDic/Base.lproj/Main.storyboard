@@ -167,11 +167,29 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsE-CW-Yrl" userLabel="디테일 스크롤뷰" customClass="DetailScrollView" customModule="KoreanToThaiDic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="600" height="492"/>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8x-31-Rzx" userLabel="빈 컨텐츠 뷰">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xed-em-mc6">
+                                        <rect key="frame" x="248" y="189" width="104" height="115"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="104" id="BVc-hp-O6p"/>
+                                            <constraint firstAttribute="height" constant="115" id="C3O-FX-eTN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="xed-em-mc6" secondAttribute="centerX" id="aIG-zu-U5N"/>
+                                    <constraint firstAttribute="centerY" secondItem="xed-em-mc6" secondAttribute="centerY" id="snH-Bd-szh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MBb-K3-viQ" secondAttribute="bottom" id="3D3-CC-R5g"/>
                             <constraint firstAttribute="trailing" secondItem="8we-IZ-h7g" secondAttribute="trailing" id="3Pj-NM-cga"/>
+                            <constraint firstAttribute="trailing" secondItem="K8x-31-Rzx" secondAttribute="trailing" id="B8T-G9-awk"/>
                             <constraint firstItem="MBb-K3-viQ" firstAttribute="top" secondItem="8we-IZ-h7g" secondAttribute="bottom" id="La6-zM-oSJ"/>
                             <constraint firstItem="J7J-RT-PXH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TeL-pJ-DE3"/>
                             <constraint firstItem="8we-IZ-h7g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zfx-B6-dX1"/>
@@ -180,7 +198,10 @@
                             <constraint firstAttribute="trailing" secondItem="ZsE-CW-Yrl" secondAttribute="trailing" id="fUN-mM-IFj"/>
                             <constraint firstItem="MBb-K3-viQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fXb-e4-OHk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZsE-CW-Yrl" secondAttribute="bottom" id="gej-aG-HoG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K8x-31-Rzx" secondAttribute="bottom" id="ltb-X1-8cc"/>
                             <constraint firstAttribute="trailing" secondItem="J7J-RT-PXH" secondAttribute="trailing" id="nAi-xC-IFx"/>
+                            <constraint firstItem="K8x-31-Rzx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nfb-UE-Tj7"/>
+                            <constraint firstItem="K8x-31-Rzx" firstAttribute="top" secondItem="8we-IZ-h7g" secondAttribute="bottom" id="o5q-tM-YVR"/>
                             <constraint firstItem="ZsE-CW-Yrl" firstAttribute="top" secondItem="8we-IZ-h7g" secondAttribute="bottom" id="reH-hg-mif"/>
                             <constraint firstAttribute="trailing" secondItem="MBb-K3-viQ" secondAttribute="trailing" id="rxe-7P-1aN"/>
                             <constraint firstItem="8we-IZ-h7g" firstAttribute="top" secondItem="J7J-RT-PXH" secondAttribute="bottom" id="ugz-Ku-fZC"/>
@@ -190,6 +211,7 @@
                     <connections>
                         <outlet property="cancelBtnInSearchBar" destination="OhI-uO-dc6" id="5pI-9S-Tox"/>
                         <outlet property="detailScrollView" destination="ZsE-CW-Yrl" id="ccf-c6-4pB"/>
+                        <outlet property="emptyContentView" destination="K8x-31-Rzx" id="sYu-Cc-FjP"/>
                         <outlet property="labelInSearchTextField" destination="4Bg-yj-JfX" id="goE-6i-oTw"/>
                         <outlet property="placeholderViewInSearchBar" destination="zcA-cx-LgG" id="bIx-4j-iCx"/>
                         <outlet property="searchBarView" destination="8we-IZ-h7g" id="l1q-yZ-BX2"/>
@@ -354,6 +376,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="logo" width="209" height="230"/>
         <image name="next_n" width="16" height="25"/>
         <image name="search_n" width="25" height="25"/>
     </resources>
