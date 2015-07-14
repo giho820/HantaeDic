@@ -6,6 +6,21 @@
 //  Copyright (c) 2015년 smallhouse. All rights reserved.
 //
 
+
+
+/*
+사전 모드 변경 가이드
+
+
+1. Project Root 의 Target 의 general 탭에서 app Icon 변경
+2. Project Root 의 Target 의 Info 탭에서 (Bundle Identifier, Bundle Display name ) 변경
+3. ConstValues 에 dic_mode 변수 변경
+4. LaunchScreen.xib 에서 런치 스크린 변경
+
+*/
+
+
+
 import UIKit
 
 class ConstValue {
@@ -17,6 +32,12 @@ class ConstValue {
         3 : 태한 사전
     */
     static let dic_mode = 1
+    
+    
+
+    
+    
+    
     
     static let color01_white = HWILib.colorWIthRGB(255, green: 255, blue: 255, alpha: 1)
     static let color02_black = HWILib.colorWIthRGB(0, green: 0, blue: 0, alpha: 1)
