@@ -62,8 +62,10 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         println("onStartWriting")
         hideSearchBarPlaceHolder()
         setSearchMode()
-        
     }
+    
+    
+    
     
     @IBAction func onWriting(sender: UITextField)
     {
@@ -85,8 +87,6 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
             self.tableViewInMain.reloadData()
             
         })
-        
-        
     }
     
     @IBAction func didEndWriting(sender: UITextField)
@@ -149,25 +149,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         })
     }
     
-    func initViews()
-    {
-        switch ConstValue.dic_mode
-        {
-        case 1:
-            self.searchBarView.backgroundColor = ConstValue.color07_main_blue
-        case 2:
-            self.searchBarView.backgroundColor = ConstValue.color13_main_green
-        case 3:
-            self.searchBarView.backgroundColor = ConstValue.color10_main_red
-        default :
-            break
-        }
 
-        self.labelInSearchTextField.textColor = ConstValue.color06_text_gray2
-        self.cancelBtnInSearchBar.titleLabel?.font = UIFont.boldSystemFontOfSize(16)
-        self.cancelBtnInSearchBar.setTitleColor(ConstValue.color01_white, forState: UIControlState.Normal)
-        self.cancelBtnInSearchBar.setTitleColor(ConstValue.color05_text_gray, forState: UIControlState.Highlighted)
-    }
     
     
     
@@ -198,14 +180,14 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
             break
         }
         
-
-        
-
+        HWILib.setBoldSectionToLabel(itemCell.label01_largeText, keyword: self.textFieldInSearchBar.text)
         
         return itemCell
         
     }
     
+    
+    // 테이블 아이템 클릭 시 행동 정의 --> 디테일뷰 표시
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         
@@ -239,6 +221,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         
     }
     
+    // 메인 모드를 디테일 뷰 보기 모드로 변경
     func setDetailViewMode()
     {
         
@@ -247,7 +230,8 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         
         self.textFieldInSearchBar.resignFirstResponder()
     }
-    
+
+    // 메인 모드를 검색 모드로 변경
     func setSearchMode()
     {
         self.backButton.hidden = true
@@ -255,13 +239,11 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         self.cancelBtnInSearchBar.hidden = false
     }
     
-    override func initHeaderView() {
-        super.initHeaderView()
-        self.backButton.hidden = true
-        self.topTitleLabel.text = "단어검색"
-        
-    }
     
+
+    
+    
+    // 백버튼 클릭 시 행동 정의
     override func onBackBtnTouchUpInside(sender: UIButton) {
         super.onBackBtnTouchUpInside(sender)
         
@@ -271,20 +253,60 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         }
     }
     
+    
+
+    // 터치 되었을 때 터치 전달
     func onTouchBegan(touches: Set<NSObject>, withEvent event: UIEvent)
     {
         self.touchesBegan(touches, withEvent: event)
     }
     
+    // 스크롤 뷰 스크롤 시 키보드 내림
     func scrollViewWillBeginDragging(scrollView: UIScrollView)
     {
         self.textFieldInSearchBar.resignFirstResponder()
     }
+
     
+    // 기타 버튼 클릭 시 -> 기타 화면으로 이동
     override func onETCBtnTouchUpInside(sender: UIButton)
     {
         super.onETCBtnTouchUpInside(sender)
         self.performSegueWithIdentifier("main_etc_seg", sender: self)
+    }
+
+    
+    
+    
+    
+    //________________________________________________________________________
+    // 초기화 함수
+    
+    func initViews()
+    {
+        switch ConstValue.dic_mode
+        {
+        case 1:
+            self.searchBarView.backgroundColor = ConstValue.color07_main_blue
+        case 2:
+            self.searchBarView.backgroundColor = ConstValue.color13_main_green
+        case 3:
+            self.searchBarView.backgroundColor = ConstValue.color10_main_red
+        default :
+            break
+        }
+        
+        self.labelInSearchTextField.textColor = ConstValue.color06_text_gray2
+        self.cancelBtnInSearchBar.titleLabel?.font = UIFont.boldSystemFontOfSize(16)
+        self.cancelBtnInSearchBar.setTitleColor(ConstValue.color01_white, forState: UIControlState.Normal)
+        self.cancelBtnInSearchBar.setTitleColor(ConstValue.color05_text_gray, forState: UIControlState.Highlighted)
+    }
+    
+    override func initHeaderView()
+    {
+        super.initHeaderView()
+        self.backButton.hidden = true
+        self.topTitleLabel.text = "단어검색"
     }
     
 }

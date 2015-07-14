@@ -6,7 +6,7 @@
 //  Copyright (c) 2015년 smallhouse. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import SQLite
 
 
@@ -35,14 +35,6 @@ class DBManager
     
     
     
-    /*
-    CREATE TABLE "THAI_KOR_DICTIONARY"
-    ("IDX" INTEGER PRIMARY KEY  NOT NULL ,
-    "PRONUNCIATION" TEXT NOT NULL ,
-    "THAI" TEXT NOT NULL ,
-    "KOREAN" TEXT NOT NULL ,
-    "SEARCH_PRONUNCIATION" TEXT DEFAULT (null) )
-    */
     
     class func initDB()
     {
@@ -78,40 +70,7 @@ class DBManager
         
     }
     
-    /*
-    class func getAllList( callback : ()->())
-    {
-    let qualityOfServiceClass = QOS_CLASS_BACKGROUND
-    let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
-    dispatch_async(backgroundQueue, {
-    println("This is run on the background queue")
-    
-    self.allItemArray.removeAll(keepCapacity: false)
-    
-    for oneItem in self.dic
-    {
-    
-    var oneCellItem = DicModel()
-    oneCellItem.IDX = oneItem[self.IDX]
-    oneCellItem.KOREAN = oneItem[self.KOREAN]
-    oneCellItem.THAI = oneItem[self.THAI]
-    oneCellItem.PRONUNCIATION = oneItem[self.PRONUNCIATION]
-    oneCellItem.SEARCH_KOREAN = oneItem[self.SEARCH_KOREAN]
-    oneCellItem.SEARCH_PRONUNCIATION = oneItem[self.SEARCH_PRONUNCIATION]
-    
-    
-    self.allItemArray.append(oneCellItem)
-    
-    }
-    self.searchedItemArray = self.allItemArray
-    
-    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-    println("This is run on the main queue, after the previous code in outer block")
-    callback()
-    })
-    })
-    }
-    */
+
     
     class func getListFromWord(word : String , callback : ()->())
     {
@@ -145,7 +104,8 @@ class DBManager
             {
                 
                 var oneCellItem = DicModel()
-                self.setItemToObject(oneCellItem, oneItem: oneItem)
+                self.setItemToObject(oneCellItem, oneItem: oneItem, searchKeyword: word)
+
                 
                 
                 self.searchedItemArrayTemp.append(oneCellItem)
@@ -158,7 +118,8 @@ class DBManager
                 {
                     
                     var oneCellItem = DicModel()
-                    self.setItemToObject(oneCellItem, oneItem: oneItem)
+                    self.setItemToObject(oneCellItem, oneItem: oneItem, searchKeyword: word)
+
                     
                     self.searchedItemArrayTemp.append(oneCellItem)
                 }
@@ -169,7 +130,7 @@ class DBManager
                     {
                         
                         var oneCellItem = DicModel()
-                        self.setItemToObject(oneCellItem, oneItem: oneItem)
+                        self.setItemToObject(oneCellItem, oneItem: oneItem, searchKeyword: word)
                         
                         self.searchedItemArrayTemp.append(oneCellItem)
                         
@@ -227,18 +188,23 @@ class DBManager
     
     
     
-    class func setItemToObject(oneModel : DicModel , oneItem : Row)
+    class func setItemToObject(oneModel : DicModel , oneItem : Row , searchKeyword : String)
     {
         oneModel.IDX = oneItem[self.IDX]
         oneModel.KOREAN = oneItem[self.KOREAN]
         oneModel.THAI = oneItem[self.THAI]
         oneModel.PRONUNCIATION = oneItem[self.PRONUNCIATION]
         
-        
+        /*
+        한태 사전 -> 검색한 한국어 부분에 bold 처리
+        들리는대로 태한사전 -> 검색한 한국어 부분에 bold 처리
+        태한 사전 -> 검색한 태국어 부분에 bold 처리
+        */
         switch ConstValue.dic_mode
         {
         case 1:
             oneModel.SEARCH_KOREAN = oneItem[self.SEARCH_KOREAN]
+
         case 2:
             oneModel.SEARCH_PRONUNCIATION = oneItem[self.SEARCH_PRONUNCIATION]
         case 3:

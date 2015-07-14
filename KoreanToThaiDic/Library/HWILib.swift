@@ -133,4 +133,22 @@ class HWILib
         label.sizeToFit()
         return label.frame.height
     }
+    
+    
+
+    
+    class func setBoldSectionToLabel(sentenceLabel : UILabel, keyword : String)
+    {
+        let sentenceTemp = sentenceLabel.text! as NSString
+        let range = sentenceTemp.rangeOfString(keyword)
+        
+        var attributedString =  NSMutableAttributedString(string: sentenceLabel.text!)
+        
+        attributedString.setAttributes( [NSFontAttributeName : UIFont.boldSystemFontOfSize(sentenceLabel.font.pointSize)], range: range)
+        
+        sentenceLabel.attributedText = attributedString
+    }
+    
+
+    
 }
