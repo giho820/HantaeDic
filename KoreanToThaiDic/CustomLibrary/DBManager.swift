@@ -100,30 +100,23 @@ class DBManager
                 break
             }
             
+            
+            
+            // 뒷부분 Like 검색
             for oneItem in self.dic.filter(like( "\(word)%", searchedColumn) )
             {
                 
                 var oneCellItem = DicModel()
+                
                 self.setItemToObject(oneCellItem, oneItem: oneItem, searchKeyword: word)
-
-                
-                
                 self.searchedItemArrayTemp.append(oneCellItem)
+                
             }
             
+            
+            // 뒷부분 Like 검색 실패 시 -> Like 전체 검색
             if self.searchedItemArrayTemp.count == 0
             {
-                
-                for oneItem in self.dic.filter(searchedColumn == "\(word) " )
-                {
-                    
-                    var oneCellItem = DicModel()
-                    self.setItemToObject(oneCellItem, oneItem: oneItem, searchKeyword: word)
-
-                    
-                    self.searchedItemArrayTemp.append(oneCellItem)
-                }
-                
                 if self.searchedItemArrayTemp.count == 0
                 {
                     for oneItem in self.dic.filter(like("%\(word)%", searchedColumn))
@@ -204,7 +197,6 @@ class DBManager
         {
         case 1:
             oneModel.SEARCH_KOREAN = oneItem[self.SEARCH_KOREAN]
-
         case 2:
             oneModel.SEARCH_PRONUNCIATION = oneItem[self.SEARCH_PRONUNCIATION]
         case 3:
@@ -214,6 +206,7 @@ class DBManager
         }
         
     }
+    
     
     
 }

@@ -35,11 +35,16 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
     
     
     var isSetOriginPositionXSearchBarIcon = false
+    
+    
+    // 뷰 로드
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.detailScrollView.hidden = true
         self.cancelBtnInSearchBar.hidden = true
+
+        // 뷰 초기화
         self.initHeaderView()
         self.initViews()
         
@@ -66,13 +71,14 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
     
     
     
-    
+    /// 사용자가 키워드를 검색창에 입력시
     @IBAction func onWriting(sender: UITextField)
     {
         println("onWriting")
         setSearchMode()
         hideSearchBarPlaceHolder()
         
+        println("사용자 입력값 : \(sender.text)")
         
         DBManager.getListFromWord(sender.text, callback: { () -> () in
             
