@@ -31,10 +31,16 @@ class ConstValue {
         2 : 들리는대로 태한사전
         3 : 태한 사전
     */
-    static let dic_mode = 1
+    static let dic_mode = 2
     
     
-
+    static let arrayOfSupplementTableTitles =
+    [
+        "부록 1. 태국어 자음과 모음",
+        "부록 2. 성조 규칙",
+        "부록 3. 성조 연습",
+        "부록 4. 한글 읽고 쓰기"
+    ]
     
     
     

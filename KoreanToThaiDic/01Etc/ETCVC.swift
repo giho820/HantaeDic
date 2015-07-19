@@ -8,6 +8,8 @@
 
 import UIKit
 
+// seg_etc_detail    기타 뷰컨트롤러 ---> 웹뷰 컨트롤러로 이동 세그웨이
+
 class ETCVC: BaseVC , UITableViewDataSource , UITableViewDelegate {
     
     //_______________________________________________________________________________________________________________
@@ -264,6 +266,16 @@ class ETCVC: BaseVC , UITableViewDataSource , UITableViewDelegate {
         }
         
         return oneCell
+    }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        if indexPath.row == 2
+        {
+                self.performSegueWithIdentifier("seg_etc_detail", sender: self)
+        }
+            tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
     //________________________________________________________________________________________________________________________________________________________________________________
     

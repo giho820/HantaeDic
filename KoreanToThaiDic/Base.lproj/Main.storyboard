@@ -349,11 +349,95 @@
                     <connections>
                         <outlet property="bottomIconViewContainer" destination="JHM-kZ-E4B" id="nrk-9o-pZk"/>
                         <outlet property="separatorView" destination="eW1-K5-ben" id="mTV-sL-Akb"/>
+                        <segue destination="Vif-7g-2EL" kind="show" identifier="seg_etc_detail" id="dil-6a-HCJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODn-P0-dkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2086" y="648"/>
+        </scene>
+        <!--Supplement ListVC-->
+        <scene sceneID="REj-fG-aOm">
+            <objects>
+                <viewController id="Vif-7g-2EL" customClass="ETCSupplementListVC" customModule="KoreanToThaiDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gB6-CQ-hLk"/>
+                        <viewControllerLayoutGuide type="bottom" id="lAf-WW-e2A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zw6-nB-t4t">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1P-Rh-Ab4" userLabel="헤더 더미뷰 (실제는 소스에서)">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="bUE-zs-Xqo"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GxX-Ug-mAz">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SupplementCell" id="qzX-zk-Jha" customClass="SupplementCell" customModule="KoreanToThaiDic" customModuleProvider="target">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qzX-zk-Jha" id="viX-da-c9H">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_n" translatesAutoresizingMaskIntoConstraints="NO" id="tCr-KO-7nU">
+                                                    <rect key="frame" x="585" y="25" width="8" height="13"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="8" id="jaE-pQ-CaL"/>
+                                                        <constraint firstAttribute="height" constant="13" id="xDB-05-62r"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="부록 1. 태국어 자음과 모음" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRy-d0-3UP" userLabel="부록 타이틀">
+                                                    <rect key="frame" x="15" y="21" width="181" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="SLI-Xd-MGS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="tCr-KO-7nU" secondAttribute="trailing" constant="7" id="HrK-Tv-iLd"/>
+                                                <constraint firstAttribute="centerY" secondItem="tCr-KO-7nU" secondAttribute="centerY" id="MNx-NV-49f"/>
+                                                <constraint firstItem="YRy-d0-3UP" firstAttribute="leading" secondItem="viX-da-c9H" secondAttribute="leading" constant="15" id="cHh-cf-Pcc"/>
+                                                <constraint firstAttribute="centerY" secondItem="YRy-d0-3UP" secondAttribute="centerY" id="s4t-f2-DZQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hwi_labelOfTitleCell" destination="YRy-d0-3UP" id="1Je-3o-daW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vif-7g-2EL" id="tMC-hS-Ih0"/>
+                                    <outlet property="delegate" destination="Vif-7g-2EL" id="PH6-dh-ro3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GxX-Ug-mAz" secondAttribute="trailing" id="5yz-Ev-mnn"/>
+                            <constraint firstItem="P1P-Rh-Ab4" firstAttribute="top" secondItem="Zw6-nB-t4t" secondAttribute="top" id="F8O-tL-1v8"/>
+                            <constraint firstAttribute="trailing" secondItem="P1P-Rh-Ab4" secondAttribute="trailing" id="OYY-bF-bfG"/>
+                            <constraint firstItem="P1P-Rh-Ab4" firstAttribute="leading" secondItem="Zw6-nB-t4t" secondAttribute="leading" id="hgK-0e-ob9"/>
+                            <constraint firstItem="GxX-Ug-mAz" firstAttribute="leading" secondItem="Zw6-nB-t4t" secondAttribute="leading" id="jWW-qo-LLo"/>
+                            <constraint firstItem="GxX-Ug-mAz" firstAttribute="top" secondItem="P1P-Rh-Ab4" secondAttribute="bottom" id="sW5-K3-M2g"/>
+                            <constraint firstItem="lAf-WW-e2A" firstAttribute="top" secondItem="GxX-Ug-mAz" secondAttribute="bottom" id="y6s-Br-lLe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="RGJ-Ft-UQt" kind="show" identifier="seg_etclist_etcdetail" id="cuL-ip-ayQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3N-dH-QC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2760" y="648"/>
         </scene>
         <!--Custom NaviC-->
         <scene sceneID="FqE-JP-mPR">
@@ -373,6 +457,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1d-B2-sjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="549" y="648"/>
+        </scene>
+        <!--Supplement DetailVC-->
+        <scene sceneID="ESE-cR-ify">
+            <objects>
+                <viewController id="RGJ-Ft-UQt" customClass="SupplementDetailVC" customModule="KoreanToThaiDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wbe-e4-Xmi"/>
+                        <viewControllerLayoutGuide type="bottom" id="heS-2M-A4e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v1P-HI-eXG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVD-x0-Ruk" userLabel="헤더 더미뷰 (실제는 소스에서)">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="LIX-Dt-SZO"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2x9-H1-yRK" userLabel="디테일 웹뷰">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pVD-x0-Ruk" secondAttribute="trailing" id="34j-Gg-6Bw"/>
+                            <constraint firstItem="heS-2M-A4e" firstAttribute="top" secondItem="2x9-H1-yRK" secondAttribute="bottom" id="8RZ-1y-CYA"/>
+                            <constraint firstItem="2x9-H1-yRK" firstAttribute="top" secondItem="pVD-x0-Ruk" secondAttribute="bottom" id="ENe-nj-Pbz"/>
+                            <constraint firstItem="pVD-x0-Ruk" firstAttribute="leading" secondItem="v1P-HI-eXG" secondAttribute="leading" id="Pwh-FF-Qqn"/>
+                            <constraint firstItem="pVD-x0-Ruk" firstAttribute="top" secondItem="v1P-HI-eXG" secondAttribute="top" id="hpM-oj-6g1"/>
+                            <constraint firstAttribute="trailing" secondItem="2x9-H1-yRK" secondAttribute="trailing" id="xkN-rO-hKX"/>
+                            <constraint firstItem="2x9-H1-yRK" firstAttribute="leading" secondItem="v1P-HI-eXG" secondAttribute="leading" id="yrR-YC-b1R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hwi_detailWebView" destination="2x9-H1-yRK" id="7z8-o5-0w7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKe-TT-oZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3422" y="648"/>
         </scene>
     </scenes>
     <resources>

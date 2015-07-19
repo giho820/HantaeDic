@@ -74,8 +74,11 @@ class BaseVC: UIViewController {
         backButton.backgroundColor = UIColor.clearColor()
         backButton.setTitle("Back", forState: UIControlState.Normal)
         backButton.setTitleColor(ConstValue.color01_white, forState: UIControlState.Normal)
-        backButton.frame = CGRectMake(8, 31, 77, 21)
+        backButton.frame = CGRectMake(8, 31, 300, 21)
         backButton.titleLabel?.font = UIFont.boldSystemFontOfSize(17)
+
+        backButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
+        backButton.contentEdgeInsets = UIEdgeInsetsMake(0, 15, 0, 0)
         
         iconBackImageView.frame = CGRectMake(0, 0, 12, 21)
         iconBackImageView.image = iconBackImageNormal
@@ -157,6 +160,10 @@ class BaseVC: UIViewController {
     }
     
     
+    
+    
+    
+//______________________________________________________________________________________________________________________
     //백그라운드 터치 시 키보드 자동 내림 처리
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
     {
@@ -203,7 +210,33 @@ class BaseVC: UIViewController {
         }
         
     }
-    
 
+    
+//______________________________________________________________________________________________________________________
+    // 얼럿창 띄우기
+    func alertWithTitle(title : String , clickString : String , clickHandler : (()->Void)? )
+    {
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        // 클릭 텍스트 맟 액션 등록
+        alert.addAction(UIAlertAction(title: clickString, style: .Default, handler: { (action : UIAlertAction!) -> Void in
+            
+            // 확인 버튼 클릭 시 행동 -> 핸들러 작동 정의
+            if clickHandler != nil
+            {
+                clickHandler!()
+            }
+            
+            // 얼럿 뷰 없애기 행동 정의
+            alert.dismissViewControllerAnimated(true, completion: { () -> Void in
+                
+            })
+        }))
+        
+        // 행동이 정의된 현재 얼럿창을 화면에 띄움
+        self.presentViewController(alert, animated: true, completion: { () -> Void in
+            
+        })
+    }
     
 }

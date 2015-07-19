@@ -11,6 +11,10 @@
 		05300B271B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
 		05300B281B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */; };
 		05300B301B5053A900282820 /* LauchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05300B2F1B5053A900282820 /* LauchScreen.xib */; };
+		0558FCD61B5BABC90017B532 /* ETCSupplementListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD51B5BABC90017B532 /* ETCSupplementListVC.swift */; };
+		0558FCD81B5BAEC40017B532 /* SupplementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD71B5BAEC40017B532 /* SupplementCell.swift */; };
+		0558FD631B5BB2740017B532 /* SupplementDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FD621B5BB2740017B532 /* SupplementDetailVC.swift */; };
+		0558FE101B5BBEDA0017B532 /* thaidic-publish in Resources */ = {isa = PBXBuildFile; fileRef = 0558FE0F1B5BBEDA0017B532 /* thaidic-publish */; };
 		05A2612F1B44446F0055D803 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2612E1B44446F0055D803 /* CustomTableView.swift */; };
 		05B775A11B4583DB004CFC45 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A01B4583DB004CFC45 /* DetailScrollView.swift */; };
 		05B775A31B4583EF004CFC45 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
@@ -134,6 +138,10 @@
 		05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_P.sqlite; sourceTree = "<group>"; };
 		05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_T.sqlite; sourceTree = "<group>"; };
 		05300B2F1B5053A900282820 /* LauchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LauchScreen.xib; sourceTree = "<group>"; };
+		0558FCD51B5BABC90017B532 /* ETCSupplementListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETCSupplementListVC.swift; sourceTree = "<group>"; };
+		0558FCD71B5BAEC40017B532 /* SupplementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementCell.swift; sourceTree = "<group>"; };
+		0558FD621B5BB2740017B532 /* SupplementDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementDetailVC.swift; sourceTree = "<group>"; };
+		0558FE0F1B5BBEDA0017B532 /* thaidic-publish */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "thaidic-publish"; sourceTree = "<group>"; };
 		05A2612E1B44446F0055D803 /* CustomTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		05B775A01B4583DB004CFC45 /* DetailScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollView.swift; sourceTree = "<group>"; };
 		05B775A21B4583EF004CFC45 /* BaseScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
@@ -200,12 +208,23 @@
 			path = DBFile;
 			sourceTree = "<group>";
 		};
+		0558FDF61B5BBC310017B532 /* HTMLWebFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0558FE0F1B5BBEDA0017B532 /* thaidic-publish */,
+			);
+			path = HTMLWebFiles;
+			sourceTree = "<group>";
+		};
 		05BFBB7C1B4740AD001DA053 /* 01Etc */ = {
 			isa = PBXGroup;
 			children = (
 				05BFBB841B4740C5001DA053 /* ETCVC.swift */,
 				05BFBB861B4746BB001DA053 /* ETCCell.swift */,
 				05BFBB8A1B474ED5001DA053 /* AppIconBtnView.swift */,
+				0558FCD51B5BABC90017B532 /* ETCSupplementListVC.swift */,
+				0558FCD71B5BAEC40017B532 /* SupplementCell.swift */,
+				0558FD621B5BB2740017B532 /* SupplementDetailVC.swift */,
 			);
 			path = 01Etc;
 			sourceTree = "<group>";
@@ -231,6 +250,7 @@
 		05C592251B42905E008BBC21 /* KoreanToThaiDic */ = {
 			isa = PBXGroup;
 			children = (
+				0558FDF61B5BBC310017B532 /* HTMLWebFiles */,
 				05300B221B5042B200282820 /* DBFile */,
 				05EA7BA31B43BFAC00F2CE14 /* 00AppInit */,
 				05BFBB7C1B4740AD001DA053 /* 01Etc */,
@@ -284,8 +304,8 @@
 		05C592C91B429439008BBC21 /* CustomLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				05C592CA1B42944C008BBC21 /* DBManager.swift */,
 				05EA7B721B43B86700F2CE14 /* ConstValue.swift */,
+				05C592CA1B42944C008BBC21 /* DBManager.swift */,
 				05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */,
 				05A2612E1B44446F0055D803 /* CustomTableView.swift */,
 				05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */,
@@ -514,6 +534,7 @@
 				05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */,
 				05C592301B42905E008BBC21 /* Images.xcassets in Resources */,
 				05300B281B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
+				0558FE101B5BBEDA0017B532 /* thaidic-publish in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,8 +553,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				05EA7B8D1B43B8F900F2CE14 /* HTTPResponseSerializer.swift in Sources */,
+				0558FCD61B5BABC90017B532 /* ETCSupplementListVC.swift in Sources */,
 				05C592CB1B42944C008BBC21 /* DBManager.swift in Sources */,
 				05EA7B7A1B43B8DF00F2CE14 /* HWILib.swift in Sources */,
+				0558FD631B5BB2740017B532 /* SupplementDetailVC.swift in Sources */,
 				05EA7B8E1B43B8F900F2CE14 /* HTTPSecurity.swift in Sources */,
 				05BFBB891B4746D5001DA053 /* ItemCell.swift in Sources */,
 				05A2612F1B44446F0055D803 /* CustomTableView.swift in Sources */,
@@ -541,6 +564,7 @@
 				05EA7B931B43B8F900F2CE14 /* README.md in Sources */,
 				05EA7B8F1B43B8F900F2CE14 /* HTTPTask.swift in Sources */,
 				05EA7BA21B43BE7D00F2CE14 /* BaseVC.swift in Sources */,
+				0558FCD81B5BAEC40017B532 /* SupplementCell.swift in Sources */,
 				05EA7B8C1B43B8F900F2CE14 /* HTTPRequestSerializer.swift in Sources */,
 				05EA7B731B43B86700F2CE14 /* ConstValue.swift in Sources */,
 				05BFBB851B4740C5001DA053 /* ETCVC.swift in Sources */,
@@ -676,7 +700,7 @@
 		05C592431B42905E008BBC21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KoreanToThaiDic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -687,7 +711,7 @@
 		05C592441B42905E008BBC21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
 				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = KoreanToThaiDic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
