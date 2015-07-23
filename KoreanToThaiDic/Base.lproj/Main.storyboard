@@ -323,9 +323,21 @@
                                     <constraint firstAttribute="height" constant="1" id="aaz-Bg-2D4"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHM-kZ-E4B" userLabel="하단 아이콘 컨테이너">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHM-kZ-E4B" userLabel="하단 뷰">
                                 <rect key="frame" x="0.0" y="257" width="600" height="343"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tca-Ux-n7P" userLabel="하단 아이콘 컨테이너">
+                                        <rect key="frame" x="10" y="10" width="580" height="333"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Tca-Ux-n7P" secondAttribute="bottom" id="9iP-71-YcC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tca-Ux-n7P" secondAttribute="trailing" constant="10" id="MXX-Ld-ODR"/>
+                                    <constraint firstItem="Tca-Ux-n7P" firstAttribute="top" secondItem="JHM-kZ-E4B" secondAttribute="top" constant="10" id="Y1G-6o-c7i"/>
+                                    <constraint firstItem="Tca-Ux-n7P" firstAttribute="leading" secondItem="JHM-kZ-E4B" secondAttribute="leading" constant="10" id="hTt-C7-C1M"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -347,7 +359,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomIconViewContainer" destination="JHM-kZ-E4B" id="nrk-9o-pZk"/>
+                        <outlet property="bottomIconViewContainer" destination="Tca-Ux-n7P" id="oXS-bu-88j"/>
                         <outlet property="separatorView" destination="eW1-K5-ben" id="mTV-sL-Akb"/>
                         <segue destination="Vif-7g-2EL" kind="show" identifier="seg_etc_detail" id="dil-6a-HCJ"/>
                     </connections>

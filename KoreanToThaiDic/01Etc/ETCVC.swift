@@ -10,7 +10,7 @@ import UIKit
 
 // seg_etc_detail    기타 뷰컨트롤러 ---> 웹뷰 컨트롤러로 이동 세그웨이
 
-class ETCVC: BaseVC , UITableViewDataSource , UITableViewDelegate {
+class ETCVC: BaseVC , UITableViewDataSource , UITableViewDelegate , AppIconBtnViewDelegate{
     
     //_______________________________________________________________________________________________________________
     // 상단 테이블 관련
@@ -50,6 +50,8 @@ class ETCVC: BaseVC , UITableViewDataSource , UITableViewDelegate {
     let iconImage01_kor_thai_p = "icon1_p"
     let iconImage02_thai_kor_p_p = "icon3_p"
     let iconImage03_thai_kor_t_p = "icon2_p"
+    
+
     
     var arrayOfIconModels : [AppIconModel] = []
     
@@ -204,13 +206,37 @@ class ETCVC: BaseVC , UITableViewDataSource , UITableViewDelegate {
 
 
             oneIcon.frame = CGRectMake( CGFloat(index * 70) , 20, 70, 70)
-            
+            oneIcon.delegate = self
             oneIcon.setViews(oneModel.hwi_title, image_normal: oneModel.hwi_image_noemal!, image_pressed: oneModel.hwi_image_pressed!)
             
             self.bottomIconViewContainer.addSubview(oneIcon)
 
         }
         
+        
+    }
+    
+    func onBtnTouchUPInside(sender : AppIconBtnView)
+    {
+        println("\(sender.hwi_title.text!)")
+        
+        let touchedTitle = sender.hwi_title.text!
+        
+        var urlOfMove = ""
+        if touchedTitle == self.titleOfIcon01
+        {
+            urlOfMove = ConstValue.url01_HantaeDic
+        }
+        else if touchedTitle == self.titleOfIcon02
+        {
+            urlOfMove = ConstValue.url02_ListenTaeHanDic
+        }
+        else if touchedTitle == self.titleOfIcon03
+        {
+            urlOfMove = ConstValue.url03_TaehanDic
+        }
+        
+        UIApplication.sharedApplication().openURL(NSURL(string:urlOfMove)!)
         
     }
     //________________________________________________________________________________________________________________________________________________

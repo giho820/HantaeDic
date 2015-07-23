@@ -42,7 +42,9 @@ class ConstValue {
         "부록 4. 한글 읽고 쓰기"
     ]
     
-    
+    static let url01_HantaeDic = "http://www.google.com"
+    static let url02_ListenTaeHanDic = "http://www.naver.com"
+    static let url03_TaehanDic = "http://www.daum.net"
     
     
     static let color01_white = HWILib.colorWIthRGB(255, green: 255, blue: 255, alpha: 1)

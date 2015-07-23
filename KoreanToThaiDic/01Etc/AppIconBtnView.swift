@@ -10,7 +10,7 @@ import UIKit
 
 protocol AppIconBtnViewDelegate
 {
-    func onBtnTouchUPInside(sender : UIButton)
+    func onBtnTouchUPInside(sender : AppIconBtnView)
 }
 
 
@@ -92,7 +92,7 @@ class AppIconBtnView: UIView
         self.hwi_iconImage.image = self.image_normal
         if delegate != nil
         {
-            delegate?.onBtnTouchUPInside(sender)
+            delegate?.onBtnTouchUPInside(self)
         }
         else
         {
