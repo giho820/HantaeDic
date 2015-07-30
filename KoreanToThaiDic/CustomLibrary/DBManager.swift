@@ -70,7 +70,7 @@ class DBManager
         
     }
     
-
+    
     
     class func getListFromWord(word : String , callback : ()->())
     {
@@ -100,34 +100,25 @@ class DBManager
                 break
             }
             
-            
-            
-            // 뒷부분 Like 검색
-            for oneItem in self.dic.filter(like( "\(word)%", searchedColumn) )
+            // 검색 단어의 시작이 * 일 경우 와일드 카드 검색
+            if count(word) > 1 && word.substringToIndex(advance(word.startIndex,1)) == "*"
             {
-                
-                var oneCellItem = DicModel()
-                
-                self.setItemToObject(oneCellItem, oneItem: oneItem, searchKeyword: word)
-                self.searchedItemArrayTemp.append(oneCellItem)
-                
-            }
-            
-            
-            // 뒷부분 Like 검색 실패 시 -> Like 전체 검색
-            if self.searchedItemArrayTemp.count == 0
-            {
-                if self.searchedItemArrayTemp.count == 0
+                let searchWord  = dropFirst(word)
+                for oneItem in self.dic.filter(like("%\(searchWord)%", searchedColumn))
                 {
-                    for oneItem in self.dic.filter(like("%\(word)%", searchedColumn))
-                    {
-                        
-                        var oneCellItem = DicModel()
-                        self.setItemToObject(oneCellItem, oneItem: oneItem, searchKeyword: word)
-                        
-                        self.searchedItemArrayTemp.append(oneCellItem)
-                        
-                    }
+                    var oneCellItem = DicModel()
+                    self.setItemToObject(oneCellItem, oneItem: oneItem, searchKeyword: word)
+                    self.searchedItemArrayTemp.append(oneCellItem)
+                }
+            }
+            else
+            {
+                // 일반적인 경우 -> 뒷부분 Like 검색
+                for oneItem in self.dic.filter(like( "\(word)%", searchedColumn) )
+                {
+                    var oneCellItem = DicModel()
+                    self.setItemToObject(oneCellItem, oneItem: oneItem, searchKeyword: word)
+                    self.searchedItemArrayTemp.append(oneCellItem)
                 }
             }
             
