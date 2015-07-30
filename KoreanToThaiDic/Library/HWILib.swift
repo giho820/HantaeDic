@@ -140,7 +140,14 @@ class HWILib
     class func setBoldSectionToLabel(sentenceLabel : UILabel, keyword : String)
     {
         let sentenceTemp = sentenceLabel.text! as NSString
-        let range = sentenceTemp.rangeOfString(keyword)
+        
+        var boldKeyworkd = keyword
+        if  count(boldKeyworkd) > 1 && boldKeyworkd.substringToIndex(advance(boldKeyworkd.startIndex, 1)) == "*"
+        {
+            boldKeyworkd = dropFirst(keyword)
+        }
+        
+        let range = sentenceTemp.rangeOfString(boldKeyworkd)
         
         var attributedString =  NSMutableAttributedString(string: sentenceLabel.text!)
         
