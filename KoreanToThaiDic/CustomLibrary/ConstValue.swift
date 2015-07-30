@@ -31,7 +31,7 @@ class ConstValue {
         2 : 들리는대로 태한사전
         3 : 태한 사전
     */
-    static let dic_mode = 1
+    static let dic_mode = 3
     
     
     static let arrayOfSupplementTableTitles =

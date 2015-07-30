@@ -5,11 +5,11 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>한태사전</string>
+	<string>태한사전</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>kr.co.smallhouse.$(PRODUCT_NAME:rfc1034identifier)1</string>
+	<string>kr.co.davidsong.$(PRODUCT_NAME:rfc1034identifier)3</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

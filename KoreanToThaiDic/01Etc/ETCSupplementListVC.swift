@@ -60,7 +60,8 @@ class ETCSupplementListVC: BaseVC , UITableViewDataSource , UITableViewDelegate{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
-            self.performSegueWithIdentifier("seg_etclist_etcdetail", sender: indexPath.row)
+        self.performSegueWithIdentifier("seg_etclist_etcdetail", sender: indexPath.row)
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     // 테이블 뷰 Delegate
