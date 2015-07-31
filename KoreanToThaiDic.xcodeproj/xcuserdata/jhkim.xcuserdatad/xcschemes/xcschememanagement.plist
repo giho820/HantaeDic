@@ -4,14 +4,34 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>KoreanToThaiDic.xcscheme</key>
+		<key>KoreanToThaiDic1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+		<key>KoreanToThaiDic2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>KoreanToThaiDic3.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0555524F1B6BE01100B4777F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>055552821B6BE06C00B4777F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>05C592221B42905E008BBC21</key>
 		<dict>
 			<key>primary</key>
