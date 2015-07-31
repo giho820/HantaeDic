@@ -369,9 +369,6 @@
 				05C592251B42905E008BBC21 /* KoreanToThaiDic */,
 				05C5923B1B42905E008BBC21 /* KoreanToThaiDicTests */,
 				05C592241B42905E008BBC21 /* Products */,
-				052FFBDF1B6BC6A50076A0D2 /* KoreanToThaiDic1.plist */,
-				052FFC101B6BC7320076A0D2 /* KoreanToThaiDic2.plist */,
-				052FFC411B6BC7C80076A0D2 /* KoreanToThaiDic3.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -407,6 +404,9 @@
 		05C592261B42905E008BBC21 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				052FFBDF1B6BC6A50076A0D2 /* KoreanToThaiDic1.plist */,
+				052FFC101B6BC7320076A0D2 /* KoreanToThaiDic2.plist */,
+				052FFC411B6BC7C80076A0D2 /* KoreanToThaiDic3.plist */,
 				052FFC511B6BCA280076A0D2 /* libsqlite3.dylib */,
 				05C592271B42905E008BBC21 /* Info.plist */,
 				052FFC421B6BC8B90076A0D2 /* LauchScreen1.xib */,
