@@ -7,54 +7,166 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05300B261B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */; };
-		05300B271B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
-		05300B281B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */; };
-		05300B301B5053A900282820 /* LauchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05300B2F1B5053A900282820 /* LauchScreen.xib */; };
-		0558FCD61B5BABC90017B532 /* ETCSupplementListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD51B5BABC90017B532 /* ETCSupplementListVC.swift */; };
-		0558FCD81B5BAEC40017B532 /* SupplementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD71B5BAEC40017B532 /* SupplementCell.swift */; };
-		0558FD631B5BB2740017B532 /* SupplementDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FD621B5BB2740017B532 /* SupplementDetailVC.swift */; };
-		0558FE101B5BBEDA0017B532 /* thaidic-publish in Resources */ = {isa = PBXBuildFile; fileRef = 0558FE0F1B5BBEDA0017B532 /* thaidic-publish */; };
-		05A2612F1B44446F0055D803 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2612E1B44446F0055D803 /* CustomTableView.swift */; };
-		05B775A11B4583DB004CFC45 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A01B4583DB004CFC45 /* DetailScrollView.swift */; };
-		05B775A31B4583EF004CFC45 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
-		05BFBB851B4740C5001DA053 /* ETCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB841B4740C5001DA053 /* ETCVC.swift */; };
-		05BFBB871B4746BB001DA053 /* ETCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB861B4746BB001DA053 /* ETCCell.swift */; };
-		05BFBB891B4746D5001DA053 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB881B4746D5001DA053 /* ItemCell.swift */; };
-		05BFBB8B1B474ED5001DA053 /* AppIconBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB8A1B474ED5001DA053 /* AppIconBtnView.swift */; };
-		05C592291B42905E008BBC21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592281B42905E008BBC21 /* AppDelegate.swift */; };
-		05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
-		05C592301B42905E008BBC21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
+		052FFBB31B6BC6A50076A0D2 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B7F1B43B8F900F2CE14 /* HTTPResponseSerializer.swift */; };
+		052FFBB41B6BC6A50076A0D2 /* ETCSupplementListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD51B5BABC90017B532 /* ETCSupplementListVC.swift */; };
+		052FFBB51B6BC6A50076A0D2 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592CA1B42944C008BBC21 /* DBManager.swift */; };
+		052FFBB61B6BC6A50076A0D2 /* HWILib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B781B43B8DF00F2CE14 /* HWILib.swift */; };
+		052FFBB71B6BC6A50076A0D2 /* SupplementDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FD621B5BB2740017B532 /* SupplementDetailVC.swift */; };
+		052FFBB81B6BC6A50076A0D2 /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B801B43B8F900F2CE14 /* HTTPSecurity.swift */; };
+		052FFBB91B6BC6A50076A0D2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB881B4746D5001DA053 /* ItemCell.swift */; };
+		052FFBBA1B6BC6A50076A0D2 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2612E1B44446F0055D803 /* CustomTableView.swift */; };
+		052FFBBB1B6BC6A50076A0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592281B42905E008BBC21 /* AppDelegate.swift */; };
+		052FFBBC1B6BC6A50076A0D2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B851B43B8F900F2CE14 /* README.md */; };
+		052FFBBD1B6BC6A50076A0D2 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B811B43B8F900F2CE14 /* HTTPTask.swift */; };
+		052FFBBE1B6BC6A50076A0D2 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */; };
+		052FFBBF1B6BC6A50076A0D2 /* SupplementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD71B5BAEC40017B532 /* SupplementCell.swift */; };
+		052FFBC01B6BC6A50076A0D2 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B7E1B43B8F900F2CE14 /* HTTPRequestSerializer.swift */; };
+		052FFBC11B6BC6A50076A0D2 /* ConstValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B721B43B86700F2CE14 /* ConstValue.swift */; };
+		052FFBC21B6BC6A50076A0D2 /* ETCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB841B4740C5001DA053 /* ETCVC.swift */; };
+		052FFBC31B6BC6A50076A0D2 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B821B43B8F900F2CE14 /* HTTPUpload.swift */; };
+		052FFBC41B6BC6A50076A0D2 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A01B4583DB004CFC45 /* DetailScrollView.swift */; };
+		052FFBC51B6BC6A50076A0D2 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B791B43B8DF00F2CE14 /* InsetTextField.swift */; };
+		052FFBC61B6BC6A50076A0D2 /* ETCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB861B4746BB001DA053 /* ETCCell.swift */; };
+		052FFBC71B6BC6A50076A0D2 /* AppIconBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB8A1B474ED5001DA053 /* AppIconBtnView.swift */; };
+		052FFBC81B6BC6A50076A0D2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA41B43BFC600F2CE14 /* MainVC.swift */; };
+		052FFBC91B6BC6A50076A0D2 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
+		052FFBCA1B6BC6A50076A0D2 /* CustomNaviC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */; };
+		052FFBCE1B6BC6A50076A0D2 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */; };
+		052FFBCF1B6BC6A50076A0D2 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
+		052FFBD01B6BC6A50076A0D2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B7D1B43B8F900F2CE14 /* .gitignore */; };
+		052FFBD11B6BC6A50076A0D2 /* SwiftHTTP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */; };
+		052FFBD21B6BC6A50076A0D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B831B43B8F900F2CE14 /* Info.plist */; };
+		052FFBD31B6BC6A50076A0D2 /* LauchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05300B2F1B5053A900282820 /* LauchScreen.xib */; };
+		052FFBD41B6BC6A50076A0D2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B841B43B8F900F2CE14 /* LICENSE */; };
+		052FFBD51B6BC6A50076A0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
+		052FFBD61B6BC6A50076A0D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
+		052FFBD71B6BC6A50076A0D2 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */; };
+		052FFBD81B6BC6A50076A0D2 /* thaidic-publish in Resources */ = {isa = PBXBuildFile; fileRef = 0558FE0F1B5BBEDA0017B532 /* thaidic-publish */; };
+		052FFBE41B6BC7320076A0D2 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B7F1B43B8F900F2CE14 /* HTTPResponseSerializer.swift */; };
+		052FFBE51B6BC7320076A0D2 /* ETCSupplementListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD51B5BABC90017B532 /* ETCSupplementListVC.swift */; };
+		052FFBE61B6BC7320076A0D2 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592CA1B42944C008BBC21 /* DBManager.swift */; };
+		052FFBE71B6BC7320076A0D2 /* HWILib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B781B43B8DF00F2CE14 /* HWILib.swift */; };
+		052FFBE81B6BC7320076A0D2 /* SupplementDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FD621B5BB2740017B532 /* SupplementDetailVC.swift */; };
+		052FFBE91B6BC7320076A0D2 /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B801B43B8F900F2CE14 /* HTTPSecurity.swift */; };
+		052FFBEA1B6BC7320076A0D2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB881B4746D5001DA053 /* ItemCell.swift */; };
+		052FFBEB1B6BC7320076A0D2 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2612E1B44446F0055D803 /* CustomTableView.swift */; };
+		052FFBEC1B6BC7320076A0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592281B42905E008BBC21 /* AppDelegate.swift */; };
+		052FFBED1B6BC7320076A0D2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B851B43B8F900F2CE14 /* README.md */; };
+		052FFBEE1B6BC7320076A0D2 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B811B43B8F900F2CE14 /* HTTPTask.swift */; };
+		052FFBEF1B6BC7320076A0D2 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */; };
+		052FFBF01B6BC7320076A0D2 /* SupplementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD71B5BAEC40017B532 /* SupplementCell.swift */; };
+		052FFBF11B6BC7320076A0D2 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B7E1B43B8F900F2CE14 /* HTTPRequestSerializer.swift */; };
+		052FFBF21B6BC7320076A0D2 /* ConstValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B721B43B86700F2CE14 /* ConstValue.swift */; };
+		052FFBF31B6BC7320076A0D2 /* ETCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB841B4740C5001DA053 /* ETCVC.swift */; };
+		052FFBF41B6BC7320076A0D2 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B821B43B8F900F2CE14 /* HTTPUpload.swift */; };
+		052FFBF51B6BC7320076A0D2 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A01B4583DB004CFC45 /* DetailScrollView.swift */; };
+		052FFBF61B6BC7320076A0D2 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B791B43B8DF00F2CE14 /* InsetTextField.swift */; };
+		052FFBF71B6BC7320076A0D2 /* ETCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB861B4746BB001DA053 /* ETCCell.swift */; };
+		052FFBF81B6BC7320076A0D2 /* AppIconBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB8A1B474ED5001DA053 /* AppIconBtnView.swift */; };
+		052FFBF91B6BC7320076A0D2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA41B43BFC600F2CE14 /* MainVC.swift */; };
+		052FFBFA1B6BC7320076A0D2 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
+		052FFBFB1B6BC7320076A0D2 /* CustomNaviC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */; };
+		052FFBFF1B6BC7320076A0D2 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */; };
+		052FFC001B6BC7320076A0D2 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
+		052FFC011B6BC7320076A0D2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B7D1B43B8F900F2CE14 /* .gitignore */; };
+		052FFC021B6BC7320076A0D2 /* SwiftHTTP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */; };
+		052FFC031B6BC7320076A0D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B831B43B8F900F2CE14 /* Info.plist */; };
+		052FFC041B6BC7320076A0D2 /* LauchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05300B2F1B5053A900282820 /* LauchScreen.xib */; };
+		052FFC051B6BC7320076A0D2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B841B43B8F900F2CE14 /* LICENSE */; };
+		052FFC061B6BC7320076A0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
+		052FFC071B6BC7320076A0D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
+		052FFC081B6BC7320076A0D2 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */; };
+		052FFC091B6BC7320076A0D2 /* thaidic-publish in Resources */ = {isa = PBXBuildFile; fileRef = 0558FE0F1B5BBEDA0017B532 /* thaidic-publish */; };
+		052FFC151B6BC7C70076A0D2 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B7F1B43B8F900F2CE14 /* HTTPResponseSerializer.swift */; };
+		052FFC161B6BC7C70076A0D2 /* ETCSupplementListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD51B5BABC90017B532 /* ETCSupplementListVC.swift */; };
+		052FFC171B6BC7C70076A0D2 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592CA1B42944C008BBC21 /* DBManager.swift */; };
+		052FFC181B6BC7C70076A0D2 /* HWILib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B781B43B8DF00F2CE14 /* HWILib.swift */; };
+		052FFC191B6BC7C70076A0D2 /* SupplementDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FD621B5BB2740017B532 /* SupplementDetailVC.swift */; };
+		052FFC1A1B6BC7C70076A0D2 /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B801B43B8F900F2CE14 /* HTTPSecurity.swift */; };
+		052FFC1B1B6BC7C70076A0D2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB881B4746D5001DA053 /* ItemCell.swift */; };
+		052FFC1C1B6BC7C70076A0D2 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2612E1B44446F0055D803 /* CustomTableView.swift */; };
+		052FFC1D1B6BC7C70076A0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592281B42905E008BBC21 /* AppDelegate.swift */; };
+		052FFC1E1B6BC7C70076A0D2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B851B43B8F900F2CE14 /* README.md */; };
+		052FFC1F1B6BC7C70076A0D2 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B811B43B8F900F2CE14 /* HTTPTask.swift */; };
+		052FFC201B6BC7C70076A0D2 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */; };
+		052FFC211B6BC7C70076A0D2 /* SupplementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD71B5BAEC40017B532 /* SupplementCell.swift */; };
+		052FFC221B6BC7C70076A0D2 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B7E1B43B8F900F2CE14 /* HTTPRequestSerializer.swift */; };
+		052FFC231B6BC7C70076A0D2 /* ConstValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B721B43B86700F2CE14 /* ConstValue.swift */; };
+		052FFC241B6BC7C70076A0D2 /* ETCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB841B4740C5001DA053 /* ETCVC.swift */; };
+		052FFC251B6BC7C70076A0D2 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B821B43B8F900F2CE14 /* HTTPUpload.swift */; };
+		052FFC261B6BC7C70076A0D2 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A01B4583DB004CFC45 /* DetailScrollView.swift */; };
+		052FFC271B6BC7C70076A0D2 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B791B43B8DF00F2CE14 /* InsetTextField.swift */; };
+		052FFC281B6BC7C70076A0D2 /* ETCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB861B4746BB001DA053 /* ETCCell.swift */; };
+		052FFC291B6BC7C70076A0D2 /* AppIconBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFBB8A1B474ED5001DA053 /* AppIconBtnView.swift */; };
+		052FFC2A1B6BC7C70076A0D2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA41B43BFC600F2CE14 /* MainVC.swift */; };
+		052FFC2B1B6BC7C70076A0D2 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
+		052FFC2C1B6BC7C70076A0D2 /* CustomNaviC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */; };
+		052FFC301B6BC7C70076A0D2 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */; };
+		052FFC311B6BC7C70076A0D2 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
+		052FFC321B6BC7C70076A0D2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B7D1B43B8F900F2CE14 /* .gitignore */; };
+		052FFC331B6BC7C70076A0D2 /* SwiftHTTP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */; };
+		052FFC341B6BC7C70076A0D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B831B43B8F900F2CE14 /* Info.plist */; };
+		052FFC351B6BC7C70076A0D2 /* LauchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05300B2F1B5053A900282820 /* LauchScreen.xib */; };
+		052FFC361B6BC7C70076A0D2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B841B43B8F900F2CE14 /* LICENSE */; };
+		052FFC371B6BC7C70076A0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
+		052FFC381B6BC7C70076A0D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
+		052FFC391B6BC7C70076A0D2 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */; };
+		052FFC3A1B6BC7C70076A0D2 /* thaidic-publish in Resources */ = {isa = PBXBuildFile; fileRef = 0558FE0F1B5BBEDA0017B532 /* thaidic-publish */; };
+		052FFC461B6BC8B90076A0D2 /* LauchScreen1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052FFC421B6BC8B90076A0D2 /* LauchScreen1.xib */; };
+		052FFC471B6BC8B90076A0D2 /* LauchScreen1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052FFC421B6BC8B90076A0D2 /* LauchScreen1.xib */; };
+		052FFC481B6BC8B90076A0D2 /* LauchScreen1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052FFC421B6BC8B90076A0D2 /* LauchScreen1.xib */; };
+		052FFC4A1B6BC8B90076A0D2 /* LauchScreen2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052FFC431B6BC8B90076A0D2 /* LauchScreen2.xib */; };
+		052FFC4B1B6BC8B90076A0D2 /* LauchScreen2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052FFC431B6BC8B90076A0D2 /* LauchScreen2.xib */; };
+		052FFC4C1B6BC8B90076A0D2 /* LauchScreen2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052FFC431B6BC8B90076A0D2 /* LauchScreen2.xib */; };
+		052FFC4E1B6BC8B90076A0D2 /* LauchScreen3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052FFC441B6BC8B90076A0D2 /* LauchScreen3.xib */; };
+		052FFC4F1B6BC8B90076A0D2 /* LauchScreen3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052FFC441B6BC8B90076A0D2 /* LauchScreen3.xib */; };
+		052FFC501B6BC8B90076A0D2 /* LauchScreen3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052FFC441B6BC8B90076A0D2 /* LauchScreen3.xib */; };
+		052FFC521B6BCA280076A0D2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 052FFC511B6BCA280076A0D2 /* libsqlite3.dylib */; };
+		052FFC531B6BCA350076A0D2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 052FFC511B6BCA280076A0D2 /* libsqlite3.dylib */; };
+		052FFC541B6BCA3D0076A0D2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 052FFC511B6BCA280076A0D2 /* libsqlite3.dylib */; };
 		05C5923F1B42905E008BBC21 /* KoreanToThaiDicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C5923E1B42905E008BBC21 /* KoreanToThaiDicTests.swift */; };
-		05C592CB1B42944C008BBC21 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C592CA1B42944C008BBC21 /* DBManager.swift */; };
-		05C592E01B42A064008BBC21 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C592D71B42A02E008BBC21 /* SQLite.framework */; };
-		05C592E31B42A0CD008BBC21 /* SQLite.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05C592D71B42A02E008BBC21 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		05DEA95B1B4535B5008E1459 /* CustomNaviC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */; };
-		05EA7B731B43B86700F2CE14 /* ConstValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B721B43B86700F2CE14 /* ConstValue.swift */; };
-		05EA7B7A1B43B8DF00F2CE14 /* HWILib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B781B43B8DF00F2CE14 /* HWILib.swift */; };
-		05EA7B7B1B43B8DF00F2CE14 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B791B43B8DF00F2CE14 /* InsetTextField.swift */; };
-		05EA7B8B1B43B8F900F2CE14 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B7D1B43B8F900F2CE14 /* .gitignore */; };
-		05EA7B8C1B43B8F900F2CE14 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B7E1B43B8F900F2CE14 /* HTTPRequestSerializer.swift */; };
-		05EA7B8D1B43B8F900F2CE14 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B7F1B43B8F900F2CE14 /* HTTPResponseSerializer.swift */; };
-		05EA7B8E1B43B8F900F2CE14 /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B801B43B8F900F2CE14 /* HTTPSecurity.swift */; };
-		05EA7B8F1B43B8F900F2CE14 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B811B43B8F900F2CE14 /* HTTPTask.swift */; };
-		05EA7B901B43B8F900F2CE14 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B821B43B8F900F2CE14 /* HTTPUpload.swift */; };
-		05EA7B911B43B8F900F2CE14 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B831B43B8F900F2CE14 /* Info.plist */; };
-		05EA7B921B43B8F900F2CE14 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B841B43B8F900F2CE14 /* LICENSE */; };
-		05EA7B931B43B8F900F2CE14 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B851B43B8F900F2CE14 /* README.md */; };
-		05EA7B941B43B8F900F2CE14 /* SwiftHTTP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */; };
-		05EA7BA21B43BE7D00F2CE14 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */; };
-		05EA7BA51B43BFC600F2CE14 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA41B43BFC600F2CE14 /* MainVC.swift */; };
+		05F3F0DD1B6BCF5C0068F341 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0CD1B6BCF5C0068F341 /* Database.swift */; };
+		05F3F0DE1B6BCF5C0068F341 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0CD1B6BCF5C0068F341 /* Database.swift */; };
+		05F3F0DF1B6BCF5C0068F341 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0CD1B6BCF5C0068F341 /* Database.swift */; };
+		05F3F0E01B6BCF5C0068F341 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0CE1B6BCF5C0068F341 /* Expression.swift */; };
+		05F3F0E11B6BCF5C0068F341 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0CE1B6BCF5C0068F341 /* Expression.swift */; };
+		05F3F0E21B6BCF5C0068F341 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0CE1B6BCF5C0068F341 /* Expression.swift */; };
+		05F3F0E31B6BCF5C0068F341 /* FTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0CF1B6BCF5C0068F341 /* FTS.swift */; };
+		05F3F0E41B6BCF5C0068F341 /* FTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0CF1B6BCF5C0068F341 /* FTS.swift */; };
+		05F3F0E51B6BCF5C0068F341 /* FTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0CF1B6BCF5C0068F341 /* FTS.swift */; };
+		05F3F0E61B6BCF5C0068F341 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D11B6BCF5C0068F341 /* Functions.swift */; };
+		05F3F0E71B6BCF5C0068F341 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D11B6BCF5C0068F341 /* Functions.swift */; };
+		05F3F0E81B6BCF5C0068F341 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D11B6BCF5C0068F341 /* Functions.swift */; };
+		05F3F0E91B6BCF5C0068F341 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F0D21B6BCF5C0068F341 /* Info.plist */; };
+		05F3F0EA1B6BCF5C0068F341 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F0D21B6BCF5C0068F341 /* Info.plist */; };
+		05F3F0EB1B6BCF5C0068F341 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F0D21B6BCF5C0068F341 /* Info.plist */; };
+		05F3F0EC1B6BCF5C0068F341 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D31B6BCF5C0068F341 /* module.modulemap */; };
+		05F3F0ED1B6BCF5C0068F341 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D31B6BCF5C0068F341 /* module.modulemap */; };
+		05F3F0EE1B6BCF5C0068F341 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D31B6BCF5C0068F341 /* module.modulemap */; };
+		05F3F0EF1B6BCF5C0068F341 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D41B6BCF5C0068F341 /* Query.swift */; };
+		05F3F0F01B6BCF5C0068F341 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D41B6BCF5C0068F341 /* Query.swift */; };
+		05F3F0F11B6BCF5C0068F341 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D41B6BCF5C0068F341 /* Query.swift */; };
+		05F3F0F21B6BCF5C0068F341 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D51B6BCF5C0068F341 /* RTree.swift */; };
+		05F3F0F31B6BCF5C0068F341 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D51B6BCF5C0068F341 /* RTree.swift */; };
+		05F3F0F41B6BCF5C0068F341 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D51B6BCF5C0068F341 /* RTree.swift */; };
+		05F3F0F51B6BCF5C0068F341 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D61B6BCF5C0068F341 /* Schema.swift */; };
+		05F3F0F61B6BCF5C0068F341 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D61B6BCF5C0068F341 /* Schema.swift */; };
+		05F3F0F71B6BCF5C0068F341 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D61B6BCF5C0068F341 /* Schema.swift */; };
+		05F3F0F81B6BCF5C0068F341 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D81B6BCF5C0068F341 /* SQLite-Bridging.m */; };
+		05F3F0F91B6BCF5C0068F341 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D81B6BCF5C0068F341 /* SQLite-Bridging.m */; };
+		05F3F0FA1B6BCF5C0068F341 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0D81B6BCF5C0068F341 /* SQLite-Bridging.m */; };
+		05F3F0FB1B6BCF5C0068F341 /* SQLite.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F0DA1B6BCF5C0068F341 /* SQLite.xcconfig */; };
+		05F3F0FC1B6BCF5C0068F341 /* SQLite.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F0DA1B6BCF5C0068F341 /* SQLite.xcconfig */; };
+		05F3F0FD1B6BCF5C0068F341 /* SQLite.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F0DA1B6BCF5C0068F341 /* SQLite.xcconfig */; };
+		05F3F0FE1B6BCF5C0068F341 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0DB1B6BCF5C0068F341 /* Statement.swift */; };
+		05F3F0FF1B6BCF5C0068F341 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0DB1B6BCF5C0068F341 /* Statement.swift */; };
+		05F3F1001B6BCF5C0068F341 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0DB1B6BCF5C0068F341 /* Statement.swift */; };
+		05F3F1011B6BCF5C0068F341 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0DC1B6BCF5C0068F341 /* Value.swift */; };
+		05F3F1021B6BCF5C0068F341 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0DC1B6BCF5C0068F341 /* Value.swift */; };
+		05F3F1031B6BCF5C0068F341 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F0DC1B6BCF5C0068F341 /* Value.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		05C592391B42905E008BBC21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05C5921B1B42905D008BBC21 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 05C592221B42905E008BBC21;
-			remoteInfo = KoreanToThaiDic;
-		};
 		05C592D61B42A02E008BBC21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05C592CE1B42A02D008BBC21 /* SQLite.xcodeproj */;
@@ -82,13 +194,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = DCC6B3921A9191D100734B78;
 			remoteInfo = "SQLiteCipher Tests";
-		};
-		05C592DE1B42A051008BBC21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05C592CE1B42A02D008BBC21 /* SQLite.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DC3773F219C8CBB3004FCF85;
-			remoteInfo = SQLite;
 		};
 		05EA7B991B43B8F900F2CE14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -120,20 +225,17 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		05C592E11B42A096008BBC21 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				05C592E31B42A0CD008BBC21 /* SQLite.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		052FFBDE1B6BC6A50076A0D2 /* KoreanToThaiDic1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanToThaiDic1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		052FFBDF1B6BC6A50076A0D2 /* KoreanToThaiDic1.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = KoreanToThaiDic1.plist; path = /Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic1.plist; sourceTree = "<absolute>"; };
+		052FFC0F1B6BC7320076A0D2 /* KoreanToThaiDic2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanToThaiDic2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		052FFC101B6BC7320076A0D2 /* KoreanToThaiDic2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = KoreanToThaiDic2.plist; path = /Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic2.plist; sourceTree = "<absolute>"; };
+		052FFC401B6BC7C70076A0D2 /* KoreanToThaiDic3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanToThaiDic3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		052FFC411B6BC7C80076A0D2 /* KoreanToThaiDic3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = KoreanToThaiDic3.plist; path = /Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic3.plist; sourceTree = "<absolute>"; };
+		052FFC421B6BC8B90076A0D2 /* LauchScreen1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LauchScreen1.xib; sourceTree = "<group>"; };
+		052FFC431B6BC8B90076A0D2 /* LauchScreen2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LauchScreen2.xib; sourceTree = "<group>"; };
+		052FFC441B6BC8B90076A0D2 /* LauchScreen3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LauchScreen3.xib; sourceTree = "<group>"; };
+		052FFC511B6BCA280076A0D2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = KorThaiDictionary_SEARCH_K.sqlite; sourceTree = "<group>"; };
 		05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_P.sqlite; sourceTree = "<group>"; };
 		05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_T.sqlite; sourceTree = "<group>"; };
@@ -149,7 +251,6 @@
 		05BFBB861B4746BB001DA053 /* ETCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETCCell.swift; sourceTree = "<group>"; };
 		05BFBB881B4746D5001DA053 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		05BFBB8A1B474ED5001DA053 /* AppIconBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIconBtnView.swift; sourceTree = "<group>"; };
-		05C592231B42905E008BBC21 /* KoreanToThaiDic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanToThaiDic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C592271B42905E008BBC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C592281B42905E008BBC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05C5922D1B42905E008BBC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -177,14 +278,47 @@
 		05EA7B881B43B8F900F2CE14 /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftHTTP.xcodeproj; sourceTree = "<group>"; };
 		05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		05EA7BA41B43BFC600F2CE14 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		05F3F0CD1B6BCF5C0068F341 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		05F3F0CE1B6BCF5C0068F341 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		05F3F0CF1B6BCF5C0068F341 /* FTS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS.swift; sourceTree = "<group>"; };
+		05F3F0D01B6BCF5C0068F341 /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		05F3F0D11B6BCF5C0068F341 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		05F3F0D21B6BCF5C0068F341 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F3F0D31B6BCF5C0068F341 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		05F3F0D41B6BCF5C0068F341 /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		05F3F0D51B6BCF5C0068F341 /* RTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTree.swift; sourceTree = "<group>"; };
+		05F3F0D61B6BCF5C0068F341 /* Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		05F3F0D71B6BCF5C0068F341 /* SQLite-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLite-Bridging.h"; sourceTree = "<group>"; };
+		05F3F0D81B6BCF5C0068F341 /* SQLite-Bridging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLite-Bridging.m"; sourceTree = "<group>"; };
+		05F3F0D91B6BCF5C0068F341 /* SQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
+		05F3F0DA1B6BCF5C0068F341 /* SQLite.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SQLite.xcconfig; sourceTree = "<group>"; };
+		05F3F0DB1B6BCF5C0068F341 /* Statement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		05F3F0DC1B6BCF5C0068F341 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		05F3F10C1B6BCFB60068F341 /* KoreanToThaiDic-bridge-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KoreanToThaiDic-bridge-header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		05C592201B42905E008BBC21 /* Frameworks */ = {
+		052FFBCB1B6BC6A50076A0D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05C592E01B42A064008BBC21 /* SQLite.framework in Frameworks */,
+				052FFC521B6BCA280076A0D2 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052FFBFC1B6BC7320076A0D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052FFC531B6BCA350076A0D2 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052FFC2D1B6BC7C70076A0D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052FFC541B6BCA3D0076A0D2 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,14 +369,19 @@
 				05C592251B42905E008BBC21 /* KoreanToThaiDic */,
 				05C5923B1B42905E008BBC21 /* KoreanToThaiDicTests */,
 				05C592241B42905E008BBC21 /* Products */,
+				052FFBDF1B6BC6A50076A0D2 /* KoreanToThaiDic1.plist */,
+				052FFC101B6BC7320076A0D2 /* KoreanToThaiDic2.plist */,
+				052FFC411B6BC7C80076A0D2 /* KoreanToThaiDic3.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		05C592241B42905E008BBC21 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				05C592231B42905E008BBC21 /* KoreanToThaiDic.app */,
 				05C592381B42905E008BBC21 /* KoreanToThaiDicTests.xctest */,
+				052FFBDE1B6BC6A50076A0D2 /* KoreanToThaiDic1.app */,
+				052FFC0F1B6BC7320076A0D2 /* KoreanToThaiDic2.app */,
+				052FFC401B6BC7C70076A0D2 /* KoreanToThaiDic3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,7 +407,12 @@
 		05C592261B42905E008BBC21 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				052FFC511B6BCA280076A0D2 /* libsqlite3.dylib */,
 				05C592271B42905E008BBC21 /* Info.plist */,
+				052FFC421B6BC8B90076A0D2 /* LauchScreen1.xib */,
+				052FFC431B6BC8B90076A0D2 /* LauchScreen2.xib */,
+				052FFC441B6BC8B90076A0D2 /* LauchScreen3.xib */,
+				05F3F10C1B6BCFB60068F341 /* KoreanToThaiDic-bridge-header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -317,6 +461,7 @@
 		05C592CD1B42A01F008BBC21 /* SQLite.swift-master */ = {
 			isa = PBXGroup;
 			children = (
+				05F3F0CC1B6BCF5C0068F341 /* SQLite */,
 				05C592CE1B42A02D008BBC21 /* SQLite.xcodeproj */,
 			);
 			name = "SQLite.swift-master";
@@ -373,26 +518,82 @@
 			path = 00AppInit;
 			sourceTree = "<group>";
 		};
+		05F3F0CC1B6BCF5C0068F341 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				05F3F0CD1B6BCF5C0068F341 /* Database.swift */,
+				05F3F0CE1B6BCF5C0068F341 /* Expression.swift */,
+				05F3F0CF1B6BCF5C0068F341 /* FTS.swift */,
+				05F3F0D01B6BCF5C0068F341 /* fts3_tokenizer.h */,
+				05F3F0D11B6BCF5C0068F341 /* Functions.swift */,
+				05F3F0D21B6BCF5C0068F341 /* Info.plist */,
+				05F3F0D31B6BCF5C0068F341 /* module.modulemap */,
+				05F3F0D41B6BCF5C0068F341 /* Query.swift */,
+				05F3F0D51B6BCF5C0068F341 /* RTree.swift */,
+				05F3F0D61B6BCF5C0068F341 /* Schema.swift */,
+				05F3F0D71B6BCF5C0068F341 /* SQLite-Bridging.h */,
+				05F3F0D81B6BCF5C0068F341 /* SQLite-Bridging.m */,
+				05F3F0D91B6BCF5C0068F341 /* SQLite.h */,
+				05F3F0DA1B6BCF5C0068F341 /* SQLite.xcconfig */,
+				05F3F0DB1B6BCF5C0068F341 /* Statement.swift */,
+				05F3F0DC1B6BCF5C0068F341 /* Value.swift */,
+			);
+			name = SQLite;
+			path = "SQLite.swift-master/SQLite";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		05C592221B42905E008BBC21 /* KoreanToThaiDic */ = {
+		052FFBAF1B6BC6A50076A0D2 /* KoreanToThaiDic1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05C592421B42905E008BBC21 /* Build configuration list for PBXNativeTarget "KoreanToThaiDic" */;
+			buildConfigurationList = 052FFBDB1B6BC6A50076A0D2 /* Build configuration list for PBXNativeTarget "KoreanToThaiDic1" */;
 			buildPhases = (
-				05C5921F1B42905E008BBC21 /* Sources */,
-				05C592201B42905E008BBC21 /* Frameworks */,
-				05C592211B42905E008BBC21 /* Resources */,
-				05C592E11B42A096008BBC21 /* CopyFiles */,
+				052FFBB21B6BC6A50076A0D2 /* Sources */,
+				052FFBCB1B6BC6A50076A0D2 /* Frameworks */,
+				052FFBCD1B6BC6A50076A0D2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				05C592DF1B42A051008BBC21 /* PBXTargetDependency */,
 			);
-			name = KoreanToThaiDic;
+			name = KoreanToThaiDic1;
 			productName = KoreanToThaiDic;
-			productReference = 05C592231B42905E008BBC21 /* KoreanToThaiDic.app */;
+			productReference = 052FFBDE1B6BC6A50076A0D2 /* KoreanToThaiDic1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		052FFBE01B6BC7320076A0D2 /* KoreanToThaiDic2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052FFC0C1B6BC7320076A0D2 /* Build configuration list for PBXNativeTarget "KoreanToThaiDic2" */;
+			buildPhases = (
+				052FFBE31B6BC7320076A0D2 /* Sources */,
+				052FFBFC1B6BC7320076A0D2 /* Frameworks */,
+				052FFBFE1B6BC7320076A0D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoreanToThaiDic2;
+			productName = KoreanToThaiDic;
+			productReference = 052FFC0F1B6BC7320076A0D2 /* KoreanToThaiDic2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		052FFC111B6BC7C70076A0D2 /* KoreanToThaiDic3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052FFC3D1B6BC7C70076A0D2 /* Build configuration list for PBXNativeTarget "KoreanToThaiDic3" */;
+			buildPhases = (
+				052FFC141B6BC7C70076A0D2 /* Sources */,
+				052FFC2D1B6BC7C70076A0D2 /* Frameworks */,
+				052FFC2F1B6BC7C70076A0D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoreanToThaiDic3;
+			productName = KoreanToThaiDic;
+			productReference = 052FFC401B6BC7C70076A0D2 /* KoreanToThaiDic3.app */;
 			productType = "com.apple.product-type.application";
 		};
 		05C592371B42905E008BBC21 /* KoreanToThaiDicTests */ = {
@@ -406,7 +607,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				05C5923A1B42905E008BBC21 /* PBXTargetDependency */,
 			);
 			name = KoreanToThaiDicTests;
 			productName = KoreanToThaiDicTests;
@@ -422,10 +622,6 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = smallhouse;
 				TargetAttributes = {
-					05C592221B42905E008BBC21 = {
-						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = Y3379EJVHL;
-					};
 					05C592371B42905E008BBC21 = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 05C592221B42905E008BBC21;
@@ -455,8 +651,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				05C592221B42905E008BBC21 /* KoreanToThaiDic */,
 				05C592371B42905E008BBC21 /* KoreanToThaiDicTests */,
+				052FFBAF1B6BC6A50076A0D2 /* KoreanToThaiDic1 */,
+				052FFBE01B6BC7320076A0D2 /* KoreanToThaiDic2 */,
+				052FFC111B6BC7C70076A0D2 /* KoreanToThaiDic3 */,
 			);
 		};
 /* End PBXProject section */
@@ -521,21 +719,72 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		05C592211B42905E008BBC21 /* Resources */ = {
+		052FFBCD1B6BC6A50076A0D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05300B261B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
-				05300B271B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */,
-				05EA7B8B1B43B8F900F2CE14 /* .gitignore in Resources */,
-				05EA7B941B43B8F900F2CE14 /* SwiftHTTP.podspec in Resources */,
-				05EA7B911B43B8F900F2CE14 /* Info.plist in Resources */,
-				05300B301B5053A900282820 /* LauchScreen.xib in Resources */,
-				05EA7B921B43B8F900F2CE14 /* LICENSE in Resources */,
-				05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */,
-				05C592301B42905E008BBC21 /* Images.xcassets in Resources */,
-				05300B281B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
-				0558FE101B5BBEDA0017B532 /* thaidic-publish in Resources */,
+				05F3F0FB1B6BCF5C0068F341 /* SQLite.xcconfig in Resources */,
+				052FFBCE1B6BC6A50076A0D2 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
+				052FFBCF1B6BC6A50076A0D2 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */,
+				052FFBD01B6BC6A50076A0D2 /* .gitignore in Resources */,
+				052FFBD11B6BC6A50076A0D2 /* SwiftHTTP.podspec in Resources */,
+				052FFBD21B6BC6A50076A0D2 /* Info.plist in Resources */,
+				052FFC4E1B6BC8B90076A0D2 /* LauchScreen3.xib in Resources */,
+				052FFBD31B6BC6A50076A0D2 /* LauchScreen.xib in Resources */,
+				052FFBD41B6BC6A50076A0D2 /* LICENSE in Resources */,
+				05F3F0E91B6BCF5C0068F341 /* Info.plist in Resources */,
+				052FFBD51B6BC6A50076A0D2 /* Main.storyboard in Resources */,
+				052FFBD61B6BC6A50076A0D2 /* Images.xcassets in Resources */,
+				052FFC4A1B6BC8B90076A0D2 /* LauchScreen2.xib in Resources */,
+				052FFBD71B6BC6A50076A0D2 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
+				052FFBD81B6BC6A50076A0D2 /* thaidic-publish in Resources */,
+				052FFC461B6BC8B90076A0D2 /* LauchScreen1.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052FFBFE1B6BC7320076A0D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F3F0FC1B6BCF5C0068F341 /* SQLite.xcconfig in Resources */,
+				052FFBFF1B6BC7320076A0D2 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
+				052FFC001B6BC7320076A0D2 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */,
+				052FFC011B6BC7320076A0D2 /* .gitignore in Resources */,
+				052FFC021B6BC7320076A0D2 /* SwiftHTTP.podspec in Resources */,
+				052FFC031B6BC7320076A0D2 /* Info.plist in Resources */,
+				052FFC4F1B6BC8B90076A0D2 /* LauchScreen3.xib in Resources */,
+				052FFC041B6BC7320076A0D2 /* LauchScreen.xib in Resources */,
+				052FFC051B6BC7320076A0D2 /* LICENSE in Resources */,
+				05F3F0EA1B6BCF5C0068F341 /* Info.plist in Resources */,
+				052FFC061B6BC7320076A0D2 /* Main.storyboard in Resources */,
+				052FFC071B6BC7320076A0D2 /* Images.xcassets in Resources */,
+				052FFC4B1B6BC8B90076A0D2 /* LauchScreen2.xib in Resources */,
+				052FFC081B6BC7320076A0D2 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
+				052FFC091B6BC7320076A0D2 /* thaidic-publish in Resources */,
+				052FFC471B6BC8B90076A0D2 /* LauchScreen1.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052FFC2F1B6BC7C70076A0D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F3F0FD1B6BCF5C0068F341 /* SQLite.xcconfig in Resources */,
+				052FFC301B6BC7C70076A0D2 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
+				052FFC311B6BC7C70076A0D2 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */,
+				052FFC321B6BC7C70076A0D2 /* .gitignore in Resources */,
+				052FFC331B6BC7C70076A0D2 /* SwiftHTTP.podspec in Resources */,
+				052FFC341B6BC7C70076A0D2 /* Info.plist in Resources */,
+				052FFC501B6BC8B90076A0D2 /* LauchScreen3.xib in Resources */,
+				052FFC351B6BC7C70076A0D2 /* LauchScreen.xib in Resources */,
+				052FFC361B6BC7C70076A0D2 /* LICENSE in Resources */,
+				05F3F0EB1B6BCF5C0068F341 /* Info.plist in Resources */,
+				052FFC371B6BC7C70076A0D2 /* Main.storyboard in Resources */,
+				052FFC381B6BC7C70076A0D2 /* Images.xcassets in Resources */,
+				052FFC4C1B6BC8B90076A0D2 /* LauchScreen2.xib in Resources */,
+				052FFC391B6BC7C70076A0D2 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
+				052FFC3A1B6BC7C70076A0D2 /* thaidic-publish in Resources */,
+				052FFC481B6BC8B90076A0D2 /* LauchScreen1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,34 +798,129 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		05C5921F1B42905E008BBC21 /* Sources */ = {
+		052FFBB21B6BC6A50076A0D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05EA7B8D1B43B8F900F2CE14 /* HTTPResponseSerializer.swift in Sources */,
-				0558FCD61B5BABC90017B532 /* ETCSupplementListVC.swift in Sources */,
-				05C592CB1B42944C008BBC21 /* DBManager.swift in Sources */,
-				05EA7B7A1B43B8DF00F2CE14 /* HWILib.swift in Sources */,
-				0558FD631B5BB2740017B532 /* SupplementDetailVC.swift in Sources */,
-				05EA7B8E1B43B8F900F2CE14 /* HTTPSecurity.swift in Sources */,
-				05BFBB891B4746D5001DA053 /* ItemCell.swift in Sources */,
-				05A2612F1B44446F0055D803 /* CustomTableView.swift in Sources */,
-				05C592291B42905E008BBC21 /* AppDelegate.swift in Sources */,
-				05EA7B931B43B8F900F2CE14 /* README.md in Sources */,
-				05EA7B8F1B43B8F900F2CE14 /* HTTPTask.swift in Sources */,
-				05EA7BA21B43BE7D00F2CE14 /* BaseVC.swift in Sources */,
-				0558FCD81B5BAEC40017B532 /* SupplementCell.swift in Sources */,
-				05EA7B8C1B43B8F900F2CE14 /* HTTPRequestSerializer.swift in Sources */,
-				05EA7B731B43B86700F2CE14 /* ConstValue.swift in Sources */,
-				05BFBB851B4740C5001DA053 /* ETCVC.swift in Sources */,
-				05EA7B901B43B8F900F2CE14 /* HTTPUpload.swift in Sources */,
-				05B775A11B4583DB004CFC45 /* DetailScrollView.swift in Sources */,
-				05EA7B7B1B43B8DF00F2CE14 /* InsetTextField.swift in Sources */,
-				05BFBB871B4746BB001DA053 /* ETCCell.swift in Sources */,
-				05BFBB8B1B474ED5001DA053 /* AppIconBtnView.swift in Sources */,
-				05EA7BA51B43BFC600F2CE14 /* MainVC.swift in Sources */,
-				05B775A31B4583EF004CFC45 /* BaseScrollView.swift in Sources */,
-				05DEA95B1B4535B5008E1459 /* CustomNaviC.swift in Sources */,
+				052FFBB31B6BC6A50076A0D2 /* HTTPResponseSerializer.swift in Sources */,
+				052FFBB41B6BC6A50076A0D2 /* ETCSupplementListVC.swift in Sources */,
+				05F3F1011B6BCF5C0068F341 /* Value.swift in Sources */,
+				052FFBB51B6BC6A50076A0D2 /* DBManager.swift in Sources */,
+				05F3F0E61B6BCF5C0068F341 /* Functions.swift in Sources */,
+				05F3F0DD1B6BCF5C0068F341 /* Database.swift in Sources */,
+				052FFBB61B6BC6A50076A0D2 /* HWILib.swift in Sources */,
+				052FFBB71B6BC6A50076A0D2 /* SupplementDetailVC.swift in Sources */,
+				052FFBB81B6BC6A50076A0D2 /* HTTPSecurity.swift in Sources */,
+				052FFBB91B6BC6A50076A0D2 /* ItemCell.swift in Sources */,
+				05F3F0EC1B6BCF5C0068F341 /* module.modulemap in Sources */,
+				05F3F0EF1B6BCF5C0068F341 /* Query.swift in Sources */,
+				05F3F0FE1B6BCF5C0068F341 /* Statement.swift in Sources */,
+				052FFBBA1B6BC6A50076A0D2 /* CustomTableView.swift in Sources */,
+				052FFBBB1B6BC6A50076A0D2 /* AppDelegate.swift in Sources */,
+				05F3F0E31B6BCF5C0068F341 /* FTS.swift in Sources */,
+				052FFBBC1B6BC6A50076A0D2 /* README.md in Sources */,
+				052FFBBD1B6BC6A50076A0D2 /* HTTPTask.swift in Sources */,
+				052FFBBE1B6BC6A50076A0D2 /* BaseVC.swift in Sources */,
+				05F3F0E01B6BCF5C0068F341 /* Expression.swift in Sources */,
+				052FFBBF1B6BC6A50076A0D2 /* SupplementCell.swift in Sources */,
+				052FFBC01B6BC6A50076A0D2 /* HTTPRequestSerializer.swift in Sources */,
+				05F3F0F81B6BCF5C0068F341 /* SQLite-Bridging.m in Sources */,
+				052FFBC11B6BC6A50076A0D2 /* ConstValue.swift in Sources */,
+				052FFBC21B6BC6A50076A0D2 /* ETCVC.swift in Sources */,
+				052FFBC31B6BC6A50076A0D2 /* HTTPUpload.swift in Sources */,
+				052FFBC41B6BC6A50076A0D2 /* DetailScrollView.swift in Sources */,
+				05F3F0F51B6BCF5C0068F341 /* Schema.swift in Sources */,
+				052FFBC51B6BC6A50076A0D2 /* InsetTextField.swift in Sources */,
+				052FFBC61B6BC6A50076A0D2 /* ETCCell.swift in Sources */,
+				052FFBC71B6BC6A50076A0D2 /* AppIconBtnView.swift in Sources */,
+				05F3F0F21B6BCF5C0068F341 /* RTree.swift in Sources */,
+				052FFBC81B6BC6A50076A0D2 /* MainVC.swift in Sources */,
+				052FFBC91B6BC6A50076A0D2 /* BaseScrollView.swift in Sources */,
+				052FFBCA1B6BC6A50076A0D2 /* CustomNaviC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052FFBE31B6BC7320076A0D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052FFBE41B6BC7320076A0D2 /* HTTPResponseSerializer.swift in Sources */,
+				052FFBE51B6BC7320076A0D2 /* ETCSupplementListVC.swift in Sources */,
+				05F3F1021B6BCF5C0068F341 /* Value.swift in Sources */,
+				052FFBE61B6BC7320076A0D2 /* DBManager.swift in Sources */,
+				05F3F0E71B6BCF5C0068F341 /* Functions.swift in Sources */,
+				05F3F0DE1B6BCF5C0068F341 /* Database.swift in Sources */,
+				052FFBE71B6BC7320076A0D2 /* HWILib.swift in Sources */,
+				052FFBE81B6BC7320076A0D2 /* SupplementDetailVC.swift in Sources */,
+				052FFBE91B6BC7320076A0D2 /* HTTPSecurity.swift in Sources */,
+				052FFBEA1B6BC7320076A0D2 /* ItemCell.swift in Sources */,
+				05F3F0ED1B6BCF5C0068F341 /* module.modulemap in Sources */,
+				05F3F0F01B6BCF5C0068F341 /* Query.swift in Sources */,
+				05F3F0FF1B6BCF5C0068F341 /* Statement.swift in Sources */,
+				052FFBEB1B6BC7320076A0D2 /* CustomTableView.swift in Sources */,
+				052FFBEC1B6BC7320076A0D2 /* AppDelegate.swift in Sources */,
+				05F3F0E41B6BCF5C0068F341 /* FTS.swift in Sources */,
+				052FFBED1B6BC7320076A0D2 /* README.md in Sources */,
+				052FFBEE1B6BC7320076A0D2 /* HTTPTask.swift in Sources */,
+				052FFBEF1B6BC7320076A0D2 /* BaseVC.swift in Sources */,
+				05F3F0E11B6BCF5C0068F341 /* Expression.swift in Sources */,
+				052FFBF01B6BC7320076A0D2 /* SupplementCell.swift in Sources */,
+				052FFBF11B6BC7320076A0D2 /* HTTPRequestSerializer.swift in Sources */,
+				05F3F0F91B6BCF5C0068F341 /* SQLite-Bridging.m in Sources */,
+				052FFBF21B6BC7320076A0D2 /* ConstValue.swift in Sources */,
+				052FFBF31B6BC7320076A0D2 /* ETCVC.swift in Sources */,
+				052FFBF41B6BC7320076A0D2 /* HTTPUpload.swift in Sources */,
+				052FFBF51B6BC7320076A0D2 /* DetailScrollView.swift in Sources */,
+				05F3F0F61B6BCF5C0068F341 /* Schema.swift in Sources */,
+				052FFBF61B6BC7320076A0D2 /* InsetTextField.swift in Sources */,
+				052FFBF71B6BC7320076A0D2 /* ETCCell.swift in Sources */,
+				052FFBF81B6BC7320076A0D2 /* AppIconBtnView.swift in Sources */,
+				05F3F0F31B6BCF5C0068F341 /* RTree.swift in Sources */,
+				052FFBF91B6BC7320076A0D2 /* MainVC.swift in Sources */,
+				052FFBFA1B6BC7320076A0D2 /* BaseScrollView.swift in Sources */,
+				052FFBFB1B6BC7320076A0D2 /* CustomNaviC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052FFC141B6BC7C70076A0D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052FFC151B6BC7C70076A0D2 /* HTTPResponseSerializer.swift in Sources */,
+				052FFC161B6BC7C70076A0D2 /* ETCSupplementListVC.swift in Sources */,
+				05F3F1031B6BCF5C0068F341 /* Value.swift in Sources */,
+				052FFC171B6BC7C70076A0D2 /* DBManager.swift in Sources */,
+				05F3F0E81B6BCF5C0068F341 /* Functions.swift in Sources */,
+				05F3F0DF1B6BCF5C0068F341 /* Database.swift in Sources */,
+				052FFC181B6BC7C70076A0D2 /* HWILib.swift in Sources */,
+				052FFC191B6BC7C70076A0D2 /* SupplementDetailVC.swift in Sources */,
+				052FFC1A1B6BC7C70076A0D2 /* HTTPSecurity.swift in Sources */,
+				052FFC1B1B6BC7C70076A0D2 /* ItemCell.swift in Sources */,
+				05F3F0EE1B6BCF5C0068F341 /* module.modulemap in Sources */,
+				05F3F0F11B6BCF5C0068F341 /* Query.swift in Sources */,
+				05F3F1001B6BCF5C0068F341 /* Statement.swift in Sources */,
+				052FFC1C1B6BC7C70076A0D2 /* CustomTableView.swift in Sources */,
+				052FFC1D1B6BC7C70076A0D2 /* AppDelegate.swift in Sources */,
+				05F3F0E51B6BCF5C0068F341 /* FTS.swift in Sources */,
+				052FFC1E1B6BC7C70076A0D2 /* README.md in Sources */,
+				052FFC1F1B6BC7C70076A0D2 /* HTTPTask.swift in Sources */,
+				052FFC201B6BC7C70076A0D2 /* BaseVC.swift in Sources */,
+				05F3F0E21B6BCF5C0068F341 /* Expression.swift in Sources */,
+				052FFC211B6BC7C70076A0D2 /* SupplementCell.swift in Sources */,
+				052FFC221B6BC7C70076A0D2 /* HTTPRequestSerializer.swift in Sources */,
+				05F3F0FA1B6BCF5C0068F341 /* SQLite-Bridging.m in Sources */,
+				052FFC231B6BC7C70076A0D2 /* ConstValue.swift in Sources */,
+				052FFC241B6BC7C70076A0D2 /* ETCVC.swift in Sources */,
+				052FFC251B6BC7C70076A0D2 /* HTTPUpload.swift in Sources */,
+				052FFC261B6BC7C70076A0D2 /* DetailScrollView.swift in Sources */,
+				05F3F0F71B6BCF5C0068F341 /* Schema.swift in Sources */,
+				052FFC271B6BC7C70076A0D2 /* InsetTextField.swift in Sources */,
+				052FFC281B6BC7C70076A0D2 /* ETCCell.swift in Sources */,
+				052FFC291B6BC7C70076A0D2 /* AppIconBtnView.swift in Sources */,
+				05F3F0F41B6BCF5C0068F341 /* RTree.swift in Sources */,
+				052FFC2A1B6BC7C70076A0D2 /* MainVC.swift in Sources */,
+				052FFC2B1B6BC7C70076A0D2 /* BaseScrollView.swift in Sources */,
+				052FFC2C1B6BC7C70076A0D2 /* CustomNaviC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,19 +934,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		05C5923A1B42905E008BBC21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 05C592221B42905E008BBC21 /* KoreanToThaiDic */;
-			targetProxy = 05C592391B42905E008BBC21 /* PBXContainerItemProxy */;
-		};
-		05C592DF1B42A051008BBC21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLite;
-			targetProxy = 05C592DE1B42A051008BBC21 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		05C5922C1B42905E008BBC21 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -615,6 +946,96 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		052FFBDC1B6BC6A50076A0D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic1.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = KoreanToThaiDic1;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic/KoreanToThaiDic-bridge-header.h";
+			};
+			name = Debug;
+		};
+		052FFBDD1B6BC6A50076A0D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic1.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = KoreanToThaiDic1;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic/KoreanToThaiDic-bridge-header.h";
+			};
+			name = Release;
+		};
+		052FFC0D1B6BC7320076A0D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic2.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = KoreanToThaiDic2;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic/KoreanToThaiDic-bridge-header.h";
+			};
+			name = Debug;
+		};
+		052FFC0E1B6BC7320076A0D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic2.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = KoreanToThaiDic2;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic/KoreanToThaiDic-bridge-header.h";
+			};
+			name = Release;
+		};
+		052FFC3E1B6BC7C70076A0D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic3.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = KoreanToThaiDic3;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic/KoreanToThaiDic-bridge-header.h";
+			};
+			name = Debug;
+		};
+		052FFC3F1B6BC7C70076A0D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic3.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = KoreanToThaiDic3;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic/KoreanToThaiDic-bridge-header.h";
+			};
+			name = Release;
+		};
 		05C592401B42905E008BBC21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -700,34 +1121,6 @@
 			};
 			name = Release;
 		};
-		05C592431B42905E008BBC21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = KoreanToThaiDic/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-			};
-			name = Debug;
-		};
-		05C592441B42905E008BBC21 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				INFOPLIST_FILE = KoreanToThaiDic/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
 		05C592461B42905E008BBC21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -765,20 +1158,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		052FFBDB1B6BC6A50076A0D2 /* Build configuration list for PBXNativeTarget "KoreanToThaiDic1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052FFBDC1B6BC6A50076A0D2 /* Debug */,
+				052FFBDD1B6BC6A50076A0D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052FFC0C1B6BC7320076A0D2 /* Build configuration list for PBXNativeTarget "KoreanToThaiDic2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052FFC0D1B6BC7320076A0D2 /* Debug */,
+				052FFC0E1B6BC7320076A0D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052FFC3D1B6BC7C70076A0D2 /* Build configuration list for PBXNativeTarget "KoreanToThaiDic3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052FFC3E1B6BC7C70076A0D2 /* Debug */,
+				052FFC3F1B6BC7C70076A0D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		05C5921E1B42905D008BBC21 /* Build configuration list for PBXProject "KoreanToThaiDic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05C592401B42905E008BBC21 /* Debug */,
 				05C592411B42905E008BBC21 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		05C592421B42905E008BBC21 /* Build configuration list for PBXNativeTarget "KoreanToThaiDic" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				05C592431B42905E008BBC21 /* Debug */,
-				05C592441B42905E008BBC21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
