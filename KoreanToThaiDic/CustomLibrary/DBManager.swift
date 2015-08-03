@@ -127,6 +127,8 @@ class DBManager
         //________________________________________________________________________________________________
         // 속도 테스트 001 : DB 에서 검색 및 콜백 해줌   ---> 만약 메모리가 딸릴 경우 이거로 해야한다.
         
+        println("전달받은 word : \(word)")
+        
         var backgroundQueue : dispatch_queue_t?
         
         if HWILib.getCurrentOSVersion() < 8
@@ -201,10 +203,14 @@ class DBManager
                 }
                 
             }
+            // 일반적인 경우 -> 뒷부분 Like 검색
             else
             {
+
                 if HWILib.getCurrentOSVersion() < 8
                 {
+
+                    var isFirst = false
                     for oneItem in self.allItemArray
                     {
                         
@@ -220,16 +226,18 @@ class DBManager
                         default:
                             break
                         }
-                        
+
                         if searchedCategoryText.hasPrefix(word)
+
                         {
                             self.searchedItemArrayTemp.append(oneItem)
                         }
                     }
+                    
                 }
                 else
                 {
-                    // 일반적인 경우 -> 뒷부분 Like 검색
+                 
                     for oneItem in self.dic.filter(like( "\(word)%", searchedColumn) )
                     {
                         var oneCellItem = DicModel()
@@ -238,8 +246,6 @@ class DBManager
                     }
                 }
             }
-            
-            
             
             
             self.searchedItemArray = self.searchedItemArrayTemp

@@ -35,7 +35,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
     
     
     var isSetOriginPositionXSearchBarIcon = false
-    
+
     
     // 뷰 로드
     override func viewDidLoad()
@@ -81,25 +81,60 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
     /// 사용자가 키워드를 검색창에 입력시
     @IBAction func onWriting(sender: UITextField)
     {
-        println("onWriting")
+
         setSearchMode()
         hideSearchBarPlaceHolder()
         
-        println("사용자 입력값 : \(sender.text)")
+        println("텍스트필드에서 사용자 입력값 : \(sender.text)")
+
+        // iOS 7 버전에서는 onWriting 이 메소드가 비정상적으로 2번 호출된다.
+        // '가능성' 이라고 텍스트를 적을 경우 '가능' , '가능성' 두개가 동시에 호출되어 문제가 발생한다.
+        // 이에 0.1초 딜레이를 둔 후에 다시 텍스트를 검색해서 해당 텍스트와 마지막에 적은 텍스트가 일치할 경우에 검색을 시행한다.
+        if HWILib.getCurrentOSVersion() < 8
+        {
+            var currentText = sender.text
+            
+            HWILib.delay(0.1, closure: { () -> () in
+                
+                if currentText == sender.text
+                {
+                    DBManager.getListFromWord(sender.text, callback: { () -> () in
+                        
+                        if sender.text == ""
+                        {
+                            self.emptyContentView.hidden = false
+                        }
+                        else
+                        {
+                            self.emptyContentView.hidden = true
+                        }
+                        self.tableViewInMain.reloadData()
+                        
+                    })
+
+                }
+            })
         
-        DBManager.getListFromWord(sender.text, callback: { () -> () in
-            
-            if sender.text == ""
-            {
-                self.emptyContentView.hidden = false
-            }
-            else
-            {
-                self.emptyContentView.hidden = true
-            }
-            self.tableViewInMain.reloadData()
-            
-        })
+        }
+        else
+        {
+            DBManager.getListFromWord(sender.text, callback: { () -> () in
+                
+                if sender.text == ""
+                {
+                    self.emptyContentView.hidden = false
+                }
+                else
+                {
+                    self.emptyContentView.hidden = true
+                }
+                self.tableViewInMain.reloadData()
+                
+            })
+        }
+        
+        
+        
     }
     
     @IBAction func didEndWriting(sender: UITextField)

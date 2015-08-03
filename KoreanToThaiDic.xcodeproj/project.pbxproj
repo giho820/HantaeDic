@@ -49,6 +49,9 @@
 		050F0CB21B6F651900CF8BB8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 050F0CB11B6F651900CF8BB8 /* libsqlite3.dylib */; };
 		050F0CB31B6F652100CF8BB8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 050F0CB11B6F651900CF8BB8 /* libsqlite3.dylib */; };
 		050F0CB41B6F652800CF8BB8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 050F0CB11B6F651900CF8BB8 /* libsqlite3.dylib */; };
+		050F0CB61B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */; };
+		050F0CB71B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */; };
+		050F0CB81B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */; };
 		05300B261B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */; };
 		05300B271B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
 		05300B281B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */; };
@@ -220,6 +223,7 @@
 		050F0C881B6F64E800CF8BB8 /* Statement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
 		050F0C891B6F64E800CF8BB8 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
 		050F0CB11B6F651900CF8BB8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = KorThaiDictionary_SEARCH_K.sqlite; sourceTree = "<group>"; };
 		05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_P.sqlite; sourceTree = "<group>"; };
 		05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_T.sqlite; sourceTree = "<group>"; };
@@ -363,7 +367,6 @@
 		05C5921A1B42905D008BBC21 = {
 			isa = PBXGroup;
 			children = (
-				050F0CB11B6F651900CF8BB8 /* libsqlite3.dylib */,
 				05C592251B42905E008BBC21 /* KoreanToThaiDic */,
 				05C5923B1B42905E008BBC21 /* KoreanToThaiDicTests */,
 				05C592241B42905E008BBC21 /* Products */,
@@ -384,6 +387,7 @@
 		05C592251B42905E008BBC21 /* KoreanToThaiDic */ = {
 			isa = PBXGroup;
 			children = (
+				050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */,
 				0558FDF61B5BBC310017B532 /* HTMLWebFiles */,
 				05300B221B5042B200282820 /* DBFile */,
 				05EA7BA31B43BFAC00F2CE14 /* 00AppInit */,
@@ -408,6 +412,7 @@
 				055552811B6BE01100B4777F /* KoreanToThaiDic2.plist */,
 				055552B41B6BE06C00B4777F /* KoreanToThaiDic3.plist */,
 				05C592271B42905E008BBC21 /* KoreanToThaiDic1.plist */,
+				050F0CB11B6F651900CF8BB8 /* libsqlite3.dylib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -674,6 +679,7 @@
 				055552761B6BE01100B4777F /* Images.xcassets in Resources */,
 				055552771B6BE01100B4777F /* LauchScreen2.xib in Resources */,
 				055552781B6BE01100B4777F /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
+				050F0CB71B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */,
 				055552791B6BE01100B4777F /* thaidic-publish in Resources */,
 				0555527A1B6BE01100B4777F /* LauchScreen1.xib in Resources */,
 			);
@@ -696,6 +702,7 @@
 				055552A91B6BE06C00B4777F /* Images.xcassets in Resources */,
 				055552AA1B6BE06C00B4777F /* LauchScreen2.xib in Resources */,
 				055552AB1B6BE06C00B4777F /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
+				050F0CB81B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */,
 				055552AC1B6BE06C00B4777F /* thaidic-publish in Resources */,
 				055552AD1B6BE06C00B4777F /* LauchScreen1.xib in Resources */,
 			);
@@ -718,6 +725,7 @@
 				05C592301B42905E008BBC21 /* Images.xcassets in Resources */,
 				0555524D1B6BDFB700B4777F /* LauchScreen2.xib in Resources */,
 				05300B281B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
+				050F0CB61B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */,
 				0558FE101B5BBEDA0017B532 /* thaidic-publish in Resources */,
 				0555524C1B6BDFB700B4777F /* LauchScreen1.xib in Resources */,
 			);
@@ -896,7 +904,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic2.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = KoreanToThaiDic2;
 				PROVISIONING_PROFILE = "";
@@ -911,7 +919,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic2.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = KoreanToThaiDic2;
 				PROVISIONING_PROFILE = "";
@@ -926,7 +934,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic3.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = KoreanToThaiDic3;
 				PROVISIONING_PROFILE = "";
@@ -942,7 +950,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic3.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = KoreanToThaiDic3;
 				PROVISIONING_PROFILE = "";
