@@ -156,6 +156,9 @@ class HWILib
         sentenceLabel.attributedText = attributedString
     }
     
-
+    class func getCurrentOSVersion() -> Double
+    {
+        return (UIDevice.currentDevice().systemVersion as NSString).doubleValue
+    }
     
 }
