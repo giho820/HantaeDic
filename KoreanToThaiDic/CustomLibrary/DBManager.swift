@@ -48,7 +48,7 @@ class DBManager
     
     
     
-    class func initDB( callback : ()->())
+    class func initDB()
     {
         switch ConstValue.dic_mode
         {
@@ -68,51 +68,6 @@ class DBManager
             break
         }
         
-        
-        
-        if HWILib.getCurrentOSVersion() < 8
-        {
-            let qualityOfServiceClass = DISPATCH_QUEUE_PRIORITY_BACKGROUND
-            let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
-            
-            dispatch_async(backgroundQueue, {
-                println("This is run on the background queue")
-                
-                self.allItemArray.removeAll(keepCapacity: false)
-                
-                var searchedColumn = self.SEARCH_KOREAN
-                
-                switch ConstValue.dic_mode
-                {
-                case 1:
-                    searchedColumn = self.SEARCH_KOREAN
-                case 2:
-                    searchedColumn = self.SEARCH_PRONUNCIATION
-                case 3:
-                    searchedColumn = self.THAI
-                default:
-                    break
-                }
-                
-                
-                for oneItem in self.dic
-                {
-                    var oneCellItem = DicModel()
-                    self.setItemToObject(oneCellItem, oneItem: oneItem)
-                    self.allItemArray.append(oneCellItem)
-                }
-                
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    println("This is run on the main queue, after the previous code in outer block")
-                    callback()
-                })
-
-        })
-        }
-        else
-        {
-            callback()
-        }
         
     }
     
@@ -167,83 +122,22 @@ class DBManager
             if count(word) > 1 && word.substringToIndex(advance(word.startIndex,1)) == "*"
             {
                 let searchWord  = dropFirst(word)
-                
-                if HWILib.getCurrentOSVersion() < 8
+                             for oneItem in self.dic.filter(like("%\(searchWord)%", searchedColumn))
                 {
-                    for oneItem in self.allItemArray
-                    {
-
-                        var searchedCategoryText : NSString = ""
-                        switch ConstValue.dic_mode
-                        {
-                        case 1:
-                            searchedCategoryText = oneItem.SEARCH_KOREAN
-                        case 2:
-                            searchedCategoryText = oneItem.SEARCH_PRONUNCIATION
-                        case 3:
-                            searchedCategoryText = oneItem.THAI
-                        default:
-                            break
-                        }
-                        
-                        if searchedCategoryText.rangeOfString(searchWord).location != NSNotFound
-                        {
-                            self.searchedItemArrayTemp.append(oneItem)
-                        }
-                    }
-                }
-                else
-                {
-                    for oneItem in self.dic.filter(like("%\(searchWord)%", searchedColumn))
-                    {
-                        var oneCellItem = DicModel()
-                        self.setItemToObject(oneCellItem, oneItem: oneItem)
-                        self.searchedItemArrayTemp.append(oneCellItem)
-                    }
+                    var oneCellItem = DicModel()
+                    self.setItemToObject(oneCellItem, oneItem: oneItem)
+                    self.searchedItemArrayTemp.append(oneCellItem)
                 }
                 
             }
             // 일반적인 경우 -> 뒷부분 Like 검색
             else
             {
-
-                if HWILib.getCurrentOSVersion() < 8
+                for oneItem in self.dic.filter(like( "\(word)%", searchedColumn) )
                 {
-
-                    var isFirst = false
-                    for oneItem in self.allItemArray
-                    {
-                        
-                        var searchedCategoryText : NSString = ""
-                        switch ConstValue.dic_mode
-                        {
-                        case 1:
-                            searchedCategoryText = oneItem.SEARCH_KOREAN
-                        case 2:
-                            searchedCategoryText = oneItem.SEARCH_PRONUNCIATION
-                        case 3:
-                            searchedCategoryText = oneItem.THAI
-                        default:
-                            break
-                        }
-
-                        if searchedCategoryText.hasPrefix(word)
-
-                        {
-                            self.searchedItemArrayTemp.append(oneItem)
-                        }
-                    }
-                    
-                }
-                else
-                {
-                 
-                    for oneItem in self.dic.filter(like( "\(word)%", searchedColumn) )
-                    {
-                        var oneCellItem = DicModel()
-                        self.setItemToObject(oneCellItem, oneItem: oneItem)
-                        self.searchedItemArrayTemp.append(oneCellItem)
-                    }
+                    var oneCellItem = DicModel()
+                    self.setItemToObject(oneCellItem, oneItem: oneItem)
+                    self.searchedItemArrayTemp.append(oneCellItem)
                 }
             }
             

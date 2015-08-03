@@ -55,12 +55,6 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         // 앱 실행된 후 디테일 뷰(커스텀 뷰) 초기화
         HWILib.delay(0.1, closure: { () -> () in
             
-            HWILib.showActivityIndicator(self)
-            
-            DBManager.initDB({ () -> () in
-                
-                HWILib.hideActivityIndicator()
-            })
             self.detailScrollView.onViewDidLoad()
         })
 
