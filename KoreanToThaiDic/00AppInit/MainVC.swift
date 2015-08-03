@@ -338,6 +338,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
             break
         }
         
+
         self.labelInSearchTextField.textColor = ConstValue.color06_text_gray2
         self.cancelBtnInSearchBar.titleLabel?.font = UIFont.boldSystemFontOfSize(16)
         self.cancelBtnInSearchBar.setTitleColor(ConstValue.color01_white, forState: UIControlState.Normal)

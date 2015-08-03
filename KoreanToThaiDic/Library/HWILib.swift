@@ -158,7 +158,38 @@ class HWILib
     
     class func getCurrentOSVersion() -> Double
     {
+        
+        
         return (UIDevice.currentDevice().systemVersion as NSString).doubleValue
+    }
+    
+    
+    
+    class func workBackgroundAndMainThread(workInThread : (anyObjectToParam : AnyObject) -> AnyObject , workInMainThread : (anyObjectFromBackground : AnyObject) -> AnyObject)
+    {
+        var backgroundQueue : dispatch_queue_t?
+        
+        if HWILib.getCurrentOSVersion() < 8
+        {
+            let qualityOfServiceClass = DISPATCH_QUEUE_PRIORITY_BACKGROUND
+            backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
+        }
+        else
+        {
+            let qualityOfServiceClass = QOS_CLASS_BACKGROUND
+            backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
+        }
+        
+        dispatch_async(backgroundQueue!, {
+
+            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                
+                
+            })
+            
+            
+        })
     }
     
 }
