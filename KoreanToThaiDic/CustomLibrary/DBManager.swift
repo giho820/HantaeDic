@@ -24,7 +24,7 @@ class DBManager
     static var THAI = Expression<String>("THAI")
     static var PRONUNCIATION = Expression<String>("PRONUNCIATION")
     static var SEARCH_KOREAN = Expression<String>("SEARCH_KOREAN")
-    static var SEARCH_PRONUNCIATION = Expression<String>("SEARCH_PRONUNCIATION")
+//    static var SEARCH_PRONUNCIATION = Expression<String>("SEARCH_PRONUNCIATION")
     
     
     
@@ -42,7 +42,7 @@ class DBManager
         var THAI : String = ""
         var PRONUNCIATION : String = ""
         var SEARCH_KOREAN : String = ""
-        var SEARCH_PRONUNCIATION : String = ""
+//        var SEARCH_PRONUNCIATION : String = ""
         
     }
     
@@ -110,7 +110,7 @@ class DBManager
             case 1:
                 searchedColumn = self.SEARCH_KOREAN
             case 2:
-                searchedColumn = self.SEARCH_PRONUNCIATION
+                searchedColumn = self.PRONUNCIATION
             case 3:
                 searchedColumn = self.THAI
             default:
@@ -175,7 +175,8 @@ class DBManager
         case 1:
             oneModel.SEARCH_KOREAN = oneItem[self.SEARCH_KOREAN]
         case 2:
-            oneModel.SEARCH_PRONUNCIATION = oneItem[self.SEARCH_PRONUNCIATION]
+//            oneModel.SEARCH_PRONUNCIATION = oneItem[self.SEARCH_PRONUNCIATION]
+            oneModel.PRONUNCIATION = oneItem[self.PRONUNCIATION]
         case 3:
             oneModel.SEARCH_KOREAN = oneItem[self.THAI]
         default:
