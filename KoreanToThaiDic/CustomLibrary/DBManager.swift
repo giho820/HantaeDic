@@ -24,7 +24,7 @@ class DBManager
     static var THAI = Expression<String>("THAI")
     static var PRONUNCIATION = Expression<String>("PRONUNCIATION")
     static var SEARCH_KOREAN = Expression<String>("SEARCH_KOREAN")
-//    static var SEARCH_PRONUNCIATION = Expression<String>("SEARCH_PRONUNCIATION")
+
     
     
     
@@ -42,7 +42,6 @@ class DBManager
         var THAI : String = ""
         var PRONUNCIATION : String = ""
         var SEARCH_KOREAN : String = ""
-//        var SEARCH_PRONUNCIATION : String = ""
         
     }
     
@@ -121,6 +120,11 @@ class DBManager
             // 검색 단어의 시작이 * 일 경우 와일드 카드 검색
             if count(word) > 1 && word.substringToIndex(advance(word.startIndex,1)) == "*"
             {
+                if ConstValue.dic_mode == 1
+                {
+                    searchedColumn = self.KOREAN
+                }
+                
                 let searchWord  = dropFirst(word)
                              for oneItem in self.dic.filter(like("%\(searchWord)%", searchedColumn))
                 {
@@ -175,7 +179,6 @@ class DBManager
         case 1:
             oneModel.SEARCH_KOREAN = oneItem[self.SEARCH_KOREAN]
         case 2:
-//            oneModel.SEARCH_PRONUNCIATION = oneItem[self.SEARCH_PRONUNCIATION]
             oneModel.PRONUNCIATION = oneItem[self.PRONUNCIATION]
         case 3:
             oneModel.SEARCH_KOREAN = oneItem[self.THAI]

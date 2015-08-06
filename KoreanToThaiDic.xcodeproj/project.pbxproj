@@ -53,8 +53,6 @@
 		050F0CB71B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */; };
 		050F0CB81B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */; };
 		05300B261B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */; };
-		05300B271B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
-		05300B281B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */; };
 		0555524C1B6BDFB700B4777F /* LauchScreen1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 055552491B6BDFB700B4777F /* LauchScreen1.xib */; };
 		0555524D1B6BDFB700B4777F /* LauchScreen2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0555524A1B6BDFB700B4777F /* LauchScreen2.xib */; };
 		0555524E1B6BDFB700B4777F /* LauchScreen3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0555524B1B6BDFB700B4777F /* LauchScreen3.xib */; };
@@ -82,7 +80,6 @@
 		055552681B6BE01100B4777F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA41B43BFC600F2CE14 /* MainVC.swift */; };
 		055552691B6BE01100B4777F /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
 		0555526A1B6BE01100B4777F /* CustomNaviC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */; };
-		0555526E1B6BE01100B4777F /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */; };
 		0555526F1B6BE01100B4777F /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
 		055552701B6BE01100B4777F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B7D1B43B8F900F2CE14 /* .gitignore */; };
 		055552711B6BE01100B4777F /* SwiftHTTP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */; };
@@ -92,7 +89,6 @@
 		055552751B6BE01100B4777F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
 		055552761B6BE01100B4777F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
 		055552771B6BE01100B4777F /* LauchScreen2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0555524A1B6BDFB700B4777F /* LauchScreen2.xib */; };
-		055552781B6BE01100B4777F /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */; };
 		055552791B6BE01100B4777F /* thaidic-publish in Resources */ = {isa = PBXBuildFile; fileRef = 0558FE0F1B5BBEDA0017B532 /* thaidic-publish */; };
 		0555527A1B6BE01100B4777F /* LauchScreen1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 055552491B6BDFB700B4777F /* LauchScreen1.xib */; };
 		055552861B6BE06C00B4777F /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7B7F1B43B8F900F2CE14 /* HTTPResponseSerializer.swift */; };
@@ -119,8 +115,6 @@
 		0555529B1B6BE06C00B4777F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA41B43BFC600F2CE14 /* MainVC.swift */; };
 		0555529C1B6BE06C00B4777F /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
 		0555529D1B6BE06C00B4777F /* CustomNaviC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */; };
-		055552A11B6BE06C00B4777F /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */; };
-		055552A21B6BE06C00B4777F /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
 		055552A31B6BE06C00B4777F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B7D1B43B8F900F2CE14 /* .gitignore */; };
 		055552A41B6BE06C00B4777F /* SwiftHTTP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */; };
 		055552A51B6BE06C00B4777F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B831B43B8F900F2CE14 /* Info.plist */; };
@@ -666,7 +660,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0555526E1B6BE01100B4777F /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
 				0555526F1B6BE01100B4777F /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */,
 				050F0CA91B6F64E800CF8BB8 /* SQLite.xcconfig in Resources */,
 				055552701B6BE01100B4777F /* .gitignore in Resources */,
@@ -678,7 +671,6 @@
 				055552751B6BE01100B4777F /* Main.storyboard in Resources */,
 				055552761B6BE01100B4777F /* Images.xcassets in Resources */,
 				055552771B6BE01100B4777F /* LauchScreen2.xib in Resources */,
-				055552781B6BE01100B4777F /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
 				050F0CB71B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */,
 				055552791B6BE01100B4777F /* thaidic-publish in Resources */,
 				0555527A1B6BE01100B4777F /* LauchScreen1.xib in Resources */,
@@ -689,8 +681,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				055552A11B6BE06C00B4777F /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
-				055552A21B6BE06C00B4777F /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */,
 				050F0CAA1B6F64E800CF8BB8 /* SQLite.xcconfig in Resources */,
 				055552A31B6BE06C00B4777F /* .gitignore in Resources */,
 				055552A41B6BE06C00B4777F /* SwiftHTTP.podspec in Resources */,
@@ -713,7 +703,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05300B261B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
-				05300B271B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */,
 				050F0CA81B6F64E800CF8BB8 /* SQLite.xcconfig in Resources */,
 				05EA7B8B1B43B8F900F2CE14 /* .gitignore in Resources */,
 				05EA7B941B43B8F900F2CE14 /* SwiftHTTP.podspec in Resources */,
@@ -724,7 +713,6 @@
 				05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */,
 				05C592301B42905E008BBC21 /* Images.xcassets in Resources */,
 				0555524D1B6BDFB700B4777F /* LauchScreen2.xib in Resources */,
-				05300B281B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
 				050F0CB61B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */,
 				0558FE101B5BBEDA0017B532 /* thaidic-publish in Resources */,
 				0555524C1B6BDFB700B4777F /* LauchScreen1.xib in Resources */,

@@ -53,7 +53,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         
 
         // 앱 실행된 후 디테일 뷰(커스텀 뷰) 초기화
-        HWILib.delay(0.1, closure: { () -> () in
+        HWILib.delay(0.2, closure: { () -> () in
             
             self.detailScrollView.onViewDidLoad()
         })
@@ -97,7 +97,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
             if HWILib.getCurrentOSVersion() < 8
             {
                 var currentText = sender.text
-                HWILib.delay(0.1, closure: { () -> () in
+                HWILib.delay(0.3, closure: { () -> () in
                     
                     if currentText == sender.text
                     {
