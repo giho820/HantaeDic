@@ -14,7 +14,7 @@ class HWILib
 {
     static var activityIndicator : UIView?
 
-    
+    // 텍스트의 빈값 검사
     class func isValidParam(inputString : String) -> (Bool)
     {
         let trimString = inputString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
@@ -27,6 +27,8 @@ class HWILib
         return true
     }
     
+    
+    // 해당 초만큼 딜레이를 준 후에 메인큐에서 실행
     class func delay(delay:Double, closure:()->()) {
         dispatch_after(
             dispatch_time(
