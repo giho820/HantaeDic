@@ -118,6 +118,9 @@ class DetailScrollView: BaseScrollView
             }
             
         }
+        self.containerView.frame = CGRectMake(0, 0, self.frame.size.width, lastValueOfY+20)
+        self.contentSize = self.containerView.frame.size
+        
 
     }
 
