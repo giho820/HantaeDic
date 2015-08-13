@@ -97,7 +97,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
             if HWILib.getCurrentOSVersion() < 8
             {
                 var currentText = sender.text
-                HWILib.delay(0.5, closure: { () -> () in
+                HWILib.delay(1, closure: { () -> () in
                     
                     if currentText == sender.text
                     {

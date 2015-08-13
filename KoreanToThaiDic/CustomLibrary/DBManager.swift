@@ -12,12 +12,13 @@ import UIKit
 
 class DBManager
 {
-    static var dbFilePath = NSBundle.mainBundle().pathForResource("KorThaiDictionary_SEARCH_K", ofType: "sqlite")!
+    static var dbFilePath : String?
+
     
-    
-    static var db = Database(dbFilePath)
-    static var dic = db["KOR_THAI_DICTIONARY"]
-    
+    static var db : Database?
+
+    static var dic : Query?
+
     
     static var IDX = Expression<Int64>("IDX")
     static var KOREAN = Expression<String>("KOREAN")
@@ -53,16 +54,17 @@ class DBManager
         {
         case 1:
             dbFilePath = NSBundle.mainBundle().pathForResource("KorThaiDictionary_SEARCH_K", ofType: "sqlite")!
-            db = Database(dbFilePath)
-            dic = db["KOR_THAI_DICTIONARY"]
+            db = Database(dbFilePath!)
+            
+            dic = db!["KOR_THAI_DICTIONARY"]
         case 2:
             dbFilePath = NSBundle.mainBundle().pathForResource("ThaiKorDictionary_SEARCH_P", ofType: "sqlite")!
-            db = Database(dbFilePath)
-            dic = db["THAI_KOR_DICTIONARY"]
+            db = Database(dbFilePath!)
+            dic = db!["THAI_KOR_DICTIONARY"]
         case 3:
             dbFilePath = NSBundle.mainBundle().pathForResource("ThaiKorDictionary_SEARCH_T", ofType: "sqlite")!
-            db = Database(dbFilePath)
-            dic = db["THAI_KOR_DICTIONARY"]
+            db = Database(dbFilePath!)
+            dic = db!["THAI_KOR_DICTIONARY"]
         default:
             break
         }
@@ -128,7 +130,7 @@ class DBManager
                 }
                 
                 let searchWord  = dropFirst(word)
-                             for oneItem in self.dic.filter(like("%\(searchWord)%", searchedColumn))
+                             for oneItem in self.dic!.filter(like("%\(searchWord)%", searchedColumn))
                 {
                     var oneCellItem = DicModel()
                     self.setItemToObject(oneCellItem, oneItem: oneItem)
@@ -147,7 +149,7 @@ class DBManager
                     searchWord = (word as NSString).stringByReplacingOccurrencesOfString(" ", withString: "")
                 }
                 
-                for oneItem in self.dic.filter(like( "\(searchWord)%", searchedColumn) )
+                for oneItem in self.dic!.filter(like( "\(searchWord)%", searchedColumn) )
                 {
                     var oneCellItem = DicModel()
                     self.setItemToObject(oneCellItem, oneItem: oneItem)
