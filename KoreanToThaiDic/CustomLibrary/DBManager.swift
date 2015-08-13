@@ -116,10 +116,12 @@ class DBManager
                 break
             }
             
+
             
             // 검색 단어의 시작이 * 일 경우 와일드 카드 검색
             if count(word) > 1 && word.substringToIndex(advance(word.startIndex,1)) == "*"
             {
+                // 한태사전에서 와일드카드 검색시에는 '괄호 안' 에 대한 내용도 검색하기 위해 컬럼을 self.KOREAN으로 변경
                 if ConstValue.dic_mode == 1
                 {
                     searchedColumn = self.KOREAN
@@ -137,7 +139,15 @@ class DBManager
             // 일반적인 경우 -> 뒷부분 Like 검색
             else
             {
-                for oneItem in self.dic.filter(like( "\(word)%", searchedColumn) )
+                var searchWord = word
+                
+                // 한태사전에서 일반 검색일 경우 whitespace 를 제거하고 검색!
+                if ConstValue.dic_mode == 1
+                {
+                    searchWord = (word as NSString).stringByReplacingOccurrencesOfString(" ", withString: "")
+                }
+                
+                for oneItem in self.dic.filter(like( "\(searchWord)%", searchedColumn) )
                 {
                     var oneCellItem = DicModel()
                     self.setItemToObject(oneCellItem, oneItem: oneItem)

@@ -827,8 +827,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: HYOJOONG LEE (2P36ZUMVMM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: HYOJOONG LEE (2P36ZUMVMM)";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic2.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -843,13 +843,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: HYOJOONG LEE (Y3379EJVHL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: HYOJOONG LEE (Y3379EJVHL)";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic2.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = KoreanToThaiDic2;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "19079bb6-b0b6-40d8-b8cd-475a10216fb7";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/KoreanToThaiDic/KoreanToThaiDic-Bridging-Header.h";
 			};
 			name = Release;
@@ -876,13 +876,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: HYOJOONG LEE (Y3379EJVHL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: HYOJOONG LEE (Y3379EJVHL)";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic3.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = KoreanToThaiDic3;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "128ebdb5-62b7-4fa5-a678-d10941b5b0af";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/KoreanToThaiDic/KoreanToThaiDic-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -978,8 +978,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: HYOJOONG LEE (2P36ZUMVMM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: HYOJOONG LEE (2P36ZUMVMM)";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic/KoreanToThaiDic1.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -995,13 +995,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: HYOJOONG LEE (Y3379EJVHL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: HYOJOONG LEE (Y3379EJVHL)";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic/KoreanToThaiDic1.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "375577f4-f251-41dd-b822-84e25a49ca2d";
 				SDKROOT = iphoneos8.4;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/KoreanToThaiDic/KoreanToThaiDic-Bridging-Header.h";
 			};
