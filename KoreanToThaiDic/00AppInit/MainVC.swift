@@ -81,16 +81,19 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         
         println("텍스트필드에서 사용자 입력값 : \(sender.text)")
         
-        
+        // 입력된 텍스트가 공백일경우 검색하지 않는다.
         if sender.text == ""
         {
             self.emptyContentView.hidden = false
             DBManager.searchedItemArray.removeAll(keepCapacity: false)
             self.tableViewInMain.reloadData()            
         }
+        // 입력된 텍스트가 공백이 아닐경우 검색 시도
         else
         {
+            
             self.emptyContentView.hidden = true
+            
             // iOS 7 버전에서는 onWriting 이 메소드가 비정상적으로 2번 호출된다.
             // '가능성' 이라고 텍스트를 적을 경우 '가능' , '가능성' 두개가 동시에 호출되어 문제가 발생한다.
             // 이에 0.1초 딜레이를 둔 후에 다시 텍스트를 검색해서 해당 텍스트와 마지막에 적은 텍스트가 일치할 경우에 검색을 시행한다.
@@ -99,6 +102,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
                 var currentText = sender.text
                 HWILib.delay(1, closure: { () -> () in
                     
+                    // 1초 뒤에 이전의 현제 텍스트와 텍스트필드의 값이 같을 경우에만 검색을 시도한다.
                     if currentText == sender.text
                     {
                         DBManager.getListFromWord(sender.text, callback: { () -> () in
