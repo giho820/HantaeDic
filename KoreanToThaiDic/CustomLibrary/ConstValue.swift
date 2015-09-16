@@ -31,7 +31,7 @@ class ConstValue {
         2 : 들리는대로 한글로 찾는 태한사전
         3 : 고급 태한사전
     */
-    static let dic_mode = 2
+    static let dic_mode = 1
     
     static let url00_versionCheck = "http://hyojoong2.cafe24.com/hante/mobile/selectServiceInfo.php?OS=i"
     
@@ -43,6 +43,8 @@ class ConstValue {
         "부록 4. 한글 읽고 쓰기"
     ]
     
+    
+    // 서버 통신을 통해 하기 URL 은 변경되므로 의미가 없음
     static var url01_HantaeDic = "http://www.google.com"
     static var url02_ListenTaeHanDic = "http://www.naver.com"
     static var url03_TaehanDic = "http://www.daum.net"

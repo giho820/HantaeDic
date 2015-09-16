@@ -47,6 +47,8 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         self.detailScrollView.hidden = true
         self.cancelBtnInSearchBar.hidden = true
 
+        self.hwi_dbFileDownloadView.hwi_currentVC = self
+        
         // 뷰 초기화
         self.initHeaderView()
         self.initViews()
@@ -226,6 +228,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         let oneItem = DBManager.searchedItemArray[indexPath.row]
         
         itemCell.label02_smallText.text = oneItem.THAI
+        itemCell.label02_smallText.font = UIFont.systemFontOfSize(15)
         
         switch ConstValue.dic_mode
         {
@@ -236,6 +239,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         case 3:
             itemCell.label01_largeText.text = oneItem.THAI
             itemCell.label02_smallText.text = oneItem.KOREAN
+        itemCell.label02_smallText.font = UIFont.systemFontOfSize(12)
         default:
             break
         }

@@ -18,6 +18,7 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
     let hwi_dbFileDownloadActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
     let hwi_dbFileDownloadProgressBar = UIProgressView(progressViewStyle: UIProgressViewStyle.Default)
     
+    var hwi_currentVC : UIViewController!
     
     var hwi_downloadDBVersion : Double = 0
     func onViewDidLoad()
@@ -81,33 +82,33 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
 //        self.hwi_dbDownloadContainerView.addSubview(self.hwi_dbFileDownloadProgressBar)
 
         
-        
-        
-        // 통신 시작
-        var request = HTTPTask()
-        
-        request.GET(ConstValue.url00_versionCheck, parameters: nil, completionHandler: {(response: HTTPResponse) in
-            if let err = response.error {
-                println("error: \(err.localizedDescription)")
-                return //also notify app of failure as needed
-            }
-            if let data = response.responseObject as? NSData
-            {
-                // 네트워크 응답 String Log 출력
-                let str = NSString(data: data, encoding: NSUTF8StringEncoding)!
-                println("response: \(str)") //prints the HTML of the page
-                
-                if let responseDic = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as? NSDictionary
+        if HWILib.isConnectedToNetwork()
+        {
+            // 통신 시작
+            var request = HTTPTask()
+            
+            request.GET(ConstValue.url00_versionCheck, parameters: nil, completionHandler: {(response: HTTPResponse) in
+                if let err = response.error {
+                    println("error: \(err.localizedDescription)")
+                    return //also notify app of failure as needed
+                }
+                if let data = response.responseObject as? NSData
                 {
-                    // 추후 앱 버전 비교 후 분기 처리시 사용 ( 현재는 사용하지 않음 )
-                    let currentAppVersion = DBManager.hwi_getCurrentAppVersion()
+                    // 네트워크 응답 String Log 출력
+                    let str = NSString(data: data, encoding: NSUTF8StringEncoding)!
+                    println("response: \(str)") //prints the HTML of the page
                     
-                    let currentDBVersion = DBManager.hwi_getCurrentDBVersion()
-                    
-                    println("현재 앱의 DB 버전 : \(currentDBVersion)")
-                    
-                    // 현재 DB 파일이 존재하지 않는다 --> DB 파일 다운로드
-
+                    if let responseDic = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as? NSDictionary
+                    {
+                        // 추후 앱 버전 비교 후 분기 처리시 사용 ( 현재는 사용하지 않음 )
+                        let currentAppVersion = DBManager.hwi_getCurrentAppVersion()
+                        
+                        let currentDBVersion = DBManager.hwi_getCurrentDBVersion()
+                        
+                        println("현재 앱의 DB 버전 : \(currentDBVersion)")
+                        
+                        // 현재 DB 파일이 존재하지 않는다 --> DB 파일 다운로드
+                        
                         var keyOfDBFilrUrl = ""
                         var keyOfDBVersion = ""
                         
@@ -138,26 +139,35 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
                         
                         println("다운로드 URL : \(downloadDBURL)")
                         println("저장경로 : \(DBManager.hwi_getDocumentFolderPath())")
-                    
-                    
-                    // DB 파일을 다운로드 받아야 할 때
-                    if currentDBVersion < serverDBVersion
-                    {
-                        let fileURL = NSURL(string: downloadDBURL)
-                        let download = TCBlobDownloadManager.sharedInstance.downloadFileAtURL(fileURL!, toDirectory: NSURL(fileURLWithPath: DBManager.hwi_getDocumentFolderPath()) , withName: DBManager.DBFILE_NAME, andDelegate: self)
+                        
+                        
+                        // DB 파일을 다운로드 받아야 할 때
+                        if currentDBVersion < serverDBVersion
+                        {
+                            let fileURL = NSURL(string: downloadDBURL)
+                            let download = TCBlobDownloadManager.sharedInstance.downloadFileAtURL(fileURL!, toDirectory: NSURL(fileURLWithPath: DBManager.hwi_getDocumentFolderPath()) , withName: DBManager.DBFILE_NAME, andDelegate: self)
+                            
+                        }
+                        else
+                        {
+                            DBManager.initDB()
+                            self.hidden = true
+                        }
                         
                     }
-                    else
-                    {
-                        DBManager.initDB()
-                        self.hidden = true
-                    }
+                    
                     
                 }
+            })
+        }
+        else
+        {
+            HWILib.showSimpleAlert("인터넷 연결이 되어있지 않으면 사용할 수 없습니다.", buttonText: "확인", vc: self.hwi_currentVC, btnClickAction: { () -> () in
                 
-                
-            }
-        })
+            })
+        }
+        
+       
         
         
     }

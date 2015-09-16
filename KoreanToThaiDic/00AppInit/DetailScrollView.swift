@@ -62,14 +62,12 @@ class DetailScrollView: BaseScrollView
         
         for oneLabel in arrayOfViews
         {
-
-//            oneLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
-//            oneLabel.numberOfLines = 0
+            
             oneLabel.textContainer.lineFragmentPadding = 0
             oneLabel.textContainerInset = UIEdgeInsetsZero
             oneLabel.backgroundColor = UIColor.clearColor()
             oneLabel.editable = false
-                self.containerView.addSubview(oneLabel)
+            self.containerView.addSubview(oneLabel)
         }
         
         self.addSubview(containerView)
@@ -114,6 +112,29 @@ class DetailScrollView: BaseScrollView
                 // 하단 작은 라벨 속성 적용
                 let yOffsetOfSmallText = topMarginOfSmallText + lastValueOfY
                 oneLabel.font = UIFont.boldSystemFontOfSize(19)
+                
+                switch ConstValue.dic_mode
+                {
+                case 1:
+                    if index == 3
+                    {
+                        oneLabel.font = UIFont.boldSystemFontOfSize(21)
+                    }
+                case 2:
+                    if index == 3
+                    {
+                        oneLabel.font = UIFont.boldSystemFontOfSize(21)
+                    }
+                case 3:
+                    if index == 1
+                    {
+                        oneLabel.font = UIFont.boldSystemFontOfSize(21)
+                    }
+                default:
+                    break
+                }
+                
+
                 
                 
                 heightOfSmallText = HWILib.getHeightForView(oneLabel.text!, font: oneLabel.font, width: widthOfLargeText)

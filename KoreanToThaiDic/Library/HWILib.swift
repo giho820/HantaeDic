@@ -194,4 +194,23 @@ class HWILib
         })
     }
     
+    
+    // 간단 AlertView 생성
+    class func showSimpleAlert(title : String ,buttonText : String ,vc : UIViewController , btnClickAction : ()->())
+    {
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: buttonText, style: UIAlertActionStyle.Default, handler: { (alert : UIAlertAction!) -> Void in
+            
+            
+            
+            alertController.dismissViewControllerAnimated(true, completion: { () -> Void in
+            })
+            btnClickAction()
+            
+        }))
+        vc.presentViewController(alertController, animated: true) { () -> Void in
+            
+        }
+    }
+    
 }
