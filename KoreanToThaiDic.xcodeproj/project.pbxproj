@@ -52,7 +52,6 @@
 		050F0CB61B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */; };
 		050F0CB71B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */; };
 		050F0CB81B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */; };
-		05300B261B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */; };
 		0555524C1B6BDFB700B4777F /* LauchScreen1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 055552491B6BDFB700B4777F /* LauchScreen1.xib */; };
 		0555524D1B6BDFB700B4777F /* LauchScreen2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0555524A1B6BDFB700B4777F /* LauchScreen2.xib */; };
 		0555524E1B6BDFB700B4777F /* LauchScreen3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0555524B1B6BDFB700B4777F /* LauchScreen3.xib */; };
@@ -80,7 +79,6 @@
 		055552681B6BE01100B4777F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA41B43BFC600F2CE14 /* MainVC.swift */; };
 		055552691B6BE01100B4777F /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B775A21B4583EF004CFC45 /* BaseScrollView.swift */; };
 		0555526A1B6BE01100B4777F /* CustomNaviC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEA95A1B4535B5008E1459 /* CustomNaviC.swift */; };
-		0555526F1B6BE01100B4777F /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */; };
 		055552701B6BE01100B4777F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B7D1B43B8F900F2CE14 /* .gitignore */; };
 		055552711B6BE01100B4777F /* SwiftHTTP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */; };
 		055552721B6BE01100B4777F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B831B43B8F900F2CE14 /* Info.plist */; };
@@ -123,7 +121,6 @@
 		055552A81B6BE06C00B4777F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922C1B42905E008BBC21 /* Main.storyboard */; };
 		055552A91B6BE06C00B4777F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C5922F1B42905E008BBC21 /* Images.xcassets */; };
 		055552AA1B6BE06C00B4777F /* LauchScreen2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0555524A1B6BDFB700B4777F /* LauchScreen2.xib */; };
-		055552AB1B6BE06C00B4777F /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */; };
 		055552AC1B6BE06C00B4777F /* thaidic-publish in Resources */ = {isa = PBXBuildFile; fileRef = 0558FE0F1B5BBEDA0017B532 /* thaidic-publish */; };
 		055552AD1B6BE06C00B4777F /* LauchScreen1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 055552491B6BDFB700B4777F /* LauchScreen1.xib */; };
 		0558FCD61B5BABC90017B532 /* ETCSupplementListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558FCD51B5BABC90017B532 /* ETCSupplementListVC.swift */; };
@@ -252,16 +249,11 @@
 		050F0C891B6F64E800CF8BB8 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
 		050F0CB11B6F651900CF8BB8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = KorThaiDictionary_SEARCH_K.sqlite; sourceTree = "<group>"; };
-		05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_P.sqlite; sourceTree = "<group>"; };
-		05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_T.sqlite; sourceTree = "<group>"; };
 		055552491B6BDFB700B4777F /* LauchScreen1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LauchScreen1.xib; sourceTree = "<group>"; };
 		0555524A1B6BDFB700B4777F /* LauchScreen2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LauchScreen2.xib; sourceTree = "<group>"; };
 		0555524B1B6BDFB700B4777F /* LauchScreen3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LauchScreen3.xib; sourceTree = "<group>"; };
 		055552801B6BE01100B4777F /* KoreanToThaiDic2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanToThaiDic2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		055552811B6BE01100B4777F /* KoreanToThaiDic2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = KoreanToThaiDic2.plist; path = /Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic2.plist; sourceTree = "<absolute>"; };
 		055552B31B6BE06C00B4777F /* KoreanToThaiDic3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanToThaiDic3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		055552B41B6BE06C00B4777F /* KoreanToThaiDic3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = KoreanToThaiDic3.plist; path = /Users/jhkim/Downloads/KoreanToThaiDic/KoreanToThaiDic3.plist; sourceTree = "<absolute>"; };
 		0558FCD51B5BABC90017B532 /* ETCSupplementListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETCSupplementListVC.swift; sourceTree = "<group>"; };
 		0558FCD71B5BAEC40017B532 /* SupplementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementCell.swift; sourceTree = "<group>"; };
 		0558FD621B5BB2740017B532 /* SupplementDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementDetailVC.swift; sourceTree = "<group>"; };
@@ -359,16 +351,6 @@
 			path = "SQLite.swift-master/SQLite";
 			sourceTree = "<group>";
 		};
-		05300B221B5042B200282820 /* DBFile */ = {
-			isa = PBXGroup;
-			children = (
-				05300B231B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite */,
-				05300B241B5042B200282820 /* ThaiKorDictionary_SEARCH_P.sqlite */,
-				05300B251B5042B200282820 /* ThaiKorDictionary_SEARCH_T.sqlite */,
-			);
-			path = DBFile;
-			sourceTree = "<group>";
-		};
 		0558FDF61B5BBC310017B532 /* HTMLWebFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,7 +396,6 @@
 			children = (
 				050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */,
 				0558FDF61B5BBC310017B532 /* HTMLWebFiles */,
-				05300B221B5042B200282820 /* DBFile */,
 				05EA7BA31B43BFAC00F2CE14 /* 00AppInit */,
 				05BFBB7C1B4740AD001DA053 /* 01Etc */,
 				05C5924B1B4291EE008BBC21 /* Library */,
@@ -434,8 +415,6 @@
 				055552491B6BDFB700B4777F /* LauchScreen1.xib */,
 				0555524A1B6BDFB700B4777F /* LauchScreen2.xib */,
 				0555524B1B6BDFB700B4777F /* LauchScreen3.xib */,
-				055552811B6BE01100B4777F /* KoreanToThaiDic2.plist */,
-				055552B41B6BE06C00B4777F /* KoreanToThaiDic3.plist */,
 				05C592271B42905E008BBC21 /* KoreanToThaiDic1.plist */,
 				050F0CB11B6F651900CF8BB8 /* libsqlite3.dylib */,
 			);
@@ -693,7 +672,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0555526F1B6BE01100B4777F /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */,
 				050F0CA91B6F64E800CF8BB8 /* SQLite.xcconfig in Resources */,
 				055552701B6BE01100B4777F /* .gitignore in Resources */,
 				055552711B6BE01100B4777F /* SwiftHTTP.podspec in Resources */,
@@ -726,7 +704,6 @@
 				753E81981BA9C24C005847A9 /* Info.plist in Resources */,
 				055552A91B6BE06C00B4777F /* Images.xcassets in Resources */,
 				055552AA1B6BE06C00B4777F /* LauchScreen2.xib in Resources */,
-				055552AB1B6BE06C00B4777F /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
 				050F0CB81B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */,
 				055552AC1B6BE06C00B4777F /* thaidic-publish in Resources */,
 				055552AD1B6BE06C00B4777F /* LauchScreen1.xib in Resources */,
@@ -737,7 +714,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05300B261B5042B200282820 /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
 				050F0CA81B6F64E800CF8BB8 /* SQLite.xcconfig in Resources */,
 				05EA7B8B1B43B8F900F2CE14 /* .gitignore in Resources */,
 				05EA7B941B43B8F900F2CE14 /* SwiftHTTP.podspec in Resources */,

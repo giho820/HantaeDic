@@ -12,16 +12,16 @@ class DetailScrollView: BaseScrollView
 {
     let containerView = UIView()
     
-    let label01_LargeText = UILabel()
-    let label02_SmallLabel = UILabel()
+    let label01_LargeText = UITextView()
+    let label02_SmallLabel = UITextView()
 
-    let label03_LargeText = UILabel()
-    let label04_SmallLabel = UILabel()
+    let label03_LargeText = UITextView()
+    let label04_SmallLabel = UITextView()
     
-    let label05_LargeText = UILabel()
-    let label06_SmallLabel = UILabel()
+    let label05_LargeText = UITextView()
+    let label06_SmallLabel = UITextView()
     
-    var arrayOfViews : [UILabel] = [];
+    var arrayOfViews : [UITextView] = [];
     
 
 
@@ -62,8 +62,13 @@ class DetailScrollView: BaseScrollView
         
         for oneLabel in arrayOfViews
         {
-            oneLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
-            oneLabel.numberOfLines = 0
+
+//            oneLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+//            oneLabel.numberOfLines = 0
+            oneLabel.textContainer.lineFragmentPadding = 0
+            oneLabel.textContainerInset = UIEdgeInsetsZero
+            oneLabel.backgroundColor = UIColor.clearColor()
+            oneLabel.editable = false
                 self.containerView.addSubview(oneLabel)
         }
         

@@ -51,25 +51,24 @@ class DBManager
     class func initDB()
     {
         
+        dbFilePath = DBManager.hwi_getDocumentFolderPath().stringByAppendingPathComponent(DBManager.DBFILE_NAME)
+        println("dbFilePath : \(dbFilePath)")
         switch ConstValue.dic_mode
         {
         case 1:
-            dbFilePath = NSBundle.mainBundle().pathForResource("KorThaiDictionary_SEARCH_K", ofType: "sqlite")!
             db = Database(dbFilePath!)
             
             dic = db!["KOR_THAI_DICTIONARY"]
         case 2:
-            dbFilePath = NSBundle.mainBundle().pathForResource("ThaiKorDictionary_SEARCH_P", ofType: "sqlite")!
             db = Database(dbFilePath!)
             dic = db!["THAI_KOR_DICTIONARY"]
         case 3:
-            dbFilePath = NSBundle.mainBundle().pathForResource("ThaiKorDictionary_SEARCH_T", ofType: "sqlite")!
             db = Database(dbFilePath!)
             dic = db!["THAI_KOR_DICTIONARY"]
         default:
             break
         }
-        
+
         
     }
     
@@ -225,10 +224,10 @@ class DBManager
         NSUserDefaults.standardUserDefaults().synchronize()
     }
     
-    class func hwi_getDocumentFolderURL()->NSURL
+    class func hwi_getDocumentFolderPath()->String
     {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
-        return NSURL(fileURLWithPath: documentsPath)!
+        return documentsPath
         
     }
     

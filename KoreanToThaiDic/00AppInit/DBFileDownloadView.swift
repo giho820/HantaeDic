@@ -18,6 +18,8 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
     let hwi_dbFileDownloadActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
     let hwi_dbFileDownloadProgressBar = UIProgressView(progressViewStyle: UIProgressViewStyle.Default)
     
+    
+    var hwi_downloadDBVersion : Double = 0
     func onViewDidLoad()
     {
         self.userInteractionEnabled  = true
@@ -105,8 +107,7 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
                     println("현재 앱의 DB 버전 : \(currentDBVersion)")
                     
                     // 현재 DB 파일이 존재하지 않는다 --> DB 파일 다운로드
-                    if currentDBVersion == 0
-                    {
+
                         var keyOfDBFilrUrl = ""
                         var keyOfDBVersion = ""
                         
@@ -129,21 +130,27 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
                         var serviceInfo = responseDic.objectForKey("SERVICEINFO") as! NSDictionary
                         var downloadDBURL = serviceInfo.objectForKey(keyOfDBFilrUrl) as! String
                         var serverDBVersion = serviceInfo.objectForKey(keyOfDBVersion) as! Double
+                        self.hwi_downloadDBVersion = serverDBVersion
+                        ConstValue.url01_HantaeDic = serviceInfo.objectForKey("STORE_URL_K") as! String
+                        ConstValue.url02_ListenTaeHanDic = serviceInfo.objectForKey("STORE_URL_P") as! String
+                        ConstValue.url03_TaehanDic = serviceInfo.objectForKey("STORE_URL_T") as! String
+                        
                         
                         println("다운로드 URL : \(downloadDBURL)")
-                        println("저장경로 : \(DBManager.hwi_getDocumentFolderURL())")
+                        println("저장경로 : \(DBManager.hwi_getDocumentFolderPath())")
+                    
+                    
+                    // DB 파일을 다운로드 받아야 할 때
+                    if currentDBVersion < serverDBVersion
+                    {
                         let fileURL = NSURL(string: downloadDBURL)
-
-                        let download = TCBlobDownloadManager.sharedInstance.downloadFileAtURL(fileURL!, toDirectory: DBManager.hwi_getDocumentFolderURL() , withName: DBManager.DBFILE_NAME, andDelegate: self)
-
-                        
-                        
+                        let download = TCBlobDownloadManager.sharedInstance.downloadFileAtURL(fileURL!, toDirectory: NSURL(fileURLWithPath: DBManager.hwi_getDocumentFolderPath()) , withName: DBManager.DBFILE_NAME, andDelegate: self)
                         
                     }
-                    // DB 버전이 존재한다.
                     else
                     {
-                    
+                        DBManager.initDB()
+                        self.hidden = true
                     }
                     
                 }
@@ -218,5 +225,13 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
     {
         self.hwi_dbFileDownloadStateLabel.text = "다운로드 완료"
         println("다운로드 완료")
+        
+        // 데이터베이스 셋팅 및 버전 저장
+        DBManager.initDB()
+        DBManager.hwi_setCurrentDBVersion(self.hwi_downloadDBVersion)
+        
+        HWILib.delay(0.5, closure: { () -> () in
+            self.hidden = true
+        })
     }
 }
