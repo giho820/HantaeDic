@@ -33,6 +33,7 @@ class ConstValue {
     */
     static let dic_mode = 1
     
+    static let url00_versionCheck = "http://hyojoong2.cafe24.com/hante/mobile/selectServiceInfo.php?OS=i"
     
     static let arrayOfSupplementTableTitles =
     [

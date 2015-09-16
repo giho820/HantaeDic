@@ -157,6 +157,9 @@
 		05EA7B941B43B8F900F2CE14 /* SwiftHTTP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05EA7B871B43B8F900F2CE14 /* SwiftHTTP.podspec */; };
 		05EA7BA21B43BE7D00F2CE14 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */; };
 		05EA7BA51B43BFC600F2CE14 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7BA41B43BFC600F2CE14 /* MainVC.swift */; };
+		753E81701BA9A0AD005847A9 /* DBFileDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E816F1BA9A0AD005847A9 /* DBFileDownloadView.swift */; };
+		753E81711BA9A0AD005847A9 /* DBFileDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E816F1BA9A0AD005847A9 /* DBFileDownloadView.swift */; };
+		753E81721BA9A0AD005847A9 /* DBFileDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E816F1BA9A0AD005847A9 /* DBFileDownloadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +260,7 @@
 		05EA7B881B43B8F900F2CE14 /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftHTTP.xcodeproj; sourceTree = "<group>"; };
 		05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		05EA7BA41B43BFC600F2CE14 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		753E816F1BA9A0AD005847A9 /* DBFileDownloadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBFileDownloadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				05EA7BA41B43BFC600F2CE14 /* MainVC.swift */,
+				753E816F1BA9A0AD005847A9 /* DBFileDownloadView.swift */,
 				05B775A01B4583DB004CFC45 /* DetailScrollView.swift */,
 				05BFBB881B4746D5001DA053 /* ItemCell.swift */,
 			);
@@ -686,6 +691,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753E81711BA9A0AD005847A9 /* DBFileDownloadView.swift in Sources */,
 				055552531B6BE01100B4777F /* HTTPResponseSerializer.swift in Sources */,
 				055552541B6BE01100B4777F /* ETCSupplementListVC.swift in Sources */,
 				050F0CAF1B6F64E800CF8BB8 /* Value.swift in Sources */,
@@ -728,6 +734,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753E81721BA9A0AD005847A9 /* DBFileDownloadView.swift in Sources */,
 				055552861B6BE06C00B4777F /* HTTPResponseSerializer.swift in Sources */,
 				055552871B6BE06C00B4777F /* ETCSupplementListVC.swift in Sources */,
 				050F0CB01B6F64E800CF8BB8 /* Value.swift in Sources */,
@@ -770,6 +777,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753E81701BA9A0AD005847A9 /* DBFileDownloadView.swift in Sources */,
 				05EA7B8D1B43B8F900F2CE14 /* HTTPResponseSerializer.swift in Sources */,
 				0558FCD61B5BABC90017B532 /* ETCSupplementListVC.swift in Sources */,
 				050F0CAE1B6F64E800CF8BB8 /* Value.swift in Sources */,

@@ -48,8 +48,8 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         self.initHeaderView()
         self.initViews()
         
-        self.tableViewInMain.customDelegate = self
         
+        self.tableViewInMain.customDelegate = self
         
 
         // 앱 실행된 후 디테일 뷰(커스텀 뷰) 초기화
@@ -60,6 +60,8 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
 
         
     }
+
+    
     
     override func viewDidAppear(animated: Bool)
     {
@@ -113,9 +115,9 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
             {
                 
                 var currentText = sender.text
-                HWILib.delay(1, closure: { () -> () in
+                HWILib.delay(0.8, closure: { () -> () in
                     
-                    // 1초 뒤에 이전의 현제 텍스트와 텍스트필드의 값이 같을 경우에만 검색을 시도한다.
+                    // 0.8초 뒤에 이전의 현제 텍스트와 텍스트필드의 값이 같을 경우에만 검색을 시도한다.
                     if currentText == sender.text
                     {
                         HWILib.showActivityIndicator(self)
@@ -359,5 +361,7 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         self.backButton.hidden = true
         self.topTitleLabel.text = "단어검색"
     }
-    
+    // 초기화 함수
+    //________________________________________________________________________
+
 }

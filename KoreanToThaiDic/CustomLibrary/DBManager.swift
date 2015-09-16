@@ -50,6 +50,9 @@ class DBManager
     
     class func initDB()
     {
+        
+        
+        
         switch ConstValue.dic_mode
         {
         case 1:
