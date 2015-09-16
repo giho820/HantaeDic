@@ -15,6 +15,9 @@ protocol CustomTableViewDelegate
 
 class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableViewDelegate , CustomTableViewDelegate{
     
+    
+    let hwi_dbFileDownloadView =  DBFileDownloadView()
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var placeholderViewInSearchBar: UIView!
     @IBOutlet weak var labelInSearchTextField: UILabel!
@@ -54,10 +57,11 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
 
         // 앱 실행된 후 디테일 뷰(커스텀 뷰) 초기화
         HWILib.delay(0.2, closure: { () -> () in
-            
             self.detailScrollView.onViewDidLoad()
         })
 
+        self.hwi_dbFileDownloadView.onViewDidLoad()
+        self.view.addSubview(self.hwi_dbFileDownloadView)
         
     }
 
@@ -76,7 +80,11 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
     }
     
     
-    
+    override func viewDidLayoutSubviews()
+    {
+        super.viewDidLayoutSubviews()
+        self.hwi_dbFileDownloadView.onViewShow()
+    }
     
     
     

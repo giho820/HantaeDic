@@ -26,7 +26,7 @@ class DBManager
     static var PRONUNCIATION = Expression<String>("PRONUNCIATION")
     static var SEARCH_KOREAN = Expression<String>("SEARCH_KOREAN")
 
-    
+    static let DBFILE_NAME = "DB.sqlite"
     
     
     static var searchedItemArray : [DicModel] = []
@@ -50,8 +50,6 @@ class DBManager
     
     class func initDB()
     {
-        
-        
         
         switch ConstValue.dic_mode
         {
@@ -203,7 +201,36 @@ class DBManager
         
     }
     
+    class func hwi_getCurrentAppVersion()->Double
+    {
+        if let appVersion = NSBundle.mainBundle().infoDictionary!["CFBundleVersion"] as? String
+        {
+            return (appVersion as NSString).doubleValue
+        }
+
+        return 0
+    }
     
+    class func hwi_getCurrentDBVersion() -> Double
+    {
+        let currentDBVersion = NSUserDefaults.standardUserDefaults().doubleForKey("currentDBVersion")
+        
+        return currentDBVersion
+        
+    }
+    
+    class func hwi_setCurrentDBVersion(version : Double)
+    {
+        NSUserDefaults.standardUserDefaults().setDouble(version, forKey: "currentDBVersion")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    
+    class func hwi_getDocumentFolderURL()->NSURL
+    {
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
+        return NSURL(fileURLWithPath: documentsPath)!
+        
+    }
     
 }
 

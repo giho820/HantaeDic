@@ -160,6 +160,15 @@
 		753E81701BA9A0AD005847A9 /* DBFileDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E816F1BA9A0AD005847A9 /* DBFileDownloadView.swift */; };
 		753E81711BA9A0AD005847A9 /* DBFileDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E816F1BA9A0AD005847A9 /* DBFileDownloadView.swift */; };
 		753E81721BA9A0AD005847A9 /* DBFileDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E816F1BA9A0AD005847A9 /* DBFileDownloadView.swift */; };
+		753E81961BA9C24C005847A9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753E81921BA9C24C005847A9 /* Info.plist */; };
+		753E81971BA9C24C005847A9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753E81921BA9C24C005847A9 /* Info.plist */; };
+		753E81981BA9C24C005847A9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753E81921BA9C24C005847A9 /* Info.plist */; };
+		753E81991BA9C24C005847A9 /* TCBlobDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E81931BA9C24C005847A9 /* TCBlobDownload.swift */; };
+		753E819A1BA9C24C005847A9 /* TCBlobDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E81931BA9C24C005847A9 /* TCBlobDownload.swift */; };
+		753E819B1BA9C24C005847A9 /* TCBlobDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E81931BA9C24C005847A9 /* TCBlobDownload.swift */; };
+		753E819C1BA9C24C005847A9 /* TCBlobDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E81941BA9C24C005847A9 /* TCBlobDownloadManager.swift */; };
+		753E819D1BA9C24C005847A9 /* TCBlobDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E81941BA9C24C005847A9 /* TCBlobDownloadManager.swift */; };
+		753E819E1BA9C24C005847A9 /* TCBlobDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E81941BA9C24C005847A9 /* TCBlobDownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +201,36 @@
 			remoteInfo = SwiftHTTPOSXTests;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		753E81881BA9A757005847A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753E818A1BA9A78D005847A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753E818C1BA9A79D005847A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		050F0C781B6F643300CF8BB8 /* KoreanToThaiDic-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KoreanToThaiDic-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -261,6 +300,11 @@
 		05EA7BA11B43BE7D00F2CE14 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		05EA7BA41B43BFC600F2CE14 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		753E816F1BA9A0AD005847A9 /* DBFileDownloadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBFileDownloadView.swift; sourceTree = "<group>"; };
+		753E81791BA9A6F2005847A9 /* TCBlobDownloadSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TCBlobDownloadSwift.xcodeproj; path = "../../../../TCBlobDownloadSwift-master/TCBlobDownloadSwift.xcodeproj"; sourceTree = "<group>"; };
+		753E81921BA9C24C005847A9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753E81931BA9C24C005847A9 /* TCBlobDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCBlobDownload.swift; sourceTree = "<group>"; };
+		753E81941BA9C24C005847A9 /* TCBlobDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCBlobDownloadManager.swift; sourceTree = "<group>"; };
+		753E81951BA9C24C005847A9 /* TCBlobDownloadSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBlobDownloadSwift.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +462,7 @@
 		05C5924B1B4291EE008BBC21 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				753E81901BA9C239005847A9 /* TCBlobDownloadSwift */,
 				05C592CD1B42A01F008BBC21 /* SQLite.swift-master */,
 				05EA7B7C1B43B8F900F2CE14 /* SwiftHTTP-master */,
 				05EA7B781B43B8DF00F2CE14 /* HWILib.swift */,
@@ -488,6 +533,26 @@
 			path = 00AppInit;
 			sourceTree = "<group>";
 		};
+		753E81901BA9C239005847A9 /* TCBlobDownloadSwift */ = {
+			isa = PBXGroup;
+			children = (
+				753E81911BA9C24C005847A9 /* Source */,
+				753E81791BA9A6F2005847A9 /* TCBlobDownloadSwift.xcodeproj */,
+			);
+			path = TCBlobDownloadSwift;
+			sourceTree = "<group>";
+		};
+		753E81911BA9C24C005847A9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				753E81921BA9C24C005847A9 /* Info.plist */,
+				753E81931BA9C24C005847A9 /* TCBlobDownload.swift */,
+				753E81941BA9C24C005847A9 /* TCBlobDownloadManager.swift */,
+				753E81951BA9C24C005847A9 /* TCBlobDownloadSwift.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -498,6 +563,7 @@
 				055552521B6BE01100B4777F /* Sources */,
 				0555526B1B6BE01100B4777F /* Frameworks */,
 				0555526D1B6BE01100B4777F /* Resources */,
+				753E818A1BA9A78D005847A9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -515,6 +581,7 @@
 				055552851B6BE06C00B4777F /* Sources */,
 				0555529E1B6BE06C00B4777F /* Frameworks */,
 				055552A01B6BE06C00B4777F /* Resources */,
+				753E818C1BA9A79D005847A9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -532,6 +599,7 @@
 				05C5921F1B42905E008BBC21 /* Sources */,
 				05C592201B42905E008BBC21 /* Frameworks */,
 				05C592211B42905E008BBC21 /* Resources */,
+				753E81881BA9A757005847A9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -633,6 +701,7 @@
 				055552731B6BE01100B4777F /* LauchScreen3.xib in Resources */,
 				050F0C971B6F64E800CF8BB8 /* Info.plist in Resources */,
 				055552741B6BE01100B4777F /* LICENSE in Resources */,
+				753E81971BA9C24C005847A9 /* Info.plist in Resources */,
 				055552751B6BE01100B4777F /* Main.storyboard in Resources */,
 				055552761B6BE01100B4777F /* Images.xcassets in Resources */,
 				055552771B6BE01100B4777F /* LauchScreen2.xib in Resources */,
@@ -654,6 +723,7 @@
 				050F0C981B6F64E800CF8BB8 /* Info.plist in Resources */,
 				055552A71B6BE06C00B4777F /* LICENSE in Resources */,
 				055552A81B6BE06C00B4777F /* Main.storyboard in Resources */,
+				753E81981BA9C24C005847A9 /* Info.plist in Resources */,
 				055552A91B6BE06C00B4777F /* Images.xcassets in Resources */,
 				055552AA1B6BE06C00B4777F /* LauchScreen2.xib in Resources */,
 				055552AB1B6BE06C00B4777F /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
@@ -675,6 +745,7 @@
 				0555524E1B6BDFB700B4777F /* LauchScreen3.xib in Resources */,
 				050F0C961B6F64E800CF8BB8 /* Info.plist in Resources */,
 				05EA7B921B43B8F900F2CE14 /* LICENSE in Resources */,
+				753E81961BA9C24C005847A9 /* Info.plist in Resources */,
 				05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */,
 				05C592301B42905E008BBC21 /* Images.xcassets in Resources */,
 				0555524D1B6BDFB700B4777F /* LauchScreen2.xib in Resources */,
@@ -696,6 +767,7 @@
 				055552541B6BE01100B4777F /* ETCSupplementListVC.swift in Sources */,
 				050F0CAF1B6F64E800CF8BB8 /* Value.swift in Sources */,
 				055552551B6BE01100B4777F /* DBManager.swift in Sources */,
+				753E819A1BA9C24C005847A9 /* TCBlobDownload.swift in Sources */,
 				050F0C941B6F64E800CF8BB8 /* Functions.swift in Sources */,
 				050F0C8B1B6F64E800CF8BB8 /* Database.swift in Sources */,
 				055552561B6BE01100B4777F /* HWILib.swift in Sources */,
@@ -719,6 +791,7 @@
 				055552621B6BE01100B4777F /* ETCVC.swift in Sources */,
 				055552631B6BE01100B4777F /* HTTPUpload.swift in Sources */,
 				055552641B6BE01100B4777F /* DetailScrollView.swift in Sources */,
+				753E819D1BA9C24C005847A9 /* TCBlobDownloadManager.swift in Sources */,
 				050F0CA31B6F64E800CF8BB8 /* Schema.swift in Sources */,
 				055552651B6BE01100B4777F /* InsetTextField.swift in Sources */,
 				055552661B6BE01100B4777F /* ETCCell.swift in Sources */,
@@ -739,6 +812,7 @@
 				055552871B6BE06C00B4777F /* ETCSupplementListVC.swift in Sources */,
 				050F0CB01B6F64E800CF8BB8 /* Value.swift in Sources */,
 				055552881B6BE06C00B4777F /* DBManager.swift in Sources */,
+				753E819B1BA9C24C005847A9 /* TCBlobDownload.swift in Sources */,
 				050F0C951B6F64E800CF8BB8 /* Functions.swift in Sources */,
 				050F0C8C1B6F64E800CF8BB8 /* Database.swift in Sources */,
 				055552891B6BE06C00B4777F /* HWILib.swift in Sources */,
@@ -762,6 +836,7 @@
 				055552951B6BE06C00B4777F /* ETCVC.swift in Sources */,
 				055552961B6BE06C00B4777F /* HTTPUpload.swift in Sources */,
 				055552971B6BE06C00B4777F /* DetailScrollView.swift in Sources */,
+				753E819E1BA9C24C005847A9 /* TCBlobDownloadManager.swift in Sources */,
 				050F0CA41B6F64E800CF8BB8 /* Schema.swift in Sources */,
 				055552981B6BE06C00B4777F /* InsetTextField.swift in Sources */,
 				055552991B6BE06C00B4777F /* ETCCell.swift in Sources */,
@@ -782,6 +857,7 @@
 				0558FCD61B5BABC90017B532 /* ETCSupplementListVC.swift in Sources */,
 				050F0CAE1B6F64E800CF8BB8 /* Value.swift in Sources */,
 				05C592CB1B42944C008BBC21 /* DBManager.swift in Sources */,
+				753E81991BA9C24C005847A9 /* TCBlobDownload.swift in Sources */,
 				050F0C931B6F64E800CF8BB8 /* Functions.swift in Sources */,
 				050F0C8A1B6F64E800CF8BB8 /* Database.swift in Sources */,
 				05EA7B7A1B43B8DF00F2CE14 /* HWILib.swift in Sources */,
@@ -805,6 +881,7 @@
 				05BFBB851B4740C5001DA053 /* ETCVC.swift in Sources */,
 				05EA7B901B43B8F900F2CE14 /* HTTPUpload.swift in Sources */,
 				05B775A11B4583DB004CFC45 /* DetailScrollView.swift in Sources */,
+				753E819C1BA9C24C005847A9 /* TCBlobDownloadManager.swift in Sources */,
 				050F0CA21B6F64E800CF8BB8 /* Schema.swift in Sources */,
 				05EA7B7B1B43B8DF00F2CE14 /* InsetTextField.swift in Sources */,
 				05BFBB871B4746BB001DA053 /* ETCCell.swift in Sources */,
