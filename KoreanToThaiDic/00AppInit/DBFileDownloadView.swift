@@ -85,6 +85,7 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
         if HWILib.isConnectedToNetwork()
         {
             // 통신 시작
+            println("인터넷 접속 확인되어 통신 시작")
             var request = HTTPTask()
             
             request.GET(ConstValue.url00_versionCheck, parameters: nil, completionHandler: {(response: HTTPResponse) in
@@ -92,6 +93,7 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
                     println("error: \(err.localizedDescription)")
                     return //also notify app of failure as needed
                 }
+
                 if let data = response.responseObject as? NSData
                 {
                     // 네트워크 응답 String Log 출력
@@ -144,14 +146,52 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
                         // DB 파일을 다운로드 받아야 할 때
                         if currentDBVersion < serverDBVersion
                         {
-                            let fileURL = NSURL(string: downloadDBURL)
-                            let download = TCBlobDownloadManager.sharedInstance.downloadFileAtURL(fileURL!, toDirectory: NSURL(fileURLWithPath: DBManager.hwi_getDocumentFolderPath()) , withName: DBManager.DBFILE_NAME, andDelegate: self)
+                            
+                            dispatch_async(dispatch_get_main_queue(),{
+                                println("현재 버전보다 서버 버전이 높아서 다운로드 진행")
+                                let alertController = UIAlertController(title: "최신 버전의 DB로 업데이트 하시겠습니까?", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+                                alertController.addAction(UIAlertAction(title: "네", style: UIAlertActionStyle.Default, handler: { (alert : UIAlertAction!) -> Void in
+                                    
+                                    
+                                    let fileURL = NSURL(string: downloadDBURL)
+                                    let download = TCBlobDownloadManager.sharedInstance.downloadFileAtURL(fileURL!, toDirectory: NSURL(fileURLWithPath: DBManager.hwi_getDocumentFolderPath()) , withName: DBManager.DBFILE_NAME, andDelegate: self)
+                                    
+                                    alertController.dismissViewControllerAnimated(true, completion: { () -> Void in
+                                        
+                                    })
+                                    
+                                }))
+                                
+                                alertController.addAction(UIAlertAction(title: "아니오", style: UIAlertActionStyle.Default, handler: { (alert : UIAlertAction!) -> Void in
+                                    
+                                    DBManager.initDB()
+                                    self.hidden = true
+                                    
+                                    alertController.dismissViewControllerAnimated(true, completion: { () -> Void in
+                                        
+                                    })
+                                    
+                                }))
+                                
+                                
+                                self.hwi_currentVC.presentViewController(alertController, animated: true) { () -> Void in
+                                    
+                                }
+
+                            })
+                            
+                            
+                            
                             
                         }
                         else
                         {
-                            DBManager.initDB()
-                            self.hidden = true
+                            dispatch_async(dispatch_get_main_queue(),{
+                                println("현재 버전이 이미 최신버전이어서 그대로 진행")
+                                DBManager.initDB()
+                                self.hidden = true
+                                println("hidden 진행")
+                            })
                         }
                         
                     }

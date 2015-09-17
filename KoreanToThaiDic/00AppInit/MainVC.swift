@@ -53,6 +53,9 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
         self.initHeaderView()
         self.initViews()
         
+        // Base DB Load
+        DBManager.loadBaseDB()
+        
         
         self.tableViewInMain.customDelegate = self
         

@@ -47,6 +47,32 @@ class DBManager
     }
     
     
+    class func loadBaseDB()
+    {
+        
+        
+        switch ConstValue.dic_mode
+        {
+        case 1:
+            dbFilePath = NSBundle.mainBundle().pathForResource("KorThaiDictionary_SEARCH_K", ofType: "sqlite")!
+        case 2:
+            dbFilePath = NSBundle.mainBundle().pathForResource("ThaiKorDictionary_SEARCH_P", ofType: "sqlite")!
+        case 3:
+            dbFilePath = NSBundle.mainBundle().pathForResource("ThaiKorDictionary_SEARCH_T", ofType: "sqlite")!
+        default:
+            break
+        }
+        
+        let destinationPath  = DBManager.hwi_getDocumentFolderPath().stringByAppendingPathComponent(DBManager.DBFILE_NAME)
+        NSFileManager.defaultManager().copyItemAtPath(dbFilePath!, toPath: destinationPath, error: nil)
+        
+        if DBManager.hwi_getCurrentAppVersion() == 0
+        {
+            DBManager.hwi_setCurrentDBVersion(0.5)
+        }
+        
+    }
+    
     
     class func initDB()
     {
@@ -57,7 +83,6 @@ class DBManager
         {
         case 1:
             db = Database(dbFilePath!)
-            
             dic = db!["KOR_THAI_DICTIONARY"]
         case 2:
             db = Database(dbFilePath!)
@@ -68,7 +93,8 @@ class DBManager
         default:
             break
         }
-
+        
+        println("DB 로드 완료")
         
     }
     

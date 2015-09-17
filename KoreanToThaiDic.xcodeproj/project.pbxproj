@@ -166,6 +166,9 @@
 		753E819C1BA9C24C005847A9 /* TCBlobDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E81941BA9C24C005847A9 /* TCBlobDownloadManager.swift */; };
 		753E819D1BA9C24C005847A9 /* TCBlobDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E81941BA9C24C005847A9 /* TCBlobDownloadManager.swift */; };
 		753E819E1BA9C24C005847A9 /* TCBlobDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E81941BA9C24C005847A9 /* TCBlobDownloadManager.swift */; };
+		754F9C1E1BA9F989009836ED /* KorThaiDictionary_SEARCH_K.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 754F9C1B1BA9F988009836ED /* KorThaiDictionary_SEARCH_K.sqlite */; };
+		754F9C221BA9F989009836ED /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 754F9C1C1BA9F988009836ED /* ThaiKorDictionary_SEARCH_P.sqlite */; };
+		754F9C261BA9F989009836ED /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 754F9C1D1BA9F988009836ED /* ThaiKorDictionary_SEARCH_T.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +199,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = D958026319E6EEEB003C8218;
 			remoteInfo = SwiftHTTPOSXTests;
+		};
+		754F9C161BA9EB31009836ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 753E81791BA9A6F2005847A9 /* TCBlobDownloadSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C3B08D121A53398A00341164;
+			remoteInfo = TCBlobDownloadSwift;
+		};
+		754F9C181BA9EB31009836ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 753E81791BA9A6F2005847A9 /* TCBlobDownloadSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C3B08D1D1A53398A00341164;
+			remoteInfo = TCBlobDownloadSwiftTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -297,6 +314,9 @@
 		753E81931BA9C24C005847A9 /* TCBlobDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCBlobDownload.swift; sourceTree = "<group>"; };
 		753E81941BA9C24C005847A9 /* TCBlobDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCBlobDownloadManager.swift; sourceTree = "<group>"; };
 		753E81951BA9C24C005847A9 /* TCBlobDownloadSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBlobDownloadSwift.h; sourceTree = "<group>"; };
+		754F9C1B1BA9F988009836ED /* KorThaiDictionary_SEARCH_K.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = KorThaiDictionary_SEARCH_K.sqlite; sourceTree = "<group>"; };
+		754F9C1C1BA9F988009836ED /* ThaiKorDictionary_SEARCH_P.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_P.sqlite; sourceTree = "<group>"; };
+		754F9C1D1BA9F988009836ED /* ThaiKorDictionary_SEARCH_T.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThaiKorDictionary_SEARCH_T.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +414,7 @@
 		05C592251B42905E008BBC21 /* KoreanToThaiDic */ = {
 			isa = PBXGroup;
 			children = (
+				754F9C1A1BA9F988009836ED /* DBFile */,
 				050F0CB51B6F6BF400CF8BB8 /* Default-568h@2x.png */,
 				0558FDF61B5BBC310017B532 /* HTMLWebFiles */,
 				05EA7BA31B43BFAC00F2CE14 /* 00AppInit */,
@@ -532,6 +553,25 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		754F9C0E1BA9EB31009836ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				754F9C171BA9EB31009836ED /* TCBlobDownloadSwift.framework */,
+				754F9C191BA9EB31009836ED /* TCBlobDownloadSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		754F9C1A1BA9F988009836ED /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				754F9C1B1BA9F988009836ED /* KorThaiDictionary_SEARCH_K.sqlite */,
+				754F9C1C1BA9F988009836ED /* ThaiKorDictionary_SEARCH_P.sqlite */,
+				754F9C1D1BA9F988009836ED /* ThaiKorDictionary_SEARCH_T.sqlite */,
+			);
+			path = DBFile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -626,6 +666,10 @@
 					ProductGroup = 05EA7B891B43B8F900F2CE14 /* Products */;
 					ProjectRef = 05EA7B881B43B8F900F2CE14 /* SwiftHTTP.xcodeproj */;
 				},
+				{
+					ProductGroup = 754F9C0E1BA9EB31009836ED /* Products */;
+					ProjectRef = 753E81791BA9A6F2005847A9 /* TCBlobDownloadSwift.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -665,6 +709,20 @@
 			remoteRef = 05EA7B9F1B43B8F900F2CE14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		754F9C171BA9EB31009836ED /* TCBlobDownloadSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TCBlobDownloadSwift.framework;
+			remoteRef = 754F9C161BA9EB31009836ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		754F9C191BA9EB31009836ED /* TCBlobDownloadSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TCBlobDownloadSwiftTests.xctest;
+			remoteRef = 754F9C181BA9EB31009836ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -679,6 +737,7 @@
 				055552731B6BE01100B4777F /* LauchScreen3.xib in Resources */,
 				050F0C971B6F64E800CF8BB8 /* Info.plist in Resources */,
 				055552741B6BE01100B4777F /* LICENSE in Resources */,
+				754F9C221BA9F989009836ED /* ThaiKorDictionary_SEARCH_P.sqlite in Resources */,
 				753E81971BA9C24C005847A9 /* Info.plist in Resources */,
 				055552751B6BE01100B4777F /* Main.storyboard in Resources */,
 				055552761B6BE01100B4777F /* Images.xcassets in Resources */,
@@ -693,6 +752,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754F9C261BA9F989009836ED /* ThaiKorDictionary_SEARCH_T.sqlite in Resources */,
 				050F0CAA1B6F64E800CF8BB8 /* SQLite.xcconfig in Resources */,
 				055552A31B6BE06C00B4777F /* .gitignore in Resources */,
 				055552A41B6BE06C00B4777F /* SwiftHTTP.podspec in Resources */,
@@ -724,6 +784,7 @@
 				753E81961BA9C24C005847A9 /* Info.plist in Resources */,
 				05C5922E1B42905E008BBC21 /* Main.storyboard in Resources */,
 				05C592301B42905E008BBC21 /* Images.xcassets in Resources */,
+				754F9C1E1BA9F989009836ED /* KorThaiDictionary_SEARCH_K.sqlite in Resources */,
 				0555524D1B6BDFB700B4777F /* LauchScreen2.xib in Resources */,
 				050F0CB61B6F6BF400CF8BB8 /* Default-568h@2x.png in Resources */,
 				0558FE101B5BBEDA0017B532 /* thaidic-publish in Resources */,
@@ -910,7 +971,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = KoreanToThaiDic2;
-				PROVISIONING_PROFILE = "19079bb6-b0b6-40d8-b8cd-475a10216fb7";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/KoreanToThaiDic/KoreanToThaiDic-Bridging-Header.h";
 			};
 			name = Release;
@@ -943,7 +1004,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = KoreanToThaiDic3;
-				PROVISIONING_PROFILE = "128ebdb5-62b7-4fa5-a678-d10941b5b0af";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/KoreanToThaiDic/KoreanToThaiDic-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1039,8 +1100,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: HYOJOONG LEE (2P36ZUMVMM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: HYOJOONG LEE (2P36ZUMVMM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic/KoreanToThaiDic1.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1062,7 +1123,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "375577f4-f251-41dd-b822-84e25a49ca2d";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos8.4;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/KoreanToThaiDic/KoreanToThaiDic-Bridging-Header.h";
 			};
