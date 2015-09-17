@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DBFileDownloadView: UIView , TCBlobDownloadDelegate
+class DBFileDownloadView: UIView , TCBlobDownloadDelegate , UIAlertViewDelegate
 {
     let hwi_backgroundImageView = UIImageView()
     
@@ -21,6 +21,7 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
     var hwi_currentVC : UIViewController!
     
     var hwi_downloadDBVersion : Double = 0
+    var downloadDBURL : String!
     func onViewDidLoad()
     {
         self.userInteractionEnabled  = true
@@ -131,7 +132,7 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
                         
                         
                         var serviceInfo = responseDic.objectForKey("SERVICEINFO") as! NSDictionary
-                        var downloadDBURL = serviceInfo.objectForKey(keyOfDBFilrUrl) as! String
+                        self.downloadDBURL = serviceInfo.objectForKey(keyOfDBFilrUrl) as! String
                         var serverDBVersion = serviceInfo.objectForKey(keyOfDBVersion) as! Double
                         self.hwi_downloadDBVersion = serverDBVersion
                         ConstValue.url01_HantaeDic = serviceInfo.objectForKey("STORE_URL_K") as! String
@@ -139,7 +140,7 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
                         ConstValue.url03_TaehanDic = serviceInfo.objectForKey("STORE_URL_T") as! String
                         
                         
-                        println("다운로드 URL : \(downloadDBURL)")
+                        println("다운로드 URL : \(self.downloadDBURL)")
                         println("저장경로 : \(DBManager.hwi_getDocumentFolderPath())")
                         
                         
@@ -149,35 +150,60 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
                             
                             dispatch_async(dispatch_get_main_queue(),{
                                 println("현재 버전보다 서버 버전이 높아서 다운로드 진행")
-                                let alertController = UIAlertController(title: "최신 버전의 DB로 업데이트 하시겠습니까?", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-                                alertController.addAction(UIAlertAction(title: "네", style: UIAlertActionStyle.Default, handler: { (alert : UIAlertAction!) -> Void in
+                                
+                                // iOS 버전이 8 이상일 경우 -> UIAlertController 가 존재해서 최신 API 사용
+                                if objc_getClass("UIAlertController") != nil {
                                     
+                                    println("UIAlertController can be instantiated")
                                     
-                                    let fileURL = NSURL(string: downloadDBURL)
-                                    let download = TCBlobDownloadManager.sharedInstance.downloadFileAtURL(fileURL!, toDirectory: NSURL(fileURLWithPath: DBManager.hwi_getDocumentFolderPath()) , withName: DBManager.DBFILE_NAME, andDelegate: self)
-                                    
-                                    alertController.dismissViewControllerAnimated(true, completion: { () -> Void in
+                                    let alertController = UIAlertController(title: "최신 버전의 DB로 업데이트 하시겠습니까?", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+                                    alertController.addAction(UIAlertAction(title: "네", style: UIAlertActionStyle.Default, handler: { (alert : UIAlertAction!) -> Void in
                                         
-                                    })
-                                    
-                                }))
-                                
-                                alertController.addAction(UIAlertAction(title: "아니오", style: UIAlertActionStyle.Default, handler: { (alert : UIAlertAction!) -> Void in
-                                    
-                                    DBManager.initDB()
-                                    self.hidden = true
-                                    
-                                    alertController.dismissViewControllerAnimated(true, completion: { () -> Void in
                                         
-                                    })
+                                        let fileURL = NSURL(string: self.downloadDBURL)
+                                        let download = TCBlobDownloadManager.sharedInstance.downloadFileAtURL(fileURL!, toDirectory: NSURL(fileURLWithPath: DBManager.hwi_getDocumentFolderPath()) , withName: DBManager.DBFILE_NAME, andDelegate: self)
+                                        
+                                        alertController.dismissViewControllerAnimated(true, completion: { () -> Void in
+                                            
+                                        })
+                                        
+                                    }))
                                     
-                                }))
-                                
-                                
-                                self.hwi_currentVC.presentViewController(alertController, animated: true) { () -> Void in
+                                    alertController.addAction(UIAlertAction(title: "아니오", style: UIAlertActionStyle.Default, handler: { (alert : UIAlertAction!) -> Void in
+                                        
+                                        DBManager.initDB()
+                                        self.hidden = true
+                                        
+                                        alertController.dismissViewControllerAnimated(true, completion: { () -> Void in
+                                            
+                                        })
+                                        
+                                    }))
+                                    
+                                    
+                                    self.hwi_currentVC.presentViewController(alertController, animated: true) { () -> Void in
+                                        
+                                    }
+
                                     
                                 }
+                                // 구버전일 경우 UIAlertController 가 없어서 -> 구형 API 사용
+                                else
+                                {
+                                    
+                                    let alert = UIAlertView()
+                                    alert.title = "최신 버전의 DB로 업데이트 하시겠습니까?"
+                                    alert.addButtonWithTitle("네")
+                                    alert.addButtonWithTitle("아니오")
+                                    alert.delegate = self
+                                    alert.show()
+                                    println("UIAlertController can NOT be instantiated")
+                                    
 
+                                }
+                                
+                                
+                               
                             })
                             
                             
@@ -210,6 +236,24 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate
        
         
         
+    }
+    
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int)
+    {
+        println("버튼 인덱스 : \(buttonIndex)")
+        
+        switch buttonIndex
+        {
+        case 0:
+            let fileURL = NSURL(string: self.downloadDBURL)
+            let download = TCBlobDownloadManager.sharedInstance.downloadFileAtURL(fileURL!, toDirectory: NSURL(fileURLWithPath: DBManager.hwi_getDocumentFolderPath()) , withName: DBManager.DBFILE_NAME, andDelegate: self)
+        case 1:
+            DBManager.initDB()
+            self.hidden = true
+            
+        default:
+            break
+        }
     }
     
     
