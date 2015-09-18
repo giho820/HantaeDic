@@ -83,6 +83,14 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate , UIAlertViewDelegate
 //        self.hwi_dbDownloadContainerView.addSubview(self.hwi_dbFileDownloadProgressBar)
 
         
+        
+        // 인터넷 연결이 태국에서 느려서 그냥 적용 안함
+        DBManager.initDB()
+        self.hidden = true
+        
+        
+        
+        /*
         if HWILib.isConnectedToNetwork()
         {
             // 통신 시작
@@ -233,7 +241,7 @@ class DBFileDownloadView: UIView , TCBlobDownloadDelegate , UIAlertViewDelegate
             })
         }
         
-       
+       */
         
         
     }

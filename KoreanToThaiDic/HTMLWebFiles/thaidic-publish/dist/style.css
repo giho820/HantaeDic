@@ -71,15 +71,71 @@ td img {
 .col-2{
   width: 50% !important;
 }
+
 .col-3{
   width: 33.3% !important;
 }
+
 .col-4{
   width: 25% !important;
 }
 
+.col-5{
+  width: 20% !important;
+}
+
+.col-6{
+  width: 16.65% !important;
+}
+
+.col-7{
+  width: 14.28% !important;
+}
+
+.col-8{
+  width: 12.5% !important;
+}
+
+.col-10{
+  width: 10% !important;
+}
+
 .text-center *{
   text-align: center !important;
+}
+
+.double-right .tablesaw-cell-persist{
+  box-shadow: initial !important;
+  -webkit-box-shadow: initial !important;
+}
+
+.double-right tr td:nth-child(1),
+.double-right tr td:nth-child(2){
+  background:#BABABA;
+  color: #fff;
+}
+
+.double-right tr:nth-of-type(1) td:nth-child(1),
+.double-right tr:nth-of-type(1) td:nth-child(2),
+.double-right tr:nth-of-type(2) td:nth-child(1),
+.double-right tr:nth-of-type(2) td:nth-child(2),
+.double-right tr:nth-of-type(5) td:nth-child(1),
+.double-right tr:nth-of-type(5) td:nth-child(2),
+.double-right tr:nth-of-type(6) td:nth-child(1),
+.double-right tr:nth-of-type(6) td:nth-child(2),
+.double-right tr:nth-of-type(9) td:nth-child(1),
+.double-right tr:nth-of-type(9) td:nth-child(2),
+.double-right tr:nth-of-type(10) td:nth-child(1),
+.double-right tr:nth-of-type(10) td:nth-child(2){
+  background: #A0A0A0;
+}
+
+.double-right tr td:nth-child(2),
+.double-right tr th:nth-child(2){
+  border-right: 2px solid #ddd !important;
+}
+.double-bottom{
+  border-bottom: 3px double #ddd !important;
 }
 
 thead.fixed{
