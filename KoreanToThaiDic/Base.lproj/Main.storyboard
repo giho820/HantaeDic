@@ -46,7 +46,7 @@
                                         </connections>
                                     </textField>
                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcA-cx-LgG" userLabel="플레이스홀더뷰">
-                                        <rect key="frame" x="268" y="14" width="65" height="17"/>
+                                        <rect key="frame" x="265.5" y="14" width="70" height="17"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_n" translatesAutoresizingMaskIntoConstraints="NO" id="G1a-JH-X6S" userLabel="돋보기 이미지">
                                                 <rect key="frame" x="0.0" y="2" width="13" height="13"/>
@@ -56,9 +56,9 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bg-yj-JfX">
-                                                <rect key="frame" x="20" y="0.0" width="45" height="17"/>
+                                                <rect key="frame" x="20" y="0.0" width="50" height="17"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="45" id="IO0-7k-NPm"/>
+                                                    <constraint firstAttribute="width" constant="50" id="IO0-7k-NPm"/>
                                                     <constraint firstAttribute="height" constant="17" id="sjt-Zv-OlR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
