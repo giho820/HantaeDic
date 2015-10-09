@@ -98,13 +98,8 @@ class DetailScrollView: BaseScrollView
             {
                 // 상단 큰 라벨 속성 적용
                 oneLabel.font = UIFont.boldSystemFontOfSize(27)
-                
-                heightOfLargetText = HWILib.getHeightForView(oneLabel.text!, font: oneLabel.font, width: widthOfLargeText)
-                
+                heightOfLargetText = HWILib.getHeightForView(oneLabel.text!, font: oneLabel.font, width: widthOfLargeText) + 1
                 oneLabel.frame = CGRectMake(leftMarginOfLargeText, topMarginOfLargeText + lastValueOfY, widthOfLargeText , heightOfLargetText)
-                
-                
-                
                 lastValueOfY = topMarginOfLargeText + lastValueOfY + heightOfLargetText
             }
             else
