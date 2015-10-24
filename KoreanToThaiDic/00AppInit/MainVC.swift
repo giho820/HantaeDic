@@ -143,10 +143,24 @@ class MainVC: BaseVC , UITextFieldDelegate , UITableViewDataSource , UITableView
             }
             else
             {
-                DBManager.getListFromWord(sender.text, callback: { () -> () in
-                    self.tableViewInMain.reloadData()
+                
+                var currentText = sender.text
+                HWILib.delay(0.2, closure: { () -> () in
+                    
+                    // 0.2초 뒤에 이전의 현제 텍스트와 텍스트필드의 값이 같을 경우에만 검색을 시도한다.
+                    if currentText == sender.text
+                    {
+                        DBManager.getListFromWord(sender.text, callback: { () -> () in
+                            self.tableViewInMain.reloadData()
+                        })
+                    }
                 })
+                
+
             }
+            
+            
+            
         }
         
         
