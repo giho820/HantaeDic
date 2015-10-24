@@ -640,14 +640,14 @@
 				ORGANIZATIONNAME = smallhouse;
 				TargetAttributes = {
 					0555524F1B6BE01100B4777F = {
-						DevelopmentTeam = Y3379EJVHL;
+						DevelopmentTeam = NLGVG88T4N;
 					};
 					055552821B6BE06C00B4777F = {
-						DevelopmentTeam = Y3379EJVHL;
+						DevelopmentTeam = NLGVG88T4N;
 					};
 					05C592221B42905E008BBC21 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = Y3379EJVHL;
+						DevelopmentTeam = NLGVG88T4N;
 					};
 				};
 			};
@@ -964,7 +964,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic2.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -995,7 +995,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic3.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1112,7 +1112,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = "$(SRCROOT)/KoreanToThaiDic/KoreanToThaiDic1.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
