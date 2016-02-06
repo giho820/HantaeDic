@@ -20,7 +20,7 @@ class DBManager
     static var dic : Query?
 
     
-    static var IDX = Expression<Int64>("IDX")
+
     static var KOREAN = Expression<String>("KOREAN")
     static var THAI = Expression<String>("THAI")
     static var PRONUNCIATION = Expression<String>("PRONUNCIATION")
@@ -38,7 +38,7 @@ class DBManager
     
     class DicModel
     {
-        var IDX : Int64 = 0
+
         var KOREAN : String = ""
         var THAI : String = ""
         var PRONUNCIATION : String = ""
@@ -202,7 +202,6 @@ class DBManager
     
     class func setItemToObject(oneModel : DicModel , oneItem : Row)
     {
-        oneModel.IDX = oneItem[self.IDX]
         oneModel.KOREAN = oneItem[self.KOREAN]
         oneModel.THAI = oneItem[self.THAI]
         oneModel.PRONUNCIATION = oneItem[self.PRONUNCIATION]
